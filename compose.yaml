@@ -1,0 +1,14 @@
+services:
+    devcenter:
+        stdin_open: true
+        tty: true
+        volumes:
+            - ${PWD}/dev:${PWD}/dev
+        working_dir: ${PWD}/dev
+        ports:
+            - 1313:1313
+        # expose:
+        #     - "1313"
+        image: nixos/nix
+        command:
+            - nix-shell

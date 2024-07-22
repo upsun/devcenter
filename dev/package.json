@@ -1,0 +1,16 @@
+{
+  "name": "@upsun/dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "hugo mod tidy && hugo",
+    "dev": "hugo server --buildDrafts --buildFuture --bind 0.0.0.0 --logLevel debug -p $npm_package_config_dev_port",
+    "start": "python3 -m http.server $npm_package_config_dev_port --directory public"
+  },
+  "config": {
+    "dev_port": "1313"
+  },
+  "author": "",
+  "license": "MIT"
+}

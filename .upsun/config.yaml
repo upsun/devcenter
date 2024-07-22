@@ -1,0 +1,31 @@
+applications:
+    devcenter:
+        source:
+            root: dev
+
+        stack:
+            - nodejs@22
+            - nodePackages.npm
+            - python312
+            - hugo
+        hooks:
+            build: |
+                npm install
+                npm run build 
+        
+        web:
+            locations:
+                /:
+                    root: "public"
+                    passthru: true
+                    index:
+                      - index.html
+
+routes:
+    "https://{default}/":
+        type: upstream
+        primary: true
+        upstream: "devcenter:http"
+    "https://www.{default}":
+        type: redirect
+        to: "https://{default}/"

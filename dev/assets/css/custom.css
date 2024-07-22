@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+/* h1, h2, h3, h4, h5, h6 {
+    font-family: "Space Grotesk", sans-serif;
+} */
+
+/* .search-results > li > a > .title { */
+/* .search-wrapper li .title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+} */
+
+.endpoint {
+    font-size: 0.85rem; 
+    padding: 0.25rem 0.75rem; 
+    margin-right: 0.5rem;
+    font-weight: 700;
+}
+
+.required-icon {
+    margin-right: 0.2rem;
+    height: 1em;
+}
+
+.search-input:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+}
+
+.required {
+    color: #CC2A1E;
+    /* fill: #CC2A1E; */
+    /* height: 1em; */
+}
+
+.api-details {
+    list-style: none;
+    margin-inline-start: 0;
+}
+
+.api-details-underlined > li {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    border-bottom: 1px solid #B4BABD;
+}
+
+.api-type {
+    color: #2B3134;
+    font-size: 0.85rem;
+}
+
+.endpoint-get {
+    background-color: rgb(47, 129, 50); 
+    color: rgb(255, 255, 255);
+}
+
+.endpoint-post {
+    background-color: #007D8E;
+    color: rgb(255, 255, 255);  
+}
+
+.endpoint-path {
+    font-size: 0.9rem; 
+}
+
+.banner {
+    background-color: #6046FF;
+    color: white;
+    height: 3rem;
+}
+
+nav.hx-mx-auto > a.hx-text-sm > span {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+html {
+    font-family: "Instrument Sans", sans-serif;
+    /* font-size: 0.95rem; */
+}
+
+.hextra-feature-grid > a > div > h3 > span {
+    /* font-family: "Space Grotesk", sans-serif; */
+    font-weight: 700;
+    letter-spacing: 0.01rem;
+    margin-bottom: 1rem;
+}
+
+.content {
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 0.95rem;
+}
+
+span.hx-cursor-default {
+    font-family: "Space Grotesk", sans-serif;
+    letter-spacing: 0.01rem;
+}
+
+/* .nav-container-blur {
+    opacity: 1.0 !important;
+} */
+
+.hextra-feature-card {
+    border: 2px solid;
+    /* border-image-source: linear-gradient(235.66deg, #ED49F0 10.39%, #6046FF 97.5%); */
+    /* border-color: rgba(0, 0, 0, 0); */
+    border-radius: 32px;
+    /* border-color: linear-gradient(235.66deg, #ED49F0 10.39%, #6046FF 97.5%);; */
+}
+
+/* .hextra-feature-card > h3 > span {
+    margin-bottom: 3rem !important;
+} */
+
+.hextra-feature-card > h3 > span.last-of-type {
+    margin-bottom: 2rem !important;
+}
+
+.hextra-cards > a.hextra-card > span {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 700;
+}
+
+a.hextra-card {
+    background-color: white;
+}
+
+a.hextra-card > span, a.hextra-card > div {
+    background-color: white;
+    /* margin: 0.75rem 1.5rem 1.5rem 1.5rem; */
+    margin-left: 1rem;
+    margin-right: 1rem;
+    /* margin-top: 1.5rem; */
+}
+
+@media (min-width:1025px) { 
+
+    .front-page-search > .search-wrapper > div > input {
+        height: 4rem;
+        /* color: white; */
+    }
+
+    .front-page-search {
+        border: 1px solid black;
+        width: 80%;
+    }
+
+    .front-page-search > .search-wrapper {
+        width: 100%;
+        color: white;
+    }
+
+    nav > a > span.hx-mx-2 {
+        font-size: 1.75rem;
+    }
+    
+    .hx-h-16 {
+        height: 5rem;
+    }
+
+    .hx-p-2 {
+        padding: 0.65rem;
+    }
+}
