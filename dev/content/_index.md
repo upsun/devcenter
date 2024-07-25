@@ -49,7 +49,7 @@ layout: hextra-home
 
 <div class="hx-mb-12">
 {{< hextra/hero-subtitle >}}
-  Your central hub for all resources related to the Upsun product offerings. All the latest demos, examples, documentation and articles for each of your frameworks and languages. Join the community and build something great with Upsun.<br class="sm:hx-block hx-hidden" />
+  Your central hub for all resources related to the **Upsun** product offerings. All the latest demos, examples, documentation and articles for each of your frameworks and languages. Join the community and build something great with Upsun.<br class="sm:hx-block hx-hidden" />
   <br class="sm:hx-block hx-hidden" />Deploy, experiment, optimize, merge, and repeat.
 {{< /hextra/hero-subtitle >}}
 </div>
@@ -58,7 +58,7 @@ layout: hextra-home
   <br class="sm:hx-block hx-hidden" />Deploy, experiment, optimize, merge, and repeat. -->
 
 {{< hextra/hero-button text="Get Started" link="https://docs.upsun.com/get-started/here.html" 
-  style="background: #6046FF; border: 2px solid #6046FF; font-family: \"Space Grotesk\", sans-serif; font-weigh: 700;"
+  style="margin-right: 10px; background: #6046FF; border: 2px solid #6046FF; font-family: \"Space Grotesk\", sans-serif; font-weigh: 700;"
 >}}
 {{< hextra/hero-button text="What is Upsun?" link="https://docs.upsun.com/learn/overview.html" 
   style="background: white; color: black; border: 2px solid black; font-family: \"Space Grotesk\", sans-serif; font-weigh: 700;"
@@ -122,7 +122,7 @@ layout: hextra-home
 
 <div class="hx-mb-12">
 {{< hextra/hero-subtitle >}}
-  No matter which framework use, the basic rules of the Upsun PaaS remain the same. See the resources below to get started today.
+  No matter which framework use, the basic rules of the Upsun Cloud Application platform remain the same. See the resources below to get started today.
 {{< /hextra/hero-subtitle >}}
 </div>
 
@@ -130,7 +130,7 @@ layout: hextra-home
   {{< hextra/feature-card
     title="Express"
     icon="nodejs"
-    subtitle="A flexible, minimal web framework for Node.js backends. Morbi quis molestie quam. Curabitur eleifend ut tortor sit amet mollis."
+    subtitle="Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications."
     link="https://docs.upsun.com/get-started/stacks/express.html"
   >}}
   {{< hextra/feature-card
@@ -142,43 +142,43 @@ layout: hextra-home
   {{< hextra/feature-card
     title="Laravel"
     icon="laravel"
-    subtitle="Get started / Use Redis / Handling Queues with Horizon / Laravel Telescope / Blackfire.io / and more..."
+    subtitle="Start building your next application with Laravel. The PHP framework for web artisans."
     link="https://docs.upsun.com/get-started/stacks/laravel.html"
   >}}
   {{< hextra/feature-card
     title="Symfony"
     icon="symfony"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie quam. Curabitur eleifend ut tortor sit amet mollis."
+    subtitle="Symfony is a set of reusable PHP components and a high performance PHP framework for web projects."
     link="https://docs.upsun.com/get-started/stacks/symfony.html"
   >}}
   {{< hextra/feature-card
     title="Next.js"
     icon="nodejs"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie quam. Curabitur eleifend ut tortor sit amet mollis."
+    subtitle="Used by some of the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components."
     link="https://docs.upsun.com/get-started/stacks/nextjs.html"
   >}}
   {{< hextra/feature-card
     title="Flask"
     icon="flask"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie quam. Curabitur eleifend ut tortor sit amet mollis."
+    subtitle="Flask is a lightweight WSGI web application framework. It is designed to make getting started quick and easy, with the ability to scale up to complex applications."
     link="https://docs.upsun.com/get-started/stacks/flask.html"
   >}}
     {{< hextra/feature-card
     title="WordPress"
     icon="wordpress"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie quam. Curabitur eleifend ut tortor sit amet mollis."
+    subtitle="The open source publishing platform of choice for millions of websites worldwide—from creators and small businesses to enterprises."
     link="https://docs.upsun.com/get-started/stacks/wordpress.html"
   >}}
   {{< hextra/feature-card
     title="Strapi"
     icon="strapi"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie quam. Curabitur eleifend ut tortor sit amet mollis."
+    subtitle="The leading open-source headless CMS. 100% JavaScript / TypeScript and fully customizable."
     link="https://docs.upsun.com/get-started/stacks/strapi.html"
   >}}
   {{< hextra/feature-card
     title="More frameworks"
     icon="arrow-right"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie quam. Curabitur eleifend ut tortor sit amet mollis."
+    subtitle="With support for even more runtimes like Go, Lisp, Elixir, Ruby and Rust, start deploying your application on Upsun."
     link="https://docs.upsun.com/get-started/stacks.html"
   >}}
 {{< /hextra/feature-grid >}}
@@ -390,15 +390,37 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at erat eu ju
 {{< /hextra/hero-headline >}}
 </div>
 
-<div class="hx-mb-12">
 {{< hextra/hero-subtitle >}}
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie quam. Curabitur eleifend ut tortor sit amet mollis. Aenean neque elit, fermentum quis sapien eget, commodo tempus ex. Donec finibus at nunc nec luctus. Etiam nec purus velit. Cras eleifend libero dui, tincidunt imperdiet nibh accumsan pulvinar.<br class="sm:hx-block hx-hidden" />
+<p class="not-prose hx-text-xl hx-text-gray-600 dark:hx-text-gray-400 sm:hx-text-xl">
+The Upsun composable image provides enhanced flexibility when defining your app. It allows you to install several runtimes and tools in your application container, in a “one image to rule them all” approach. The composable image is built on Nix, which offers the following benefits:
+</p><br class="sm:hx-block hx-hidden" />
+<ul class="not-prose hx-text-xl hx-text-gray-600 dark:hx-text-gray-400 sm:hx-text-xl" style="margin-left: 20px; list-style: disc;">
+  <li>You can add as many packages to your application container as you need, choosing from over 80,000 packages from the Nixpkgs collection.</li>
+  <li>The packages you add are built in total isolation, so you can install different versions of the same package.</li>
+  <li>With Nix, there are no undeclared dependencies in your source code. What works on your local machine is guaranteed to work on any other machine.</li>
+</ul>
+<br class="sm:hx-block hx-hidden" />
+<p class="not-prose hx-text-xl hx-text-gray-600 dark:hx-text-gray-400 sm:hx-text-xl">
+What can you build?
+</p><br class="sm:hx-block hx-hidden" /><br class="sm:hx-block hx-hidden" />
+{{< /hextra/hero-subtitle >}}
+
+
+<!-- <div class="hx-mb-12">
+{{< hextra/hero-subtitle >}}
+  The Upsun composable image provides enhanced flexibility when defining your app. It allows you to install several runtimes and tools in your application container, in a “one image to rule them all” approach. The composable image is built on Nix, which offers the following benefits:<br class="sm:hx-block hx-hidden" /><br class="sm:hx-block hx-hidden" />
+
+  * You can add as many packages to your application container as you need, choosing from over 80,000 packages from the Nixpkgs collection.<br class="sm:hx-block hx-hidden" /><br class="sm:hx-block hx-hidden" />
+  * The packages you add are built in total isolation, so you can install different versions of the same package.<br class="sm:hx-block hx-hidden" /><br class="sm:hx-block hx-hidden" />
+  * With Nix, there are no undeclared dependencies in your source code. What works on your local machine is guaranteed to work on any other machine.
+
+  <br class="sm:hx-block hx-hidden" />
   <br class="sm:hx-block hx-hidden" />What can you build?
 {{< /hextra/hero-subtitle >}}
-</div>
+</div> -->
 
 {{< hextra/hero-button text="See how it works" link="https://docs.upsun.com/create-apps/app-reference/composable-image.html"
-  style="background: #6046FF; border: 2px solid #6046FF; font-family: \"Space Grotesk\", sans-serif; font-weigh: 700;"
+  style="margin-right: 10px; background: #6046FF; border: 2px solid #6046FF; font-family: \"Space Grotesk\", sans-serif; font-weigh: 700;"
 >}}
 {{< hextra/hero-button text="Why we went with Nix" link="https://www.youtube.com/watch?v=LhVjKes2Wsc&t=0s" 
   style="background: white; color: black; border: 2px solid black; font-family: \"Space Grotesk\", sans-serif; font-weigh: 700;"
@@ -663,8 +685,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie qua
   {{< hextra/feature-card
     title="Podcast"
     icon="play"
-    subtitle="Build with GitHub Actions, and host for free on GitHub Pages. Alternatively it can be hosted on any static hosting service."
-    link="https://docs.upsun.com"
+    subtitle="From developers to enthusiasts, Change Mode is a podcast made by the community, for the community. #chmod."
+    link="https://www.podcastics.com/podcast/the-changemode-podcast/"
   >}}
 {{< /hextra/feature-grid >}}
 
@@ -761,7 +783,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie qua
 </div>
 
 {{< hextra/hero-button text="Join the community" link="https://discord.gg/PkMc2pVCDV"
-  style="background: #6046FF; border: 2px solid #6046FF; font-family: \"Space Grotesk\", sans-serif; font-weigh: 700;"
+  style="margin-right: 10px; background: #6046FF; border: 2px solid #6046FF; font-family: \"Space Grotesk\", sans-serif; font-weigh: 700;"
 >}}
 {{< hextra/hero-button text="Get support" link="https://docs.upsun.com/learn/overview/get-support.html" 
   style="background: white; color: black; border: 2px solid black; font-family: \"Space Grotesk\", sans-serif; font-weigh: 700;"

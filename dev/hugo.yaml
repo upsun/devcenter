@@ -56,53 +56,77 @@ enableInlineShortcodes: true
 
 menu:
   main:
-    # - identifier: about
-    #   name: About
-    #   pageRef: /about
-    #   weight: 1
-    - identifier: api
-      name: API
-      # move to end
-      url: https://api.upsun.com/docs
-      # pageRef: /api
+    - identifier: docs
+      name: Docs
+      pageRef: /docs
       weight: 1
-    - identifier: blog
-      name: Blog
-      # pageRef: /blog
-      url: "https://upsun.com/blog"
-      weight: 2
-    # - identifier: blog
-    #   name: Certification
-    #   pageRef: /blog
-    #   weight: 3
     - identifier: cli
       name: CLI
       # pageRef: /cli
       url: "https://docs.upsun.com/administration/cli.html"
+      weight: 2
+    - identifier: api
+      name: API
+      url: https://api.upsun.com/docs
+      # pageRef: /api
+      weight: 3
+    - identifier: blog
+      name: Blog
+      pageRef: /blog
+      # url: "https://upsun.com/blog"
       weight: 4
-    - identifier: community
-      name: Discussions
-      url: "https://support.platform.sh/hc/en-us/community/topics/14855644510866-Upsun"
-      # pageRef: /community
-      weight: 5
-    - identifier: documentation
-      name: Docs
-      pageRef: /docs
-      weight: 6
-    - identifier: about
-      name: Examples 
-      # pageRef: /about
-      url: "https://github.com/orgs/upsun/repositories?q=topic%3Aupsun-example"
-      weight: 7
-    # - identifier: forum
-    #   name: Forum
-    #   url: "https://community.platform.sh"
-    #   weight: 8
     - identifier: podcast
       name: Podcast
       # pageRef: /showcase
       url: "https://podcast.upsun.com"
-      weight: 9
+      weight: 5
+    # - identifier: about
+    #   name: About
+    #   pageRef: /about
+    #   weight: 1
+    # - identifier: blog
+    #   name: Blog
+    #   # pageRef: /blog
+    #   url: "https://upsun.com/blog"
+    #   weight: 2
+    # # - identifier: blog
+    # #   name: Certification
+    # #   pageRef: /blog
+    # #   weight: 3
+    # - identifier: cli
+    #   name: CLI
+    #   # pageRef: /cli
+    #   url: "https://docs.upsun.com/administration/cli.html"
+    #   weight: 4
+    # # - identifier: community
+    # #   name: Discussions
+    # #   url: "https://support.platform.sh/hc/en-us/community/topics/14855644510866-Upsun"
+    # #   # pageRef: /community
+    # #   weight: 5
+    # - identifier: documentation
+    #   name: Docs
+    #   pageRef: /docs
+    #   weight: 6
+    # # - identifier: about
+    # #   name: Examples 
+    # #   # pageRef: /about
+    # #   url: "https://github.com/orgs/upsun/repositories?q=topic%3Aupsun-example"
+    # #   weight: 7
+    # # - identifier: forum
+    # #   name: Forum
+    # #   url: "https://community.platform.sh"
+    # #   weight: 8
+    # - identifier: podcast
+    #   name: Podcast
+    #   # pageRef: /showcase
+    #   url: "https://podcast.upsun.com"
+    #   weight: 9
+    # - identifier: api
+    #   name: API
+    #   # move to end
+    #   url: https://api.upsun.com/docs
+    #   # pageRef: /api
+    #   weight: 10
     # - identifier: training
     #   name: Training
     #   pageRef: /showcase
@@ -197,7 +221,7 @@ params:
   footer:
     enable: true
     displayCopyright: true
-    displayPoweredBy: true
+    displayPoweredBy: false
     width: wide
 
   displayUpdatedDate: true
