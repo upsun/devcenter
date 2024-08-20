@@ -1,5 +1,7 @@
 ---
 title: Search
+sidebar:
+      exclude: true
 # type: docs
 ---
 

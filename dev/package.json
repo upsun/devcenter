@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "hugo mod tidy && hugo",
+    "build": "hugo mod tidy && hugo --gc --minify --buildFuture",
     "dev": "hugo server --buildDrafts --buildFuture --bind 0.0.0.0 --logLevel debug -p $npm_package_config_dev_port",
     "start": "python3 -m http.server $npm_package_config_dev_port --directory public"
   },

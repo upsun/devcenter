@@ -1,0 +1,377 @@
+- id: 8hg-wHeH_68
+  title: "A great fit from the Git-go"
+  tags:
+    - product 
+  categories:
+    - demos
+  date: 2024-03-19T15:20:15+09:00
+  author:
+    - gregqualls
+  authors:
+    - Greg Qualls
+- id: hA6C_3ZcOM8
+  title: "Quick Guide to Upgrading Your Node.js Runtime in Upsun"
+  categories:
+    - demos
+  tags:
+    - infrastructure
+    - node.js
+  date: 2024-04-12T15:20:15+09:00
+  author:
+    - gregqualls
+  authors:
+    - Greg Qualls
+- id: WGDuE-f8dQo
+  title: "A Quick Your of the Upsun Console - Pt. 1 - All Projects Page"
+  categories:
+    - demos
+  date: 2024-04-12T15:20:15+09:00
+  tags:
+    - console
+    - projects 
+  author:
+    - gregqualls
+  authors:
+    - Greg Qualls
+- id: 9N2U3xI7x4w
+  title: "A Quick Your of the Upsun Console - Pt. 2 - The Project Page"
+  tags:
+    - console
+    - projects
+  categories:
+    - demos
+  date: 2024-04-12T15:20:15+09:00
+  author:
+    - gregqualls
+  authors:
+    - Greg Qualls
+- id: vg0gbt6pZlQ
+  title: "A Quick Your of the Upsun Console - Pt. 3 - Environment Pages"
+  categories:
+    - demos
+  tags:
+    - console
+    - environments
+  date: 2024-04-12T15:20:15+09:00
+  author:
+    - gregqualls
+  authors:
+    - Greg Qualls
+- id: oSg2oeq_iIU
+  title: "A Quick Your of the Upsun Console - Pt. 4 - Settings, Access, and Integrations"
+  author:
+    - gregqualls
+  tags:
+    - console
+    - environments
+  categories:
+    - demos
+  date: 2024-04-12T15:20:15+09:00
+  author:
+    - gregqualls
+  authors:
+    - Greg Qualls
+- id: JU5vnh8PSvw
+  title: "chmod 101: WTFM: Write that funky manual"
+  date: 2024-04-24T15:20:15+09:00
+  categories:
+    - podcasts
+  author:
+    - mupsi
+  authors:
+    - Marine Gandy
+    - Ryan Weaver
+- id: B2vlY2_slRM
+  title: "App performance & efficiency: Blackfire pro tips & tools"
+  date: 2024-05-27T15:20:15+09:00
+  event: symfonycon-brussels-2023
+  categories:
+    - talks
+  author:
+    - thomasdiluccio
+  authors:
+    - Thomas di Luccio
+- id: 9Eezgt81ago
+  title: "Deploy and scale a Symfony ChatGPT app with Upsun"
+  date: 2024-05-27T15:20:15+09:00
+  event: symfonycon-brussels-2023
+  categories:
+    - talks
+  author:
+    - gmoigneu
+  authors:
+    - Guillaume Moigneu
+- id: Dzogbk1yb_A
+  title: "Your weakness is your superpower: Strengths-based growth"
+  event: symfonycon-brussels-2023
+  date: 2024-05-27T15:20:15+09:00
+  categories:
+    - talks
+  author:
+    - mary-thomas
+  authors:
+    - Mary Thomas
+- id: DY_WNejXZu8
+  title: "Kaizen-inspired DevOps - Techniques for high-performing teams"
+  event: symfonycon-brussels-2023
+  date: 2024-05-27T15:20:15+09:00
+  categories:
+    - talks
+  author:
+    - branislav-bujisic
+  authors:
+    - Branislav Bujisic
+- id: LhVjKes2Wsc
+  title: "Container environment maintenance: Master container management"
+  event: symfonycon-brussels-2023
+  date: 2024-05-27T15:20:15+09:00
+  categories:
+    - talks
+  author:
+    - lolautruche
+  authors:
+    - Jérôme Vieilledent
+- id: AeX-aVaOG2w
+  title: "Mastering linked data in PHP: Graphs and algorithms"
+  event: symfonycon-brussels-2023
+  date: 2024-05-27T15:20:15+09:00
+  categories:
+    - talks
+  author:
+    - christian-rades
+  authors:
+    - Christian Rades
+- id: BLWUhZUyKV4
+  title: "Is Remote the past of the future of work?"
+  event: symfonycon-brussels-2023
+  date: 2024-05-27T15:20:15+09:00
+  categories:
+    - talks
+  author:
+    - fred-plais
+    - caroline-leroy
+  authors:
+    - Fred Plais
+    - Caroline Leroy
+- id: 8IT-atDyGX4
+  title: "Transforming Symfony monolith to multi-apps: A step-by-step guide"
+  event: symfonycon-brussels-2023
+  date: 2024-05-27T15:20:15+09:00
+  categories:
+    - talks
+  author:
+    - flovntp
+  authors:
+    - Florent Huck
+- id: Y8b2DlHIc3U
+  title: "Master regex: From basics to advanced pattern matching"
+  event: symfonycon-brussels-2023
+  date: 2024-05-27T15:20:15+09:00
+  categories:
+    - talks
+  author:
+    - mupsi
+  authors:
+    - Marine Gandy
+- id: gBPoDWBd3Q8
+  title: "Building your first GitHub Action: Step-by-step guide"
+  event: symfonycon-brussels-2023
+  date: 2024-05-27T15:20:15+09:00
+  categories:
+    - talks
+  author:
+    - gilzow
+  authors:
+    - Paul Gilzow
+- id: mOAJIjGfGSs
+  title: "Product, engineering, design: A guide to effective collaboration"
+  event: symfonycon-brussels-2023
+  date: 2024-05-27T15:20:15+09:00
+  categories:
+    - talks
+  author: 
+    - shawna-spoor
+    - sukhman-virk
+  authors:
+    - Shawna Spoor
+    - Sukhman Virk
+- id: ad1CMpaug58
+  title: "chmod 102: COUNT your blessings (and check your indexes)"
+  categories:
+    - podcasts
+  date: 2024-06-11T15:20:15+09:00
+  author:
+    - mupsi
+  authors:
+    - Marine Gandy
+    - Lætitia Avrot
+- id: HZtTP0hqJjk
+  title: "chmod 103: Community is built through happy accidents"
+  categories:
+    - podcasts
+  date: 2024-06-10T15:20:15+09:00
+  author:
+    - mupsi
+  authors:
+    - Marine Gandy
+    - Aisha Bello
+    - Leona So
+- id: 4Sr-gInNVfA
+  title: "Django schema migrations and deployments minus the misery"
+  event: djangocon-europe-2023
+  categories:
+    - talks
+  date: 2024-07-11T15:20:15+09:00
+  author:
+    - akalipetis
+  authors:
+    - Antonis Kalipetis
+- id: LCfEP26XhJ0
+  title: "Upsun launch at AWS Summit Paris 2024"
+  categories:
+    - releases
+  date: 2024-07-01T15:20:15+09:00
+  authors:
+    - the Upsun team
+- link: https://www.podcastics.com/podcast/episode/chmod-104-the-floor-is-lavamoat-with-zbyszek-tenerowicz-303572/
+  image: https://medias.podcastics.com/podcastics/episodes/7278/artwork/chmod-104-the-floor-is-lavamoat-with-zbyszek-tenerowicz-change-mode-podcast.png.7c3c576386aced862e03636d1fbf0a55.png
+  title: "chmod 104: The floor is Lava(Moat)"
+  categories:
+    - podcasts
+  date: 2024-06-26T15:20:15+09:00
+  author:
+    - mupsi
+  authors:
+    - Marine Gandy
+    - Zbyszek Tenerowicz
+- id: IWXiuR6jlK8
+  title: "chmod 105: Just in the Nix of time"
+  categories:
+    - podcasts
+  date: 2024-07-17T15:20:15+09:00
+  author:
+    - mupsi
+  authors:
+    - Marine Gandy
+    - Pol Dellaiera
+- id: 17FsshNSLts
+  title: "Drupal out of the Box: Custom Elements without Coding"
+  categories:
+    - podcasts
+  date: 2023-08-11T15:20:15+09:00
+  author:
+    - mupsi
+  authors:
+    - Marine Gandy
+    - Roland Golla
+- id: lXRyz11q3sM
+  title: "Une meilleure sécurité dans Drupal"
+  event: drupalcamp-roazhon-2024
+  categories:
+    - talks
+  date: 2024-05-07T15:20:15+09:00
+  author:
+    - flovntp
+    - mupsi
+  authors:
+    - Marine Gandy
+    - Nicolas Loye
+- id: DL55_xUhBMY
+  title: "Introduction to GitHub Actions: Understanding Key Terms and Building Your First GitHub Action"
+  event: djangocon-us-2024
+  categories:
+    - talks
+  date: 2023-12-14T15:20:15+09:00
+  author:
+    - gilzow
+  authors:
+    - Paul Gilzow
+- id: skMrC8yVfs8
+  title: "Learn how to secure your applications like the experts"
+  categories:
+    - webinars
+  date: 2023-10-17T15:20:15+09:00
+  author:
+    - gilzow
+  authors:
+    - Paul Gilzow
+- id: q-Dm2lre1Gg
+  title: "Introduction to GitHub Actions: Understanding Key Terms and Building Your First GitHub Action"
+  categories:
+    - talks
+  date: 2024-02-24T15:20:15+09:00
+  event: drupalcamp-florida-2024
+  author:
+    - gilzow
+  authors:
+    - Paul Gilzow
+- id: -WhkPil-Rrw
+  title: "Introduction to GitHub Actions: Understanding Key Terms and Building Your First GitHub Action"
+  event: drupalcamp-asheville-2024
+  categories:
+    - talks
+  date: 2024-07-16T15:20:15+09:00
+  author:
+    - gilzow
+  authors:
+    - Paul Gilzow
+- id: NRyPGfFySQ0
+  title: "Performanceoptimierung für Webapplikationen"
+  categories:
+    - webinars
+  date: 2024-04-08T15:20:15+09:00
+  author:
+    - patrick-boest
+  authors:
+    - Patrick Boest
+- id: 6rge_Iw9kGw
+  title: "New era of observability l Blackfire Continuous Profiler"
+  categories:
+    - demos
+  date: 2024-03-25T15:20:15+09:00
+  author:
+    - thomasdiluccio
+  authors:
+    - Thomas di Luccio
+- id: 7ZpxQuFMfOg
+  title: "Maximize efficiency with strategic application optimization"
+  categories:
+    - webinars
+  date: 2024-03-06T15:20:15+09:00
+  author:
+    - corey-dockendorf
+  authors:
+    - Corey Dockendorf
+- title: "Regex: Demystifying the Hieroglyphics"
+  image: "/images/background-blue.webp"
+  categories:
+    - talks
+  date: 2024-08-15T15:20:15+09:00
+  event: devup-2024
+  link: https://www.devupconf.org/speakers/paul-gilzow
+  author:
+    - gilzow
+  authors:
+    - Paul Gilzow
+- title: "Introduction to GitHub Actions: Understanding Key Terms and Building Your First GitHub Action"
+  image: "/images/background-purple.webp"
+  categories:
+    - talks
+  date: 2024-08-16T15:20:15+09:00
+  event: devup-2024
+  link: https://www.devupconf.org/speakers/paul-gilzow
+  author:
+    - gilzow
+  authors:
+    - Paul Gilzow
+- title: "Unlocking the power of automation: An introduction to automated testing"
+  image: "/images/background-yellow.webp"
+  categories:
+    - talks
+  date: 2024-09-23T15:20:15+09:00
+  event: highedweb-2024
+  link: https://events.highedweb.org/heweb24/session/2154400/unlocking-the-power-of-automation-an-introduction-to-automated-testing
+  author:
+    - gilzow
+  authors:
+    - Paul Gilzow
