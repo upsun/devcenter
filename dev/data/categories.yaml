@@ -1,0 +1,35 @@
+post:
+    tutorials:
+        single: "Tutorial"
+        list: "Tutorials"
+    core-concepts:
+        single: "Core concept"
+        list: "Core concepts"
+    how-tos:
+        single: "How-to guide"
+        list: "How-to guides"
+    discussions:
+        single: "Discussion"
+        list: "Discussions"
+    releases:
+        single: "Release"
+        list: "Releases"
+    experiments:
+        single: "Experiment"
+        list: "Experiments"
+med:
+    demos: 
+        single: "Demo"
+        list: "Demos"
+    livestreams:
+        single: "Livestream"
+        list: "Livestreams"
+    podcasts:
+        single: "Podcast"
+        list: "Podcasts"
+    talks: 
+        single: "Talk"
+        list: "Talks"
+    webinars:
+        single: "Webinar"
+        list: "Webinars"

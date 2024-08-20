@@ -2,6 +2,7 @@
 title: Hextra Theme
 layout: hextra-home
 ---
+
 <!-- 
 {{< hextra/hero-container 
   class="hx-mt-6"
@@ -36,7 +37,7 @@ layout: hextra-home
 <div class="hx-mt-6"></div>
 
 {{< hextra/hero-container 
-  image="images/hero-people-telescope.png"
+  image="images/upsun-hello-world.svg"
   imageTitle="Console"
   imageWidth="100%"
   class="hx-pt-6 hx-pb-6"
@@ -49,7 +50,7 @@ layout: hextra-home
 
 <div class="hx-mb-12">
 {{< hextra/hero-subtitle >}}
-  Your central hub for all resources related to the **Upsun** product offerings. All the latest demos, examples, documentation and articles for each of your frameworks and languages. Join the community and build something great with Upsun.<br class="sm:hx-block hx-hidden" />
+  Your central hub for all resources related to the Upsun product offerings. All the latest demos, examples, documentation and articles for each of your frameworks and languages. Join the community and build something great with Upsun.<br class="sm:hx-block hx-hidden" />
   <br class="sm:hx-block hx-hidden" />Deploy, experiment, optimize, merge, and repeat.
 {{< /hextra/hero-subtitle >}}
 </div>
@@ -58,10 +59,10 @@ layout: hextra-home
   <br class="sm:hx-block hx-hidden" />Deploy, experiment, optimize, merge, and repeat. -->
 
 {{< hextra/hero-button text="Get Started" link="https://docs.upsun.com/get-started/here.html" 
-  style="margin-right: 10px; background: #6046FF; border: 2px solid #6046FF; font-family: \"Space Grotesk\", sans-serif; font-weigh: 700;"
+  style="margin-right: 10px; background: #6046FF; border: 2px solid #6046FF; font-family: \"Space Grotesk\", sans-serif; font-weight: 700;"
 >}}
 {{< hextra/hero-button text="What is Upsun?" link="https://docs.upsun.com/learn/overview.html" 
-  style="background: white; color: black; border: 2px solid black; font-family: \"Space Grotesk\", sans-serif; font-weigh: 700;"
+  style="background: white; color: black; border: 2px solid black; font-family: \"Space Grotesk\", sans-serif; font-weight: 700;"
 >}}
 <!-- {{< hextra/hero-button text="What's Platform.sh?" link="docs" 
   style="background: #6046FF; border: 2px solid #6046FF;"
@@ -241,36 +242,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at erat eu ju
 {{< /hextra/hero-subtitle >}}
 </div>
 
-{{< cards >}}
-
-  {{< custom/card
-        link="https://www.youtube.com/watch?v=GMKVA2DxwRA"
-        title="Dev Environments on Upsun: step-by-step"
-        icon="play"
-        subtitle="Join Greg Qualls in this video to better understand the process of setting up development environments on Upsun through the terminal."
-        image="images/hqdefault.jpg"
-        imageStyle="object-fit:cover; aspect-ratio:16/9;"
-  >}}
-
-  {{< custom/card
-        link="https://upsun.com/blog/upsun-origin-story/"
-        title="The Upsun origin story: the evolution of a PaaS"
-        subtitle="Where did Upsun even come from? In this post **Fabien Potencier** and **Guillaume Moigneu** outline how ten years running a PaaS with Platform.sh led to Upsun."
-        image="images/upsun-web.webp"
-        icon="cloud"
-        imageStyle="object-fit:cover; aspect-ratio:16/9;"
-  >}}
-
-    {{< custom/card
-        link="https://www.podcastics.com/podcast/episode/chmod-105-just-in-the-nix-of-time-with-pol-dellaiera-306594/"
-        title="chmod 105: Just in the Nix of time"
-        icon="microphone"
-        subtitle="Embark in an unconventional open source journey with Pol Dellaiera (**@poldellaiera**) on the latest episode of the podcast. It all starts with saving every euro to buy his first computer as a kid -- Then it goes to Drupal, Symfony, and now Nix, where Pol’s contributions as a maintainer with commits rights make the lives of PHP developers easier than ever. Package manager, operating system and even functional language: Nix does it all. Let’s dive in!"
-        image="images/chmod-105-nix.png"
-        imageStyle="object-fit:cover; aspect-ratio:16/9;"
-  >}}
-
-{{< /cards >}}
+{{< custom/whats-new >}}
 
 <div class="hx-mt-6"></div>
 
@@ -377,6 +349,74 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at erat eu ju
 
 <div class="hx-mt-6"></div>
 
+{{< custom/hero-container 
+  class="hx-pt-6 hx-pb-6"
+>}}
+<div class="hx-mt-6 hx-mb-6">
+{{< hextra/hero-headline >}}
+  Composable images,
+  <br class="sm:hx-block hx-hidden" /><span style="color: #6046FF;"> powered by Nix.</span>
+{{< /hextra/hero-headline >}}
+</div>
+
+{{< hextra/hero-subtitle >}}
+<p class="not-prose hx-text-xl hx-text-gray-600 dark:hx-text-gray-400 sm:hx-text-xl">
+The Upsun composable image provides enhanced flexibility when defining your app. It allows you to install several runtimes and tools in your application container, in a “one image to rule them all” approach. The composable image is built on Nix, which offers the following benefits:
+</p><br class="sm:hx-block hx-hidden" />
+<ul class="not-prose hx-text-xl hx-text-gray-600 dark:hx-text-gray-400 sm:hx-text-xl" style="margin-left: 20px; list-style: disc;">
+  <li>You can add as many packages to your application container as you need, choosing from over 80,000 packages from the Nixpkgs collection.</li>
+  <li>The packages you add are built in total isolation, so you can install different versions of the same package.</li>
+  <li>With Nix, there are no undeclared dependencies in your source code. What works on your local machine is guaranteed to work on any other machine.</li>
+</ul>
+<br class="sm:hx-block hx-hidden" />
+<p class="not-prose hx-text-xl hx-text-gray-600 dark:hx-text-gray-400 sm:hx-text-xl">
+What can you build?
+</p><br class="sm:hx-block hx-hidden" /><br class="sm:hx-block hx-hidden" />
+{{< /hextra/hero-subtitle >}}
+
+{{< hextra/hero-button text="See how it works" link="https://docs.upsun.com/create-apps/app-reference/composable-image.html"
+  style="margin-right: 10px; background: #6046FF; border: 2px solid #6046FF; font-family: \"Space Grotesk\", sans-serif; font-weight: 700;"
+>}}{{< hextra/hero-button text="Why we chose Nix" link="https://www.youtube.com/watch?v=LhVjKes2Wsc&t=0s" 
+  style="background: white; color: black; border: 2px solid black; font-family: \"Space Grotesk\", sans-serif; font-weight: 700;"
+>}}
+
+<----->
+
+```yaml {filename=".upsun/config.yaml"}
+applications:
+
+    frontend: 
+        source:
+            root: client
+        stack:
+            - nodejs@22
+            - nodePackages.npm
+            - yq
+
+    backend: 
+        source:
+            root: api
+        stack:
+            - python@3.12
+            - python312Packages.pip
+            - php@8.3:
+                extensions:
+                    - apcu
+                    - sodium
+            - facedetect   
+
+    docs: 
+        source:
+            root: docs     
+        stack:
+            - hugo
+            - golang@1.22
+```
+
+{{< /custom/hero-container >}}
+
+<!-- <div class="hx-mt-6"></div>
+
 {{< hextra/hero-container 
   image="/images/carbon-multi-new.png"
   imageTitle="People"
@@ -403,7 +443,7 @@ The Upsun composable image provides enhanced flexibility when defining your app.
 <p class="not-prose hx-text-xl hx-text-gray-600 dark:hx-text-gray-400 sm:hx-text-xl">
 What can you build?
 </p><br class="sm:hx-block hx-hidden" /><br class="sm:hx-block hx-hidden" />
-{{< /hextra/hero-subtitle >}}
+{{< /hextra/hero-subtitle >}} -->
 
 
 <!-- <div class="hx-mb-12">
@@ -419,13 +459,13 @@ What can you build?
 {{< /hextra/hero-subtitle >}}
 </div> -->
 
-{{< hextra/hero-button text="See how it works" link="https://docs.upsun.com/create-apps/app-reference/composable-image.html"
+<!-- {{< hextra/hero-button text="See how it works" link="https://docs.upsun.com/create-apps/app-reference/composable-image.html"
   style="margin-right: 10px; background: #6046FF; border: 2px solid #6046FF; font-family: \"Space Grotesk\", sans-serif; font-weigh: 700;"
 >}}
 {{< hextra/hero-button text="Why we went with Nix" link="https://www.youtube.com/watch?v=LhVjKes2Wsc&t=0s" 
   style="background: white; color: black; border: 2px solid black; font-family: \"Space Grotesk\", sans-serif; font-weigh: 700;"
 >}}
-{{< /hextra/hero-container >}}
+{{< /hextra/hero-container >}} -->
 
 <!-- {{< hextra/feature-grid >}}
   {{< hextra/feature-card
@@ -763,7 +803,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie qua
 <div class="hx-mt-6"></div>
 
 {{< hextra/hero-container 
-  image="/images/hero-people-sitting-person-laptop.png"
+  image="/images/sun-walk.png"
   imageTitle="People"
   imageWidth="100%"
   class="hx-pt-6 hx-pb-6"
@@ -783,9 +823,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie qua
 </div>
 
 {{< hextra/hero-button text="Join the community" link="https://discord.gg/PkMc2pVCDV"
-  style="margin-right: 10px; background: #6046FF; border: 2px solid #6046FF; font-family: \"Space Grotesk\", sans-serif; font-weigh: 700;"
+  style="margin-right: 10px; background: #6046FF; border: 2px solid #6046FF; font-family: \"Space Grotesk\", sans-serif; font-weight: 700;"
 >}}
 {{< hextra/hero-button text="Get support" link="https://docs.upsun.com/learn/overview/get-support.html" 
-  style="background: white; color: black; border: 2px solid black; font-family: \"Space Grotesk\", sans-serif; font-weigh: 700;"
+  style="background: white; color: black; border: 2px solid black; font-family: \"Space Grotesk\", sans-serif; font-weight: 700;"
 >}}
 {{< /hextra/hero-container >}}

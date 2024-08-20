@@ -1,0 +1,33 @@
+- title: How to Deploy Flutter on Upsun
+  date: 2024-03-19T15:20:15+09:00
+  link: https://dev.to/upsun/how-to-deploy-flutter-on-upsun-3m1g
+  image: https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fru0gbxijkkn8qxvs62g4.png
+  categories:
+    - how-tos
+  tags:
+    - nix 
+    - flutter
+- title: "Au revoir to templates: Go on Upsun"
+  date: 2024-03-19T15:20:15+09:00
+  link: https://support.platform.sh/hc/en-us/community/posts/17707674764050-Au-revoir-to-templates-Go-on-Upsun
+  categories:
+    - tutorials
+  tags:
+    - golang 
+    - template
+- title: "Up(sun) and running with Django"
+  date: 2023-12-21T15:20:15+09:00
+  link: https://upsun.com/blog/setting-up-django-on-upsun/
+  image: https://upsun.com/static/a0a4139ccca073db714c3617819de90d/75ad2/getting_started_django_45b60d764f.webp
+  categories:
+    - tutorials
+  tags:
+    - django
+- title: "To Upsun, a WordPress migration story"
+  date: 2024-02-19T15:20:15+09:00
+  link: https://upsun.com/blog/to-upsun-a-wordpress-migration-story/
+  image: https://upsun.com/static/9c05cc06a7432bbdcf24a8d463d6454c/9a9df/wordpress_migration_story_0b55a0b86f.webp
+  categories:
+    - tutorials
+  tags:
+    - wordpress

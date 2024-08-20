@@ -1,0 +1,9 @@
+- title: "Observability insights: navigating deterministic and probabilistic profilin"
+  date: 2023-12-15T15:20:15+09:00
+  link: https://upsun.com/blog/deterministic-vs-probabilistic-profiling/
+  image: https://upsun.com/static/a6bc761e9ca81269c034080a3eb29c46/17138/continuous_vs_deterministic_profiling_blog_header_3b54f887b4.webp
+  categories:
+    - discussions
+  tags:
+    - performance
+    - observability

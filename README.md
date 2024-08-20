@@ -7,6 +7,7 @@
 
 Vist the site at http://localhost:1313.
 
-When finished, clean up with:
+Cleaning up:
 
 - `docker-compose down`
+- `docker container prune`

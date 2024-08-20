@@ -11,4 +11,10 @@ services:
         #     - "1313"
         image: nixos/nix
         command:
+            # Dev
             - nix-shell
+            # Prod
+            # - nix-shell prod.nix
+            # Cleanup
+            # - nix-store --gc
+

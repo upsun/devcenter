@@ -1,41 +1,47 @@
 ---
-linkTitle: "Docs"
-title: Introduction
+title: "Community"
+comments: false
+# title: "upsun<sup>tv</sup>"
+# type: media
+# layout: list
+# type: docs
 ---
 
-👋 Hello! Welcome to the Hextra documentation!
+Welcome to the Upsun Community!
 
-<!--more-->
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae nunc non tellus euismod pretium. Nam justo dui, venenatis in fermentum sit amet, vulputate ut enim. Aenean finibus felis id egestas aliquet.
 
-## What is Hextra?
+<div class="hx-text-center hx-mt-6">
+{{< hextra/hero-button text="Join us on Discord" link="https://discord.gg/PkMc2pVCDV"
+  style="margin-right: 10px; background: #6046FF; border: 2px solid #6046FF; font-family: \"Space Grotesk\", sans-serif; font-weight: 700;"
+>}}
+{{< hextra/hero-button text="Ask a question on the forum" link="https://community.platform.sh" 
+  style="background: white; color: black; border: 2px solid black; font-family: \"Space Grotesk\", sans-serif; font-weight: 700;"
+  class="max-md:hx-hidden"
+>}}
+</div>
 
-Hextra is a modern, fast and batteries-included [Hugo][hugo] theme built with [Tailwind CSS][tailwind-css].
-Designed for building beautiful websites for documentation, blogs, and websites, it provides out-of-the-box features and flexibility to meet various requirements.
+## What's new
 
-## Features
+<!-- {{% details title="First project incentive" closed="true" %}}
 
-- **Beautiful Design** - Inspired by Nextra, Hextra utilizes Tailwind CSS to offer a modern design that makes your site look outstanding.
-- **Responsive Layout and Dark Mode** - It looks great on all devices, from mobile, tablet to desktop. Dark mode is also supported to accommodate various lighting conditions.
-- **Fast and Lightweight** - Powered by Hugo, a lightning-fast static-site generator housed in a single binary file, Hextra keeps its footprint minimal. No JavaScript or Node.js are needed to use it.
-- **Full-text Search** - Built-in offline full-text search powered by FlexSearch, no additional configuration required.
-- **Battery-included** - Markdown, syntax highlighting, LaTeX math formulae, diagrams and Shortcodes elements to enhance your content. Table of contents, breadcrumbs, pagination, sidebar navigation and more are all automatically generated.
-- **Multi-language and SEO Ready** - Multi-language sites made easy with Hugo's multilingual mode. Out-of-the-box support is included for SEO tags, Open Graph, and Twitter Cards.
+<p class="toc-cta-title">Get started</p>
 
-## Questions or Feedback?
+This is the content of the details.
 
-{{< callout emoji="❓" >}}
-  Hextra is still in active development.
-  Have a question or feedback? Feel free to [open an issue](https://github.com/imfing/hextra/issues)!
-{{< /callout >}}
+Markdown is **supported**.
 
-## Next
+{{% /details %}} -->
 
-Dive right into the following section to get started:
+{{< custom/whats-new >}}
 
-{{< cards >}}
-  {{< card link="getting-started" title="Getting Started" icon="document-text" subtitle="Learn how to create website using Hextra" >}}
-{{< /cards >}}
+## Contributors
 
-[hugo]: https://gohugo.io/
-[flex-search]: https://github.com/nextapps-de/flexsearch
-[tailwind-css]: https://tailwindcss.com/
+Thanks to all our contributors!
+
+{{% custom/contributors %}}
+
+## Meet the Upsun team
+
+{{< custom/people >}}
+

@@ -16,23 +16,28 @@ outputs:
   page: [HTML]
   section: [HTML, RSS]
 
+taxonomies:
+  category: categories
+  tag: tags
+  # events: events
+
 defaultContentLanguage: en
 languages:
   en:
     languageName: English
     weight: 1
     title: upsun
-  zh-cn:
-    languageName: 简体中文
-    languageCode: zh-CN
-    weight: 2
-    title: Hextra
-  fa:
-    languageName: فارسی
-    languageCode: fa
-    languageDirection: rtl
-    weight: 3
-    title: هگزترا
+  # zh-cn:
+  #   languageName: 简体中文
+  #   languageCode: zh-CN
+  #   weight: 2
+  #   title: Hextra
+  # fa:
+  #   languageName: فارسی
+  #   languageCode: fa
+  #   languageDirection: rtl
+  #   weight: 3
+  #   title: هگزترا
 
 module:
   hugoVersion:
@@ -58,7 +63,8 @@ menu:
   main:
     - identifier: docs
       name: Docs
-      pageRef: /docs
+      # pageRef: /docs
+      url: "https://docs.upsun.com"
       weight: 1
     - identifier: cli
       name: CLI
@@ -70,20 +76,29 @@ menu:
       url: https://api.upsun.com/docs
       # pageRef: /api
       weight: 3
-    - identifier: blog
-      name: Blog
-      pageRef: /blog
+    - identifier: posts
+      name: Articles
+      pageRef: /community/posts
       # url: "https://upsun.com/blog"
       weight: 4
-    - identifier: podcast
-      name: Podcast
-      # pageRef: /showcase
-      url: "https://podcast.upsun.com"
+    - identifier: media
+      name: Media
+      pageRef: /community/media
+      # url: "https://podcast.upsun.com"
       weight: 5
-    # - identifier: about
-    #   name: About
-    #   pageRef: /about
-    #   weight: 1
+    # - identifier: profiles
+    #   name: Profiles (rm)
+    #   pageRef: /profiles
+    #   # url: "https://podcast.upsun.com"
+    #   weight: 6
+    # - identifier: training
+    #   name: Training
+    #   pageRef: /training
+    #   weight: 7
+    - identifier: community
+      name: Community
+      pageRef: /community
+      weight: 8
     # - identifier: blog
     #   name: Blog
     #   # pageRef: /blog
@@ -135,61 +150,54 @@ menu:
     #   name: API
     #   pageRef: /showcase
     #   weight: 10
-    # - name: Search
-    #   weight: 11
-    #   pageRef: /search
-    #   params:
-    #     icon: search
-      # params:
-      #   type: search
-    - name: YouTube
+    - name: Search
       weight: 11
-      url: "https://www.youtube.com/@upsun_com"
+      pageRef: /search
       params:
-        icon: youtube
-    - name: Discord
-      weight: 12
-      url: "https://discord.gg/PkMc2pVCDV"
-      params:
-        icon: discord
-    # - name: Support
-    #   weight: 13
-    #   url: "https://github.com/imfing/hextra"
+        icon: search
+      # params:
+        # type: search
+    # - name: YouTube
+    #   weight: 11
+    #   url: "https://www.youtube.com/@upsun_com"
     #   params:
     #     icon: youtube
-    #     # icon: user-group
+    # - name: Discord
+    #   weight: 12
+    #   url: "https://discord.gg/PkMc2pVCDV"
+    #   params:
+    #     icon: discord
+        # icon: user
+    - name: Account
+      weight: 13
+      url: "https://console.upsun.com"
+      params:
+        icon: user
+        # icon: user-group
     # - name: Signup
     #   weight: 12
     #   url: "https://github.com/imfing/hextra"
     #   params:
     #     icon: hugo-full
 
-  sidebar:
-    - identifier: more
-      name: More
-      params:
-        type: separator
-      weight: 1
-    - identifier: about
-      name: "About the Dev Center"
-      pageRef: "/about"
-      weight: 2
-    - identifier: signup
-      name: "Sign up"
-      pageRef: "/about"
-      weight: 3
-    - identifier: console
-      name: "Upsun Console"
-      pageRef: "/about"
-      weight: 4
-    - identifier: errors
-      name: "Ask a question"
-      pageRef: "/docs/guide"
-      weight: 5
-    - identifier: hugoDocs
-      name: "Join the community"
-      url: "https://gohugo.io/documentation/"
-      weight: 6
+  # sidebar:
+  #   - identifier: more
+  #     name: More
+  #     params:
+  #       type: separator
+  #     weight: 1
+  #   - identifier: signup
+  #     name: "Start your trial"
+  #     url: "https://auth.upsun.com/register?"
+  #     weight: 2
+  #   - identifier: discord
+  #     name: "Join the Discord"
+  #     url: "https://discord.gg/PkMc2pVCDV"
+  #     weight: 3
+  #   - identifier: errors
+  #     name: "Ask a question"
+  #     url: "https://community.platform.sh"
+  #     weight: 4
 
 params:
   description: A central hub for all Upsun product offerings, resources, and community details.
@@ -230,7 +238,7 @@ params:
   # Search
   # flexsearch is enabled by default
   search:
-    enable: true
+    enable: false
     type: flexsearch
 
     flexsearch:
@@ -251,6 +259,8 @@ params:
       # date | lastmod | publishDate | title | weight
       sortBy: date
       sortOrder: desc # or "asc"
+    avatar:
+      default: https://github.com/upsun.png
 
   highlight:
     copy:
@@ -264,13 +274,52 @@ params:
 
     # https://giscus.app/
     giscus:
-      repo: imfing/hextra
+      repo: upsun/dev
       repoId: R_kgDOJ9fJag
-      category: General
+      category: Articles
       categoryId: DIC_kwDOJ9fJas4CY7gW
-      # mapping: pathname
+      mapping: pathname
       # strict: 0
       # reactionsEnabled: 1
       # emitMetadata: 0
       # inputPosition: top
       # lang: en
+
+  overrides:
+      sidebar-active:
+          "/community/post/": "/community/posts/"
+          "/community/med/": "/community/media/"
+      # These set of overrides were meant to address top nav bar items (docs, cli, etc.) active at incorrect times.
+      # For example, http://localhost:1313/community/posts/ both Articles & community are active, but
+      # for a single post (http://localhost:1313/community/post/on-preview-environments/) only Community is.
+      # In both cases, `Articles` activated is probably the best behavior.
+      navbar-active:
+          "/community/post/": "/community/posts/"
+          "/community/posts/": "/community/posts/"
+          "/community/med/": "/community/media/"
+          "/community/media/": "/community/media/"
+
+  announcement: "Welcome to the Upsun Developer Center! [Find out more](/community/post/introducing-dev-center/)"
+
+  social:
+      discord: "https://discord.gg/PkMc2pVCDV"
+      forum: "https://community.platform.sh"
+      github: "https://github.com/upsun"
+      youtube: "https://www.youtube.com/@upsun_com"
+      xtwitter: "https://x.com/upsuncom"
+
+  featured:
+    - pageRef: /community/post/introducing-dev-center
+    - pageRef: /community/post/on-preview-environments
+    - pageRef: /community/med/8hg-wheh_68/
+    - pageRef: /community/post/infra-events-multi-app/
+    # - pageRef: /community/post/why-we-chose-nix
+    # - media: true
+    #   id: IWXiuR6jlK8
+    # - media: true
+    #   id: -WhkPil-Rrw
+    # - pageRef: /blog/infra-events-multi-app
+    # - media: true
+    #   id: 4Sr-gInNVfA
+    # - media: true
+    #   id: B2vlY2_slRM
