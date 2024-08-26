@@ -8,7 +8,7 @@
           <h1>{{ .Title }}</h1>
           {{ .Content }}
         
-        {{ $pages := where .Site.RegularPages ".Path" "like" `/community/events` }}
+        {{ $pages := where .Site.RegularPages ".Path" "like" `/community/engage/events` }}
         {{ $pastEvents := where $pages ".Date.Unix" "lt" time.Now.Unix }}
         {{ $upcomingEvents := where $pages ".Date.Unix" "ge" time.Now.Unix }}
 

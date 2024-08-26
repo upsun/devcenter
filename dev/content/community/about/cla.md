@@ -3,7 +3,7 @@
 linkTitle: License agreement
 title: Community license agreement
 type: docs
-weight: 7
+weight: 43
 comments: false
 ---
  

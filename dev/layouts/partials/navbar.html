@@ -32,7 +32,6 @@
     </a>
 
     {{- $currentPage := . -}}
-    {{- $overriddes := index $context.Site.Params.overrides "navbar-active" -}}
     {{- range .Site.Menus.main -}}
       {{- $currentMenu := . -}}
       {{- if eq .Params.type "search" -}}
@@ -56,6 +55,25 @@
         {{- else -}}
         
           {{- $active := or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .) -}}
+          
+          {{- if isset (index $context.Site.Params.overrides "navbar-active" .Identifier) "exclude" -}}
+            {{- $excludeData := index $context.Site.Params.overrides "navbar-active" .Identifier "exclude" }}
+
+            {{- $overrideExclude := in $excludeData $currentPage.RelPermalink -}}
+
+            {{- range $excludeData -}}
+                {{- if strings.Contains $currentPage.RelPermalink . -}}
+                    {{- $overrideExclude = true -}}
+                {{- end -}}
+            {{- end -}}
+
+            {{- if $overrideExclude -}}
+              {{- $active = false -}}
+            {{- end -}}
+          
+            {{- end -}}
+          <!-- <p style="color: gray;">{{- .Identifier -}}</p> -->
+          
           {{- $activeClass := cond $active "hx-font-medium" "hx-text-gray-600 hover:hx-text-gray-800 dark:hx-text-gray-400 dark:hover:hx-text-gray-200" -}}
           <a
             title="{{ or (T .Identifier) .Name | safeHTML }}"

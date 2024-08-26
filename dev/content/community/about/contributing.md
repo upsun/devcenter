@@ -1,7 +1,7 @@
 ---
 title: "Contributing"
 type: docs
-weight: 4
+weight: 42
 comments: false
 ---
 

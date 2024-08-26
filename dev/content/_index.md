@@ -1,7 +1,19 @@
 ---
-title: Hextra Theme
+title: Upsun Developer Center
 layout: hextra-home
 ---
+
+<!-- <div class="home-title-container hx-w-full not-prose">
+  <h2 class="home-title md:hx-text-5xl">Upsun Developer Center</h2>
+  <p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae fermentum elit. Vivamus sagittis magna dictum scelerisque efficitur. Donec leo mauris, dignissim eget erat ac, faucibus cursus elit.
+  </p>
+  {{< custom/search >}}
+</div>
+
+
+{{< custom/search >}} -->
+
 
 <!-- 
 {{< hextra/hero-container 

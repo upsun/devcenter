@@ -112,7 +112,7 @@
           </li>
         {{- end -}}
       {{- end -}}
-    {{- else -}}
+    {{- else if not $context.Params.sidebar.excludechildren -}}
       <div class="ltr:hx-pr-0 hx-overflow-hidden">
         <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'>
           {{- range $items.ByWeight }}
@@ -189,9 +189,11 @@
     {{- .title -}}
     {{- with .context }}
       {{- if or .RegularPages .Sections }}
+        {{- if not .Params.sidebar.excludechildren -}}
         <span class="hextra-sidebar-collapsible-button">
           {{- template "sidebar-collapsible-button" -}}
         </span>
+        {{- end -}}
       {{- end }}
     {{ end -}}
   </a>

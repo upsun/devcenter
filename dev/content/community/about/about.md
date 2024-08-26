@@ -1,7 +1,8 @@
 ---
 title: "About"
-weight: 1
+weight: 40
+# type: docs
+excludeSearch: true
 sidebar:
   separator: true
-comments: false
 ---
