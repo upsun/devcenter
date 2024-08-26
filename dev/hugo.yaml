@@ -1,11 +1,11 @@
 # Configuration
-baseURL: "https://devcenter.upsun.com/"
+baseURL: "https://devcenter.upsun.com"
 title: "Upsun Developer Center"
 
 enableRobotsTXT: true
 # enableGitInfo: true
 # enableEmoji: false
-hasCJKLanguage: true
+# hasCJKLanguage: true
 
 # services:
 #   googleAnalytics:
@@ -16,9 +16,9 @@ outputs:
   page: [HTML]
   section: [HTML, RSS]
 
-taxonomies:
-  category: categories
-  tag: tags
+# taxonomies:
+#   category: categories
+#   tag: tags
   # events: events
 
 defaultContentLanguage: en
@@ -78,12 +78,12 @@ menu:
       weight: 3
     - identifier: posts
       name: Articles
-      pageRef: /community/posts
+      pageRef: /community/content/posts
       # url: "https://upsun.com/blog"
       weight: 4
     - identifier: media
-      name: Media
-      pageRef: /community/media
+      name: Videos
+      pageRef: /community/content/videos
       # url: "https://podcast.upsun.com"
       weight: 5
     # - identifier: profiles
@@ -202,6 +202,7 @@ menu:
 params:
   description: A central hub for all Upsun product offerings, resources, and community details.
   titleMain: Upsun Developer Center
+  prodURL: "https://devcenter.upsun.com"
   navbar:
     displayTitle: true
     displayLogo: true
@@ -238,7 +239,7 @@ params:
   # Search
   # flexsearch is enabled by default
   search:
-    enable: false
+    enable: true
     type: flexsearch
 
     flexsearch:
@@ -248,6 +249,11 @@ params:
       # https://github.com/nextapps-de/flexsearch/#tokenizer-prefix-search
       tokenize: forward
 
+    suggestions:
+        - "[preview environments](/search?q=preview+environments)"
+        - "[Composable image](/search?q=composable+image)"
+        - "[Djangocon](/search?q=djangocon)"
+        - "[Discord rules](/search?q=discord+rules)"
 
   editURL:
     enable: true
@@ -287,19 +293,18 @@ params:
 
   overrides:
       sidebar-active:
-          "/community/post/": "/community/posts/"
-          "/community/med/": "/community/media/"
-      # These set of overrides were meant to address top nav bar items (docs, cli, etc.) active at incorrect times.
-      # For example, http://localhost:1313/community/posts/ both Articles & community are active, but
-      # for a single post (http://localhost:1313/community/post/on-preview-environments/) only Community is.
-      # In both cases, `Articles` activated is probably the best behavior.
+          "/community/content/posts/": "/community/content/posts/"
+          "/community/content/videos/": "/community/content/videos/"
+          "/community/engage/people/": "/community/engage/people/"
       navbar-active:
-          "/community/post/": "/community/posts/"
-          "/community/posts/": "/community/posts/"
-          "/community/med/": "/community/media/"
-          "/community/media/": "/community/media/"
+          # matches identifier attribute above. 
+          community:
+              exclude:
+                - "/community/content/posts/"
+                - "/community/content/videos/"
 
-  announcement: "Welcome to the Upsun Developer Center! [Find out more](/community/post/introducing-dev-center/)"
+
+  announcement: "Welcome to the new Upsun Developer Center! [Find out more](/community/content/posts/introducing-dev-center/)"
 
   social:
       discord: "https://discord.gg/PkMc2pVCDV"
@@ -309,10 +314,10 @@ params:
       xtwitter: "https://x.com/upsuncom"
 
   featured:
-    - pageRef: /community/post/introducing-dev-center
-    - pageRef: /community/post/on-preview-environments
-    - pageRef: /community/med/8hg-wheh_68/
-    - pageRef: /community/post/infra-events-multi-app/
+    - pageRef: /community/content/posts/introducing-dev-center
+    - pageRef: /community/content/posts/on-preview-environments
+    - pageRef: /community/content/videos/8hg-wheh_68/
+    - pageRef: /community/content/posts/infra-events-multi-app/
     # - pageRef: /community/post/why-we-chose-nix
     # - media: true
     #   id: IWXiuR6jlK8

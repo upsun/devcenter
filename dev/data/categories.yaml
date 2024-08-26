@@ -1,4 +1,4 @@
-post:
+posts:
     tutorials:
         single: "Tutorial"
         list: "Tutorials"
@@ -17,7 +17,7 @@ post:
     experiments:
         single: "Experiment"
         list: "Experiments"
-med:
+videos:
     demos: 
         single: "Demo"
         list: "Demos"

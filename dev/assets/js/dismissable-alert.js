@@ -11,26 +11,26 @@
     // Enable alert closing, on DOMContentLoaded
     window.addEventListener('DOMContentLoaded', () => {
         var announcement = document.getElementById('announcement');
-        console.log("page has been loaded");
+        // console.log("page has been loaded");
 
         if (announcement !== null) {
             var id = announcement.dataset.id;
 
             if (Object.keys(localStorage).includes(id)) {
-                console.log("Yes. Doing nothing.");
+                console.log("Announcement closed.");
                 // announcement.classList.add("announcement-container-show");
             } else {
-                console.log("No. Adding display class.");
+                // console.log("No. Adding display class.");
                 // localStorage.setItem(id, 'closed');
                 announcement.classList.add("announcement-container-show");
                 // hx-block
             }
 
-            console.log(id);
-            console.log(localStorage);
+            // console.log(id);
+            // console.log(localStorage);
 
             Object.keys(localStorage).forEach(function (key) {
-                console.log(key);
+                // console.log(key);
                 if (/^global-alert-/.test(key)) {
                     if (key !== id) {
                         localStorage.removeItem(key);
@@ -67,11 +67,11 @@
 function closeAnnouncement() {
     console.log("Close it already!");
     var announcement = document.getElementById('announcement');
-    console.log(announcement);
+    // console.log(announcement);
     if (announcement !== null) {
         var id = announcement.dataset.id;
-        console.log(id);
-        console.log(localStorage);
+        // console.log(id);
+        // console.log(localStorage);
         localStorage.setItem(id, 'closed');
         // console.log(localStorage);
         // announcement.setAttribute('data-global-alert', 'closed');
@@ -80,10 +80,10 @@ function closeAnnouncement() {
         console.log(Object.keys(localStorage));
 
         if (Object.keys(localStorage).includes(id)) {
-            console.log("id has been set to close");
+            // console.log("id has been set to close");
             announcement.classList.remove("announcement-container-show");
         } else {
-            console.log("announcement has not yet been closed");
+            console.log("Announcement shown.");
         }
 
     }

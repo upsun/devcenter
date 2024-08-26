@@ -5,7 +5,7 @@
     {{ partial "toc.html" . }}
     <article class="hx-w-full hx-break-words hx-flex hx-min-h-[calc(100vh-var(--navbar-height))] hx-min-w-0 hx-justify-center hx-pb-8 hx-pr-[calc(env(safe-area-inset-right)-1.5rem)]">
       <main class="hx-w-full hx-min-w-0 hx-max-w-6xl hx-px-6 hx-pt-4 md:hx-px-12">
-        {{ partial "custom/section-back.html" (dict "context" . "ancestors" ( slice "/community" "/community/media" )) }}
+        {{ partial "custom/section-back.html" (dict "context" . "ancestors" ( slice "/community" "/community/content/videos/" )) }}
         <!-- <div class="hx-mt-4 post-category hx-text-sm" style="text-align: right;">
             {{ range .Params.categories }}
                 <span class="category-span"><a href="/categories/{{ . }}">{{ upper . }}</a></span>
@@ -25,7 +25,7 @@
           {{ if and .Date .Params.author }}<span class="hx-mx-1">·</span>{{ end -}}
           {{- with $.Params.author -}}
             {{- range $i, $author := . -}}
-              {{ with ( $context.Site.GetPage ( printf "/community/people/%s" $author ) ) }}
+              {{ with ( $context.Site.GetPage ( printf "/community/engage/people/%s" $author ) ) }}
                 <a href="{{ .RelPermalink }}"
                   class="hx-group hx-inline-flex hx-items-center hx-text-current hx-gap-x-1.5 hx-mx-1"
                   title="{{ .Title }}">

@@ -1,5 +1,5 @@
 {{ $authorHandle := .Get 0 | default "all" }}
-{{ $contentType := .Get 1 | default "post" }}
+{{ $contentType := .Get 1 | default "posts" }}
 {{ $author := slice ( $authorHandle ) }}
 {{ $categories := slice "all" }}
 
@@ -9,7 +9,7 @@
     {{ $categories = $categories | append $i }}
 {{ end }}
 
-{{ $posts := .Site.GetPage ( printf "/community/%s/" $contentType ) }}
+{{ $posts := .Site.GetPage ( printf "/community/content/%s/" $contentType ) }}
 
 {{ $written := $posts.Pages }}
 {{ if ne ( index $author 0 ) "all" }}
@@ -17,10 +17,21 @@
 {{ end }}
 
 {{ if eq 0 ( len $written ) }}
-<div class="hx-mt-4">
+<!-- <div class="hx-mt-4">
     Coming soon.
-</div>
+</div> -->
 {{ else }}
+    {{ $skipHeadings := slice "/community/content/videos/" "/community/content/posts/" }}
+    {{ if not (in $skipHeadings .Page.RelPermalink) }}
+        {{ if eq $contentType "posts" }}
+        <h2>Articles<span class="hx-absolute -hx-mt-20" id="articles"></span>
+            <a href="#articles" class="subheading-anchor" aria-label="Permalink for this section"></a></h2>
+        {{ else }}
+        <h2>Videos<span class="hx-absolute -hx-mt-20" id="videos"></span>
+            <a href="#videos" class="subheading-anchor" aria-label="Permalink for this section"></a></h2>
+        {{ end }}
+    {{ end }}
+
 <div class="hextra-scrollbar hx-overflow-x-auto hx-overflow-y-hidden hx-overscroll-x-contain">
     <div class="hx-mt-4 hx-flex hx-w-max hx-min-w-full hx-border-b hx-border-gray-200 hx-pb-px dark:hx-border-neutral-800">
     {{ $contentIndex := 0 }}
@@ -55,7 +66,7 @@
     </div>
 </div>
 
-<div>
+<div class="excludeSearch">
     {{ $contentIndex := 0 }}
     {{ range $categories }}
         {{ $currentYear := "" }}
@@ -73,7 +84,15 @@
                     {{ end }}
                     <div class="hx-py-4">
                         <span style="display: block; text-decoration: none;" class="post-category hx-text-xs hx-pb-4 max-md:hx-hidden hx-font-semibold">{{ $t.Format "02 Jan 2006" }}
-                            {{ if and .Date .Params.author }}<span class="hx-mx-1">·</span>{{ if eq ( len .Params.authors ) 1 }}by {{ index .Params.authors 0 "name"}}{{ else }}by {{ index .Params.authors 0 "name"}} and {{ index .Params.authors 1 "name"}}{{ end }}
+                            {{ if and .Date .Params.author }}<span class="hx-mx-1">·</span>
+                                {{ if eq ( len .Params.author ) 1 }}
+                                    {{ $author0 := .GetPage ( printf "/community/engage/people/%s" ( index .Params.author 0 ) )}}
+                                    by {{ with $author0 }}{{ .Title }}{{ end }}
+                                {{ else }}
+                                    {{ $author0 := .GetPage ( printf "/community/engage/people/%s" ( index .Params.author 0 ) )}}
+                                    {{ $author1 := .GetPage ( printf "/community/engage/people/%s" ( index .Params.author 1 ) )}}
+                                    by {{ with $author0 }}{{ .Title }}{{ end }} and {{ with $author1 }}{{ .Title }}{{ end }}
+                                {{ end }}
                             {{ end -}}
                         </span>
                         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
@@ -99,7 +118,15 @@
                             {{ end }}
                             <div class="hx-py-4">
                                 <span style="display: block; text-decoration: none;" class="post-category hx-text-xs hx-pb-4 max-md:hx-hidden hx-font-semibold">{{ $t.Format "02 Jan 2006" }}
-                                    {{ if and .Date .Params.author }}<span class="hx-mx-1">·</span>{{ if eq ( len .Params.authors ) 1 }}by {{ index .Params.authors 0 "name"}}{{ else }}by {{ index .Params.authors 0 "name"}} and {{ index .Params.authors 1 "name"}}{{ end }}
+                                    {{ if and .Date .Params.author }}<span class="hx-mx-1">·</span>
+                                        {{ if eq ( len .Params.author ) 1 }}
+                                            {{ $author0 := .GetPage ( printf "/community/engage/people/%s" ( index .Params.author 0 ) )}}
+                                            by {{ with $author0 }}{{ .Title }}{{ end }}
+                                        {{ else }}
+                                            {{ $author0 := .GetPage ( printf "/community/engage/people/%s" ( index .Params.author 0 ) )}}
+                                            {{ $author1 := .GetPage ( printf "/community/engage/people/%s" ( index .Params.author 1 ) )}}
+                                            by {{ with $author0 }}{{ .Title }}{{ end }} and {{ with $author1 }}{{ .Title }}{{ end }}
+                                        {{ end }}
                                     {{ end -}}
                                 </span>
                                 <a href="{{ .RelPermalink }}">{{ .Title }}</a>

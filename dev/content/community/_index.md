@@ -1,6 +1,7 @@
 ---
 title: "Community"
 comments: false
+excludeSearch: true
 # title: "upsun<sup>tv</sup>"
 # type: media
 # layout: list
@@ -37,11 +38,17 @@ Markdown is **supported**.
 
 ## Contributors
 
-Thanks to all our contributors!
+Thanks to all our awesome contributors!
 
 {{% custom/contributors %}}
 
 ## Meet the Upsun team
 
-{{< custom/people >}}
+<div class="hx-text-center hx-mt-6">
+{{< hextra/hero-button text="Meet the team" link="/community/engage/people/"
+  style="margin-right: 10px; background: #6046FF; border: 2px solid #6046FF; font-family: \"Space Grotesk\", sans-serif; font-weight: 700;"
+>}}
+</div>
+
+<!-- {{< custom/people >}} -->
 

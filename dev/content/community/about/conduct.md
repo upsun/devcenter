@@ -1,7 +1,7 @@
 ---
 title: "Code of Conduct"
 type: docs
-weight: 3
+weight: 41
 comments: false
 ---
 
