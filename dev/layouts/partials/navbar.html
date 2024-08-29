@@ -14,7 +14,9 @@
   {{ end -}}
 {{- end -}}
 
-{{- partial "custom/announcement.html" (dict "context" . "navWidth" $navWidth )  -}}
+{{- if .Site.Params.announcement.enable -}}
+  {{- partial "custom/announcement.html" (dict "context" . "navWidth" $navWidth )  -}}
+{{- end -}}
 {{- partial "custom/topnav.html" (dict "context" . "navWidth" $navWidth )  -}}
 
 <div class="nav-container hx-sticky hx-top-0 hx-z-20 hx-w-full hx-bg-transparent print:hx-hidden">

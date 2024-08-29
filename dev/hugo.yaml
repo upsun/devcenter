@@ -168,7 +168,7 @@ menu:
     #   params:
     #     icon: discord
         # icon: user
-    - name: Account
+    - name: Upsun Console
       weight: 13
       url: "https://console.upsun.com"
       params:
@@ -236,6 +236,12 @@ params:
   displayUpdatedDate: true
   dateFormat: "January 2, 2006"
 
+  contrib:
+    defaultImage:
+      posts: "/images/red-background.webp"
+      videos: "/images/background-purple.webp"
+      user: "/images/user-logo-default.png"
+
   # Search
   # flexsearch is enabled by default
   search:
@@ -256,7 +262,7 @@ params:
         - "[Discord rules](/search?q=discord+rules)"
 
   editURL:
-    enable: true
+    enable: false
     base: "https://github.com/upsun/dev/edit/main/dev/content"
 
   blog:
@@ -303,8 +309,9 @@ params:
                 - "/community/content/posts/"
                 - "/community/content/videos/"
 
-
-  announcement: "Welcome to the new Upsun Developer Center! [Find out more](/community/content/posts/introducing-dev-center/)"
+  announcement:
+      enable: false
+      message: "Welcome to the brand new Upsun Developer Center! [Find out more](/community/content/posts/introducing-dev-center/)"
 
   social:
       discord: "https://discord.gg/PkMc2pVCDV"

@@ -1,11 +1,11 @@
 ---
 title: "A great fit from the Git-go"
 date: 2024-03-19T15:20:15+09:00
-image: https://img.youtube.com/vi/8hg-wHeH_68/hqdefault.jpg
 
 author:
-  - chadwcarlson
   - gregqualls
+
+image: https://img.youtube.com/vi/8hg-wHeH_68/hqdefault.jpg
 
 sidebar:
     exclude: true

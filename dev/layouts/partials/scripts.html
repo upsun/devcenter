@@ -6,9 +6,12 @@
 {{- $jsFileTree := resources.Get "js/filetree.js" -}}
 {{- $jsSidebar := resources.Get "js/sidebar.js" -}}
 {{- $jsBackToTop := resources.Get "js/back-to-top.js" -}}
-{{- $jsDismissAlert := resources.Get "js/dismissable-alert.js" -}}
+{{- $jsDismissAlert := "" -}}
+{{- $scripts := slice $jsTheme $jsMenu $jsCodeCopy $jsTabs $jsLang $jsFileTree $jsSidebar $jsBackToTop | resources.Concat "js/main.js" -}}
+{{- if .Site.Params.announcement.enable -}}
+    {{- $scripts = slice $jsTheme $jsMenu $jsCodeCopy $jsTabs $jsLang $jsFileTree $jsSidebar $jsBackToTop $jsDismissAlert | resources.Concat "js/main.js" -}}
+{{- end -}}
 
-{{- $scripts := slice $jsTheme $jsMenu $jsCodeCopy $jsTabs $jsLang $jsFileTree $jsSidebar $jsBackToTop $jsDismissAlert | resources.Concat "js/main.js" -}}
 {{- if hugo.IsProduction -}}
   {{- $scripts = $scripts | minify | fingerprint -}}
 {{- end -}}
