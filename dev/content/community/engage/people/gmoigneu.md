@@ -1,21 +1,25 @@
 ---
-title: "Guillaume Moigneu"
-team: "Developer Advocacy"
-company: "Upsun"
-role: "VP, Product Advocacy"
+#################################
+# Don't touch these settings.
 type: people
 layout: single
 sidebar:
   exclude: true
-# image: https://github.com/upsun.png
-links:
-    github: gmoigneu
-    # linkedin: chadwcarlson
-    # website: chadwcarlson.com
-# type: hextra-home
+#################################
+title: "Guillaume Moigneu"
+team: "Developer Advocacy"
+company: "Upsun"
+role: "VP, Product Advocacy"
+
+# Update these only if you'd like them to be public.
+# links:
+#     github: something
+#     twitter: something
+#     linkedin: something
+#     website: https://www.something.com
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae nunc non tellus euismod pretium. Nam justo dui, venenatis in fermentum sit amet, vulputate ut enim. Aenean finibus felis id egestas aliquet. Proin urna ex, cursus dignissim aliquam quis, consectetur vel lorem. Sed non eleifend eros. Aliquam id molestie urna. Sed pretium finibus lorem, vitae egestas velit semper sit amet. Vestibulum imperdiet nunc ac nulla gravida, posuere pulvinar urna faucibus. 
+<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae nunc non tellus euismod pretium. Nam justo dui, venenatis in fermentum sit amet, vulputate ut enim. Aenean finibus felis id egestas aliquet. Proin urna ex, cursus dignissim aliquam quis, consectetur vel lorem. Sed non eleifend eros. Aliquam id molestie urna. Sed pretium finibus lorem, vitae egestas velit semper sit amet. Vestibulum imperdiet nunc ac nulla gravida, posuere pulvinar urna faucibus.  -->
 
 <!-- excludeSearch -->
 {{< custom/contributions "gmoigneu" >}}
