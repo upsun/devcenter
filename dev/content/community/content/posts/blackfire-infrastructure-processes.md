@@ -1,24 +1,41 @@
 ---
-title: Why we chose Nix for the Composable image
-date: 2024-08-29T15:20:15+09:00
-image: /images/background-yellow.webp
-icon: release-notes
-author:
-  - chadwcarlson
-
+#################################
+# Don't touch these settings.
+date: '2024-08-19T10:53:08-04:00'
 sidebar:
     exclude: true
 type: post
+#################################
+# Update the title
+title: "Up(sun) and running with infrastructure processes on Blackfire"
 
-description: |
-    Join Greg Qualls in this video to better understand the process of setting up development environments on Upsun through the terminal.
-tags:
-  - nix
-  - images
-  - composable-image
+# Replace if you have a good image. 
+# Images are not used (yet) on individual pages, only on lists of articles.
+image: /images/yellow_purple.webp
+
+link: "https://upsun.com/blog/blackfire-infrastructure-processes/"
+
+# Update author with one or more
+#   -> content/community/engage/people/AUTHOR.md
+#   -> https://github.com/AUTHOR
+#   -> AUTHORFirst AUTHORLast
+author:
+  - flovntp
+
+# Choose ONE of the options below:
 categories:
-  - discussions
-# excludeSearch: true
+#   - core-concepts
+#   - discussions
+  - experiments
+#   - how-tos
+#   - releases
+#   - tutorials
+
+# Tags don't do anything yet, so ignore for now.
+# tags:
+#   - events
+#   - integrations
+math: true
 ---
 
 ## Lorem markdownum?
@@ -36,8 +53,11 @@ lacertis!
 - An fors est
 
 Sensit haec illo spectator frui gravidus ordine latitant. Quod eris, vota ensem
-pectus patria quidem; *lacrimae nutu*. Nunc
-[additur](http://condit-filia.com/solvit), et munera geminos dixit, nec habemus,
+pectus patria quidem; *lacrimae nutu*. 
+
+$$F(\omega) = \int_{-\infty}^{\infty} f(t) e^{-j\omega t} \, dt$$
+
+Nunc [additur](http://condit-filia.com/solvit), et munera geminos dixit, nec habemus,
 illi. Caeloque subdita flammasque hanc timide patuit causas nos solus fecisse:
 refert tibi, aera Cumaea.
 
@@ -75,7 +95,7 @@ lacertis!
 
 <div class="hx-mt-6"></div>
 
-{{< youtube mraLsg-G4wA >}}
+{{< youtube fC3Cthm0HFU >}}
 
 Sensit haec illo spectator frui gravidus ordine latitant. Quod eris, vota ensem
 pectus patria quidem; *lacrimae nutu*. Nunc

@@ -16,6 +16,13 @@
     {{ $written = where $posts.Pages "Params.author" "intersect" $author }}
 {{ end }}
 
+{{ $defaultImage := index .Site.Params.contrib "defaultImage" $contentType }}
+
+{{ $attribution := "by" }}
+{{ if eq $contentType "videos" }}
+    {{ $attribution = "with" }}
+{{ end }}
+
 {{ if eq 0 ( len $written ) }}
 <!-- <div class="hx-mt-4">
     Coming soon.
@@ -82,20 +89,50 @@
                         {{ $currentYear = $t.Format "2006" }}
                         <div class="hx-py-2 hx-font-bold">{{ $currentYear }}</div>
                     {{ end }}
-                    <div class="hx-py-4">
-                        <span style="display: block; text-decoration: none;" class="post-category hx-text-xs hx-pb-4 max-md:hx-hidden hx-font-semibold">{{ $t.Format "02 Jan 2006" }}
-                            {{ if and .Date .Params.author }}<span class="hx-mx-1">·</span>
-                                {{ if eq ( len .Params.author ) 1 }}
-                                    {{ $author0 := .GetPage ( printf "/community/engage/people/%s" ( index .Params.author 0 ) )}}
-                                    by {{ with $author0 }}{{ .Title }}{{ end }}
-                                {{ else }}
-                                    {{ $author0 := .GetPage ( printf "/community/engage/people/%s" ( index .Params.author 0 ) )}}
-                                    {{ $author1 := .GetPage ( printf "/community/engage/people/%s" ( index .Params.author 1 ) )}}
-                                    by {{ with $author0 }}{{ .Title }}{{ end }} and {{ with $author1 }}{{ .Title }}{{ end }}
-                                {{ end }}
-                            {{ end -}}
-                        </span>
-                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    <div class="contrib-item">
+                        <div class="contrib-img">
+                            {{ if isset .Params "image" }}
+                            <img src="{{ .Params.image }}">
+                            {{ else if eq $contentType "videos" }}
+                            <img src="https://img.youtube.com/vi/{{ with .File }}{{ .BaseFileName }}{{ end }}/hqdefault.jpg">
+                            {{ else }}
+                            <img src="{{ $defaultImage }}">
+                            {{ end }}
+                        </div>
+                        <div class="contrib-desc">
+                            <span style="display: block; text-decoration: none;" class="post-category hx-text-xs hx-pb-4 max-md:hx-hidden hx-font-semibold">{{ $t.Format "02 Jan 2006" }}
+                                {{ if and .Date .Params.author }}<span class="hx-mx-1">·</span>
+                                    {{ if eq ( len .Params.author ) 1 }}
+                                        {{ $author0 := .GetPage ( printf "/community/engage/people/%s" ( index .Params.author 0 ) )}}
+                                        {{ if ne $author0.Title "" }}
+                                            {{ $author0 = $author0.Title }}
+                                        {{ else }}
+                                            {{ $author0 = index .Params.author 0 }}
+                                        {{ end }}
+                                        {{ $attribution }} {{ $author0 }}
+                                    {{ else }}
+                                        {{ $author0 := .GetPage ( printf "/community/engage/people/%s" ( index .Params.author 0 ) )}}
+                                        {{ if ne $author0.Title "" }}
+                                            {{ $author0 = $author0.Title }}
+                                        {{ else }}
+                                            {{ $author0 = index .Params.author 0 }}
+                                        {{ end }}
+                                        {{ $author1 := .GetPage ( printf "/community/engage/people/%s" ( index .Params.author 1 ) )}}
+                                        {{ if ne $author1.Title "" }}
+                                            {{ $author1 = $author1.Title }}
+                                        {{ else }}
+                                            {{ $author1 = index .Params.author 1 }}
+                                        {{ end }}
+                                        {{ $attribution }} {{ $author0}} and {{ $author1 }}
+                                    {{ end }}
+                                {{ end -}}
+                            </span>
+                            {{ if isset .Params "link" }}
+                                <a href="{{ .Params.link }}" target="_blank">{{ .Title }}</a>
+                            {{ else }}
+                                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                            {{ end }}
+                        </div>
                     </div>
                 {{ end }}
             </ul>
@@ -116,20 +153,50 @@
                                 {{ $currentYear = $t.Format "2006" }}
                                 <div class="hx-py-2 hx-font-bold">{{ $currentYear }}</div>
                             {{ end }}
-                            <div class="hx-py-4">
+                            <div class="contrib-item">
+                                <div class="contrib-img">
+                                    {{ if isset .Params "image" }}
+                                    <img src="{{ .Params.image }}">
+                                    {{ else if eq $contentType "videos" }}
+                                    <img src="https://img.youtube.com/vi/{{ with .File }}{{ .BaseFileName }}{{ end }}/hqdefault.jpg">
+                                    {{ else }}
+                                    <img src="{{ $defaultImage }}">
+                                    {{ end }}
+                                </div>
+                                <div class="contrib-desc">
                                 <span style="display: block; text-decoration: none;" class="post-category hx-text-xs hx-pb-4 max-md:hx-hidden hx-font-semibold">{{ $t.Format "02 Jan 2006" }}
                                     {{ if and .Date .Params.author }}<span class="hx-mx-1">·</span>
-                                        {{ if eq ( len .Params.author ) 1 }}
-                                            {{ $author0 := .GetPage ( printf "/community/engage/people/%s" ( index .Params.author 0 ) )}}
-                                            by {{ with $author0 }}{{ .Title }}{{ end }}
+                                    {{ if eq ( len .Params.author ) 1 }}
+                                        {{ $author0 := .GetPage ( printf "/community/engage/people/%s" ( index .Params.author 0 ) )}}
+                                        {{ if ne $author0.Title "" }}
+                                            {{ $author0 = $author0.Title }}
                                         {{ else }}
-                                            {{ $author0 := .GetPage ( printf "/community/engage/people/%s" ( index .Params.author 0 ) )}}
-                                            {{ $author1 := .GetPage ( printf "/community/engage/people/%s" ( index .Params.author 1 ) )}}
-                                            by {{ with $author0 }}{{ .Title }}{{ end }} and {{ with $author1 }}{{ .Title }}{{ end }}
+                                            {{ $author0 = index .Params.author 0 }}
                                         {{ end }}
-                                    {{ end -}}
+                                        {{ $attribution }} {{ $author0 }}
+                                    {{ else }}
+                                        {{ $author0 := .GetPage ( printf "/community/engage/people/%s" ( index .Params.author 0 ) )}}
+                                        {{ if ne $author0.Title "" }}
+                                            {{ $author0 = $author0.Title }}
+                                        {{ else }}
+                                            {{ $author0 = index .Params.author 0 }}
+                                        {{ end }}
+                                        {{ $author1 := .GetPage ( printf "/community/engage/people/%s" ( index .Params.author 1 ) )}}
+                                        {{ if ne $author1.Title "" }}
+                                            {{ $author1 = $author1.Title }}
+                                        {{ else }}
+                                            {{ $author1 = index .Params.author 1 }}
+                                        {{ end }}
+                                        {{ $attribution }} {{ $author0}} and {{ $author1 }}
+                                    {{ end }}
+                                {{ end -}}
                                 </span>
-                                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                                {{ if isset .Params "link" }}
+                                    <a href="{{ .Params.link }}" target="_blank">{{ .Title }}</a>
+                                {{ else }}
+                                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                                {{ end }}
+                                </div>
                             </div>
                         {{ end }}
                     </ul>                    

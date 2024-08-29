@@ -3,49 +3,6 @@ title: Upsun Developer Center
 layout: hextra-home
 ---
 
-<!-- <div class="home-title-container hx-w-full not-prose">
-  <h2 class="home-title md:hx-text-5xl">Upsun Developer Center</h2>
-  <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae fermentum elit. Vivamus sagittis magna dictum scelerisque efficitur. Donec leo mauris, dignissim eget erat ac, faucibus cursus elit.
-  </p>
-  {{< custom/search >}}
-</div>
-
-
-{{< custom/search >}} -->
-
-
-<!-- 
-{{< hextra/hero-container 
-  class="hx-mt-6"
-  image="images/hextra-doc.webp"
-  style="background-color: #6046FF; color: white; padding: 1rem;"
->}}
-
-<div class="hx-mt-6 hx-mb-6">
-{{< hextra/hero-headline >}}
-  Ultimate&nbsp;<br class="sm:hx-block hx-hidden" />developer flexibility
-{{< /hextra/hero-headline >}}
-</div>
-
-<div class="hx-mb-12">
-{{< hextra/hero-subtitle >}}
-  Self-service. Usage-based pricing Customize your resources, runtimes, users, frontends, backends, APIs.&nbsp;<br class="sm:hx-block hx-hidden" />
-  All the choices are yours. Welcome to the Upsun PaaS.
-{{< /hextra/hero-subtitle >}}
-</div>
-
-{{< /hextra/hero-container >}} -->
-
-<!-- {{< hextra/hero-badge 
-  link="/blog/markdown/"
->}}
-  <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
-  <span>The Upsun Developer Center is now live!</span>
-  {{< icon name="arrow-circle-right" attributes="height=14" >}}
-{{< /hextra/hero-badge >}} -->
-
-
 <div class="hx-mt-6"></div>
 
 {{< hextra/hero-container 

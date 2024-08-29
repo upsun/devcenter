@@ -1,8 +1,8 @@
 ---
 title: "Corey Dockendorf"
-team: "Developer Advocacy"
+team: "Customer Solutions"
 company: "Upsun"
-role: "Strategic Solutions Architect"
+role: "Senior Solutions Architect"
 type: people
 layout: single
 sidebar:

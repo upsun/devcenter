@@ -25,18 +25,21 @@
           {{ if and .Date .Params.author }}<span class="hx-mx-1">·</span>{{ end -}}
           {{- with $.Params.author -}}
             {{- range $i, $author := . -}}
+              {{ $pageCheck := ( $context.Site.GetPage ( printf "/community/engage/people/%s" $author ) ) }}
+              {{ if ne $pageCheck.Title "" }}
               {{ with ( $context.Site.GetPage ( printf "/community/engage/people/%s" $author ) ) }}
                 <a href="{{ .RelPermalink }}"
                   class="hx-group hx-inline-flex hx-items-center hx-text-current hx-gap-x-1.5 hx-mx-1"
                   title="{{ .Title }}">
-                  {{- if isset . "image" -}}
-                    {{- with $image := .image }}
+                  {{- $page := . -}}
+                  {{- if isset .Params "image" -}}
+                    {{- with $image := .Params.image }}
                       {{- $isLocal := not (urls.Parse $image).Scheme -}}
                       {{- $startsWithSlash := hasPrefix $image "/" -}}
                       {{- if and $isLocal $startsWithSlash }}
                         {{- $image = (relURL (strings.TrimPrefix "/" $image)) -}}
                       {{ end -}}
-                      <img src="{{ $image | safeURL }}" alt="{{ .Title}}" class="hx-inline-block hx-h-4 hx-w-4 hx-rounded-full" {{ if $lazyLoading }}loading="lazy"{{ end }} />
+                      <img src="{{ $image | safeURL }}" alt="{{ $page.Title}}" class="hx-inline-block hx-h-4 hx-w-4 hx-rounded-full" {{ if $lazyLoading }}loading="lazy"{{ end }} />
                     {{ end -}}
                   {{- else -}}
                      <img src="https://github.com/{{ $author }}.png" alt="{{ .Title }}" class="hx-inline-block hx-h-4 hx-w-4 hx-rounded-full" {{ if $lazyLoading }}loading="lazy"{{ end }} />
@@ -44,6 +47,25 @@
                   <div class="group-hover:hx-underline font-grotesk">{{ .Title }}</div>
                 </a>
 
+               {{ end }}
+              
+              {{ else }}
+                {{ $ghCheck := printf "https://github.com/%s" $author }}
+                {{ with resources.GetRemote $ghCheck }}
+                  <a href="{{ $ghCheck }}"
+                    class="hx-group hx-inline-flex hx-items-center hx-text-current hx-gap-x-1.5 hx-mx-1"
+                    title="{{ $author }}" target="_blank">
+                      <img src="https://github.com/{{ $author }}.png" alt="{{ $author }}" class="hx-inline-block hx-h-4 hx-w-4 hx-rounded-full" {{ if $lazyLoading }}loading="lazy"{{ end }} />
+                    <div class="group-hover:hx-underline font-grotesk">{{ $author }}</div>
+                  </a>
+                {{ else }}
+                <a href="#"
+                  class="hx-group hx-inline-flex hx-items-center hx-text-current hx-gap-x-1.5 hx-mx-1"
+                  title="{{ $author }}">
+                    <img src="{{ site.Params.contrib.defaultImage.user }}" alt="{{ $author }}" class="hx-inline-block hx-h-4 hx-w-4 hx-rounded-full" {{ if $lazyLoading }}loading="lazy"{{ end }} />
+                  <div class="group-hover:hx-underline font-grotesk">{{ $author }}</div>
+                </a>
+                {{ end }}
               {{ end }}
             {{- end -}}
             <span class="hx-mx-1">·</span>{{ printf "Reading time: %d minutes" $context.Page.ReadingTime }}

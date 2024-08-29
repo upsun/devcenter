@@ -1,3 +1,5 @@
+# Upsun Developer Center
+
 ## Running locally
 
 - Start Docker
@@ -5,7 +7,7 @@
 - `git submodule update`
 - `docker-compose up --remove-orphans`
 
-Vist the site at http://localhost:1313.
+Visit the site at http://localhost:1313.
 
 Cleaning up:
 

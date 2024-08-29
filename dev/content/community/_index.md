@@ -24,16 +24,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae nunc no
 
 ## What's new
 
-<!-- {{% details title="First project incentive" closed="true" %}}
-
-<p class="toc-cta-title">Get started</p>
-
-This is the content of the details.
-
-Markdown is **supported**.
-
-{{% /details %}} -->
-
 {{< custom/whats-new >}}
 
 ## Contributors

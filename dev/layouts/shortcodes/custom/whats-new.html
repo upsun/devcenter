@@ -18,12 +18,12 @@
                 {{ with $context.Site.GetPage .pageRef }}
                     {{ $title = .Title }}
                     {{ $imgLink = .Params.image }}
+                    {{ if isset . "image" }}
+                        {{ $imgLink = .image }}
+                    {{ end }}
                     {{ $category = index .Params.categories 0 }}
                     {{ $attribution = "by" }}
-                    {{ $authors = slice }}
-                    {{ range .Params.authors }}
-                        {{ $authors = $authors | append .name }}
-                    {{ end }}
+                    {{ $authors = .Params.author }}
                     {{ $date = .Params.date }}
                 {{ end }}
             {{ else }}
@@ -45,12 +45,29 @@
             <span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-mb-4 hx-pt-4 hx-px-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
             {{ $title }}</span>
             <div class="author-info hx-line-clamp-3 hx-text-sm hx-font-normal hx-text-gray-500 dark:hx-text-gray-400 hx-mt-4 hx-px-4">
-                {{ if eq ( len $authors ) 1 }}
-                {{ $attribution }} {{ index $authors 0 }}
-                {{ else if eq ( len $authors ) 3 }}
-                {{ $attribution }} {{ index $authors 0 }}, {{ index $authors 1 }}, and {{ index $authors 2 }}
+
+                {{ if eq ( len $authors) 1 }}
+                    {{ $author0 := site.GetPage ( printf "/community/engage/people/%s" ( index $authors 0 ) )}}
+                    {{ if ne $author0.Title "" }}
+                        {{ $author0 = $author0.Title }}
+                    {{ else }}
+                        {{ $author0 = index $authors 0 }}
+                    {{ end }}
+                    {{ $attribution }} {{ $author0 }}
                 {{ else }}
-                {{ $attribution }} {{ index $authors 0 }} and {{ index $authors 1 }}
+                    {{ $author0 := site.GetPage ( printf "/community/engage/people/%s" ( index $authors 0 ) )}}
+                    {{ if ne $author0.Title "" }}
+                        {{ $author0 = $author0.Title }}
+                    {{ else }}
+                        {{ $author0 = index $authors 0 }}
+                    {{ end }}
+                    {{ $author1 := site.GetPage ( printf "/community/engage/people/%s" ( index $authors 1 ) )}}
+                    {{ if ne $author1.Title "" }}
+                        {{ $author1 = $author1.Title }}
+                    {{ else }}
+                        {{ $author1 = index $authors 1 }}
+                    {{ end }}
+                    {{ $attribution }} {{ $author0}} and {{ $author1 }}
                 {{ end }}
             </div>
             <div class="author-info hx-line-clamp-3 hx-text-sm hx-font-normal hx-text-gray-500 dark:hx-text-gray-400 hx-px-4 hx-mb-4">
