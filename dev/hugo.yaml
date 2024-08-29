@@ -240,7 +240,7 @@ params:
     defaultImage:
       posts: "/images/red-background.webp"
       videos: "/images/background-purple.webp"
-      user: "/images/user-logo-default.png"
+      user: "https://github.com/upsun.png"
 
   # Search
   # flexsearch is enabled by default
