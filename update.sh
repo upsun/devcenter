@@ -1,2 +1,2 @@
 # Update submodules.
-git submodule update --remote
+git submodule update --remote --recursive
