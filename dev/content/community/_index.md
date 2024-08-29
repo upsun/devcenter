@@ -26,11 +26,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae nunc no
 
 {{< custom/whats-new >}}
 
-## Contributors
+<!-- ## Contributors
 
 Thanks to all our awesome contributors!
 
-{{% custom/contributors %}}
+{{% custom/contributors %}} -->
 
 ## Meet the Upsun team
 
