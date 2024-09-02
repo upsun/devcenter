@@ -9,6 +9,7 @@ comments: false
 ### Setting up
 
 1. In a terminal window, [run this site locally via Docker](/community/about/contributing/local).
+1. Go to the `dev` folder: ``cd dev``
 1. In another window, navigate into the repository, and run the following command:
 
     ```bash
