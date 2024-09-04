@@ -5,7 +5,7 @@
 - Start Docker
 - `git submodule init`
 - `git submodule update`
-- `docker-compose up --remove-orphans`
+- `docker-compose up --remove-orphans -d`
 
 Visit the site at http://localhost:1313.
 
