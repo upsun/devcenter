@@ -11,7 +11,11 @@ Docker and Hugo are required.
 - Start Docker
 - `git submodule init`
 - `git submodule update`
-- `docker-compose up --remove-orphans -d`
+- `docker-compose up --remove-orphans`
+
+> Please note: if you add a ``-d`` option to the `docker-compose` command, you won't be able to see logs in your terminal
+>
+> As you will not get back to the terminal prompt, please open a new tab in your terminal for executing this command.
 
 Visit the site at [http://localhost:1313](http://localhost:1313).
 
