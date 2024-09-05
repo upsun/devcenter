@@ -9,7 +9,7 @@
   {{- if $toc }}
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4">
       {{- with .Fragments.Headings -}}
-        <p class="hx-mb-4 hx-font-semibold hx-tracking-tight">{{ $onThisPage }}</p>
+        <p class="on-this-page hx-mb-4 hx-font-semibold hx-tracking-tight">{{ $onThisPage }}</p>
         {{- range . -}}
           <ul>
             {{- with .Headings -}}{{ template "toc-subheading" (dict "headings" . "level" 0) }}{{- end -}}
@@ -17,7 +17,7 @@
         {{- end -}}
       {{- end -}}
 
-      {{- $borderClass := "hx-mt-5 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111]" -}}
+      {{- $borderClass := "hx-mt-5 hx-border-t hx-pt-8 dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111]" -}}
       {{- $ctaBorderClass := $borderClass }}
       {{- if not .Fragments.Headings -}}
         {{- $ctaBorderClass = "" -}}
