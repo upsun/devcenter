@@ -36,7 +36,7 @@ Key moments:
 
 2:19 - Join the Upsun Community
 •  Inviting viewers to become part of the Upsun community.
-• Provide information on accessing support through Discord and emphasize the community's willingness to help with challenges.
+•  Provide information on accessing support through Discord and emphasize the community's willingness to help with challenges.
 •  Encouraging viewers to sign up, try out Upsun, and form their own opinions based on firsthand experience.
 
 [2:35](https://www.youtube.com/watch?v=8hg-wHeH_68&t=155s) - Try Upsun now
