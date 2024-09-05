@@ -172,7 +172,8 @@ menu:
       weight: 13
       url: "https://console.upsun.com"
       params:
-        icon: user
+        login: true
+        # icon: login
         # icon: user-group
     # - name: Signup
     #   weight: 12
@@ -204,15 +205,21 @@ params:
   titleMain: Upsun Developer Center
   prodURL: "https://devcenter.upsun.com"
   navbar:
-    displayTitle: true
+    displayTitle: false
     displayLogo: true
     logo:
+      path: images/logos/devcenter_light.svg
+      dark: images/logos/devcenter_light.svg
+      width: 217
+      height: 41
+      # width: 255
+      # height: 48
       # path: images/logo.svg
-      path: images/logo_upsun_light.svg
+      # path: images/logo_upsun_light.svg
       # dark: images/logo-dark.svg
-      dark: images/logo_upsun_dark.svg
-      width: 33
-      height: 32
+      # dark: images/logo_upsun_dark.svg
+      # width: 33
+      # height: 32
       # link: /
     width: wide
 
@@ -320,11 +327,31 @@ params:
       youtube: "https://www.youtube.com/@upsun_com"
       xtwitter: "https://x.com/upsuncom"
 
+  communitycards:
+    - category: "Self-service Application Platform"
+      title: "Upsun"
+      subtitle: "Self-service. Usage-based pricing. Customize your resources, runtimes, users, frontends, backends, APIs."
+      # image: /images/flame-graph.png
+      image: /images/background-purple.webp
+      link: "https://docs.upsun.com/"
+    - category: "Our original PaaS"
+      title: "Platform.sh"
+      subtitle: "Perfect for monolithic CMS and ecommerce applications. Predictable pricing."
+      # image: /images/psh-console-main-view.png
+      image: /images/background-blue.webp
+      link: "https://docs.platform.sh/"
+    - category: "Continuous Observability"
+      title: "Blackfire.io"
+      subtitle: "Stay in control with long-term performance optimization."
+      # image: /images/transaction-breakdown-3.webp
+      image: /images/red-background.webp
+      link: "https://docs.blackfire.io/index"
+
   featured:
     - pageRef: /community/content/posts/introducing-dev-center
     - pageRef: /community/content/posts/on-preview-environments
     - pageRef: /community/content/videos/8hg-wheh_68/
-    - pageRef: /community/content/posts/infra-events-multi-app/
+    # - pageRef: /community/content/posts/infra-events-multi-app/
     # - pageRef: /community/post/why-we-chose-nix
     # - media: true
     #   id: IWXiuR6jlK8
