@@ -26,6 +26,7 @@ author:
 # Choose ONE of the options below:
 categories:
 #   - core-concepts
+#   - how-it-works
 #   - discussions
 #   - experiments
   - how-tos
@@ -38,7 +39,7 @@ categories:
 #   - integrations
 math: true
 ---
-
+<!-- 
 ## Lorem markdownum?
 
 Lorem markdownum, Aries, cum formae, illius, gemitu in caelum, iste, praebet
@@ -253,4 +254,4 @@ lacertis!
 {{< /tabs >}}
 
 Caeloque subdita flammasque hanc timide patuit causas nos solus fecisse:
-refert tibi, aera Cumaea.
+refert tibi, aera Cumaea. -->
