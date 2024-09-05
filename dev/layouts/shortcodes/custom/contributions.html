@@ -128,9 +128,9 @@
                                 {{ end -}}
                             </span>
                             {{ if isset .Params "link" }}
-                                <a href="{{ .Params.link }}" target="_blank">{{ .Title }}</a>
+                                <a href="{{ .Params.link }}" target="_blank">{{ .Title | markdownify }}</a>
                             {{ else }}
-                                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                                <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
                             {{ end }}
                         </div>
                     </div>
@@ -192,9 +192,9 @@
                                 {{ end -}}
                                 </span>
                                 {{ if isset .Params "link" }}
-                                    <a href="{{ .Params.link }}" target="_blank">{{ .Title }}</a>
+                                    <a href="{{ .Params.link }}" target="_blank">{{ .Title | markdownify }}</a>
                                 {{ else }}
-                                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                                    <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
                                 {{ end }}
                                 </div>
                             </div>

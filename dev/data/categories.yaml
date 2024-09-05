@@ -17,6 +17,9 @@ posts:
     experiments:
         single: "Experiment"
         list: "Experiments"
+    how-it-works:
+        single: "How Upsun works"
+        list: "How Upsun works"
 videos:
     demos: 
         single: "Demo"
