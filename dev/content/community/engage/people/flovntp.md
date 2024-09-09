@@ -11,6 +11,7 @@ team: "Developer Advocacy"
 company: "Upsun"
 role: "DevRel Engineer"
 
+image: "/images/people/flovntp.webp"
 # Update these only if you'd like them to be public.
 # links:
 #     github: something

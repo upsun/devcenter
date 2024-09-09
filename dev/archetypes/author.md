@@ -15,6 +15,7 @@ title: "Your Name"
 team: "Team in your Company"
 company: "Company"
 role: "Your role"
+#image: "/images/people/<author>.webp"
 
 # Update these only if you'd like them to be public.
 # links:

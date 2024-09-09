@@ -1,27 +1,27 @@
 ---
 #################################
 # Don't touch these settings.
-date: '{{ .Date }}'
+date: '2024-08-08T15:11:26+02:00'
 sidebar:
     exclude: true
 type: post
 #################################
 # Update the title
-title: "Include a short, descriptive title"
+title: "Django Girls: community, python, and open source - Podcast"
 
 # Replace if you have a good image. 
 # Images are not used (yet) on individual pages, only on lists of articles.
 image: /images/red-background.webp
 
 # Define this value if listing an external blog post not written within this site.
-#link: "https://upsun.com/blog/blackfire-infrastructure-processes/"
+link: "https://upsun.com/blog/django-girls-community-python-open-source-podcast/"
 
 # Update author with one or more
 #   -> content/community/engage/people/AUTHOR.md
 #   -> https://github.com/AUTHOR
 #   -> AUTHORFirst AUTHORLast
 author:
-  - upsun
+  - mupsi
 
 # Choose ONE of the options below:
 categories:
