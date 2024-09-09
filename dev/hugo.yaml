@@ -78,14 +78,18 @@ menu:
       weight: 3
     - identifier: posts
       name: Articles
-      pageRef: /community/content/posts
-      # url: "https://upsun.com/blog"
+      pageRef: /posts
       weight: 4
+    # - identifier: videossold
+    #   name: Videos-old
+    #   pageRef: /community/content/videos
+    #   # url: "https://upsun.com/blog"
+    #   weight: 5
     - identifier: media
       name: Videos
-      pageRef: /community/content/videos
+      pageRef: /videos
       # url: "https://podcast.upsun.com"
-      weight: 5
+      weight: 6
     # - identifier: profiles
     #   name: Profiles (rm)
     #   pageRef: /profiles
@@ -326,6 +330,8 @@ params:
       github: "https://github.com/upsun"
       youtube: "https://www.youtube.com/@upsun_com"
       xtwitter: "https://x.com/upsuncom"
+      linkedin: "https://linkedin.com/company/upsuncom"
+      tiktok: "https://www.tiktok.com/@upsun.com"
 
   communitycards:
     - category: "Self-service Application Platform"
@@ -348,9 +354,9 @@ params:
       link: "https://docs.blackfire.io/index"
 
   featured:
-    - pageRef: /community/content/posts/introducing-dev-center
-    - pageRef: /community/content/posts/on-preview-environments
-    - pageRef: /community/content/videos/8hg-wheh_68/
+    - pageRef: /posts/introducing-dev-center
+    - pageRef: /posts/on-preview-environments
+    - pageRef: /videos/orrxx4japwc/
     # - pageRef: /community/content/posts/infra-events-multi-app/
     # - pageRef: /community/post/why-we-chose-nix
     # - media: true

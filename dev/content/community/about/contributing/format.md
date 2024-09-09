@@ -2,6 +2,10 @@
 title: "Text formatting"
 type: docs
 comments: false
+
+excludeSearch: true
+sidebar:
+  exclude: true
 ---
 
 The original [Hextra theme](https://imfing.github.io/hextra/), and custom shortcodes added for this site are listed below for your quick reference when contributing.

@@ -1,10 +1,10 @@
 ---
-title: How to set up infrastructure events on multi-application architecture
-date: 2024-08-28T15:20:15+09:00
-image: /images/red-background.webp
+title: On Upsun preview environments
+date: 2024-08-30T15:20:15+09:00
+image: /images/background-purple.webp
 icon: release-notes
 author:
-  - flovntp
+  - gmoigneu
 
 sidebar:
     exclude: true
@@ -13,10 +13,11 @@ type: post
 description: |
     Join Greg Qualls in this video to better understand the process of setting up development environments on Upsun through the terminal.
 tags:
-  - events
-  - integrations
+  - environments
 categories:
-  - how-tos
+  - discussions
+  - featured
+math: true
 # excludeSearch: true
 ---
 
@@ -35,8 +36,11 @@ lacertis!
 - An fors est
 
 Sensit haec illo spectator frui gravidus ordine latitant. Quod eris, vota ensem
-pectus patria quidem; *lacrimae nutu*. Nunc
-[additur](http://condit-filia.com/solvit), et munera geminos dixit, nec habemus,
+pectus patria quidem; *lacrimae nutu*. 
+
+$$F(\omega) = \int_{-\infty}^{\infty} f(t) e^{-j\omega t} \, dt$$
+
+Nunc [additur](http://condit-filia.com/solvit), et munera geminos dixit, nec habemus,
 illi. Caeloque subdita flammasque hanc timide patuit causas nos solus fecisse:
 refert tibi, aera Cumaea.
 

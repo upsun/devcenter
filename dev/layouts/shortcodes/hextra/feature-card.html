@@ -21,12 +21,12 @@
 >
   <div class="hx-relative hx-w-full" style="padding: 2.25rem;">
     <h3 class="hx-text-xl hx-font-medium hx-leading-6 hx-mb-2 hx-flex hx-items-center">
+      <span>{{ $title }}</span>
       {{ with $icon -}}
-        <span style="padding-right: 1.5rem;">
+        <span style="position: absolute; right: 2.25rem;">
           {{- partial "utils/icon.html" (dict "name" . "attributes" "height=1.75rem") -}}
         </span>
       {{ end -}}
-      <span>{{ $title }}</span>
     </h3>
     <p class="hx-text-sm hx-leading-7">{{ $subtitle | markdownify }}</p>
   </div>

@@ -3,6 +3,10 @@ title: "Set up a local environment"
 linkTitle: "Running locally"
 type: docs
 comments: false
+
+excludeSearch: true
+sidebar:
+  exclude: true
 ---
 
 Docker and Hugo are required.

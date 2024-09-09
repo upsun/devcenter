@@ -11,9 +11,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae nunc no
   style="margin-right: 10px; background: #6046FF; border: 2px solid #6046FF; font-family: \"Space Grotesk\", sans-serif; font-weight: 700;"
 >}}
 </div> -->
-
+<!-- 
 {{< cards >}}
   {{< card link="https://discord.gg/PkMc2pVCDV" title="Join" >}}
   {{< card link="./faq" title="FAQ" >}}
   {{< card link="./rules" title="Rules" >}}
-{{< /cards >}}
+{{< /cards >}} -->
+
+- [Join the Discord](https://discord.gg/PkMc2pVCDV)
+- [FAQ](./faq)
+- [Rules](./rules)

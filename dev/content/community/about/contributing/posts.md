@@ -3,6 +3,10 @@ title: "How to contribute an article to the Dev Center"
 linkTitle: "Add articles"
 type: docs
 comments: false
+
+excludeSearch: true
+sidebar:
+  exclude: true
 ---
 
 {{% steps %}}
@@ -13,11 +17,11 @@ comments: false
 1. In another window, navigate into the repository, and run the following command:
 
     ```bash
-    hugo new content content/community/content/posts/article-title-slug.md --kind post
+    hugo new content content/posts/article-title-slug.md --kind post
     ```
 
     Where `article-title-slug` should be a lowercase, slugified (i.e. recognizable, but unique) version of your article's title.
-1. Navigate to the newly created file at `content/community/content/posts/article-title-slug.md` in your IDE.
+1. Navigate to the newly created file at `content/posts/article-title-slug.md` in your IDE.
 1. Navigate to [http://localhost:1313/community/content/posts/article-title-slug](http://localhost:1313/community/content/posts/article-title-slug) in your browser to view your edits in real time.
 
 ### Create an author profile
@@ -52,7 +56,7 @@ Articles are associated with authors, that are represented in your post by eithe
   Posts can be attributed to **up to three** authors, each of whom can be defined by any of the options described above.
   This configuration comes in the next step, but will look like this:
 
-```yaml {filename="content/community/content/posts/article-title-slug.md"}
+```yaml {filename="content/posts/article-title-slug.md"}
 ---
 author:
   - your-name # Author 1: a file at content/community/engage/people/your-name.md
@@ -68,7 +72,7 @@ author:
 Most of the changes you need to make at this point are to the [front matter](https://gohugo.io/content-management/front-matter/).
 The front matter contains variables that help tell Hugo how to display the page you're adding.
 
-```yaml {filename="content/community/content/posts/article-title-slug.md"}
+```yaml {filename="content/posts/article-title-slug.md"}
 ---
 #################################
 # Don't touch these settings.
@@ -87,7 +91,7 @@ Do **not** change values presented above between the `##########################
 
 1. Update the `title` attribute in the front matter of this file.
 
-    ```yaml {filename="content/community/content/posts/article-title-slug.md"}
+    ```yaml {filename="content/posts/article-title-slug.md"}
     ---
     title: "Include a short, descriptive title"
     ---
@@ -96,7 +100,7 @@ Do **not** change values presented above between the `##########################
 1. Update the `image` attibute in the front matter of this file, if you have one you'd like to use.
 Otherwise, feel free to leave the default value.
 
-    ```yaml {filename="content/community/content/posts/article-title-slug.md"}
+    ```yaml {filename="content/posts/article-title-slug.md"}
     ---
     image: /images/red-background.webp
     ---
@@ -108,7 +112,7 @@ Otherwise, feel free to leave the default value.
 1. Update the `author` attribute array in the front matter of this file.
     Be sure to first follow the instructions above to define author profiles if needed.
 
-    ```yaml {filename="content/community/content/posts/article-title-slug.md"}
+    ```yaml {filename="content/posts/article-title-slug.md"}
     ---
     author:
       - your-name # Author 1: a file at content/community/engage/people/your-name.md
@@ -120,7 +124,7 @@ Otherwise, feel free to leave the default value.
 1. Update the `categories` attribute array in the front matter of this file.
 Choose only one of the listed available categories, and comment out the rest.
 
-    ```yaml {filename="content/community/content/posts/article-title-slug.md"}
+    ```yaml {filename="content/posts/article-title-slug.md"}
     ---
     categories:
     #   - core-concepts
@@ -135,7 +139,7 @@ Choose only one of the listed available categories, and comment out the rest.
 1. (Optional) Update the `link` attribute in the front matter of this file. 
 **Only update** this value if you want to list an article that is hosted externally somewhere, such as on the Upsun blog or the Upsun Dev.to acccount.
 
-    ```yaml {filename="content/community/content/posts/article-title-slug.md"}
+    ```yaml {filename="content/posts/article-title-slug.md"}
     ---
     link: "https://upsun.com/blog/blackfire-infrastructure-processes/"
     ---
