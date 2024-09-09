@@ -1,33 +1,35 @@
 ---
 #################################
 # Don't touch these settings.
-date: '2024-08-19T10:53:08-04:00'
+date: '2024-08-22T15:14:07+02:00'
 sidebar:
     exclude: true
 type: post
 #################################
 # Update the title
-title: "Up(sun) and running with infrastructure processes on Blackfire"
+title: "Exploring Nix: an in-depth look at open source contributions - Podcast"
 
 # Replace if you have a good image. 
 # Images are not used (yet) on individual pages, only on lists of articles.
-image: /images/yellow_purple.webp
+image: /images/red-background.webp
 
-link: "https://upsun.com/blog/blackfire-infrastructure-processes/"
+# Define this value if listing an external blog post not written within this site.
+link: "https://upsun.com/blog/nix-open-source-contributions-podcast/"
 
 # Update author with one or more
 #   -> content/community/engage/people/AUTHOR.md
 #   -> https://github.com/AUTHOR
 #   -> AUTHORFirst AUTHORLast
 author:
-  - flovntp
+  - mupsi
 
 # Choose ONE of the options below:
 categories:
 #   - core-concepts
-#   - discussions
-  - experiments
-#   - how-tos
+#   - how-it-works
+   - discussions
+#   - experiments
+#  - how-tos
 #   - releases
 #   - tutorials
 

@@ -14,10 +14,12 @@ sidebar:
 ### Setting up
 
 1. In a terminal window, [run this site locally via Docker](/community/about/contributing/local).
-1. In another window, navigate into the repository, and run the following command:
+1. In another window, navigate into the repository, and run the following command from the `dev` folder:
 
     ```bash
-    hugo new content content/posts/article-title-slug.md --kind post
+    hugo new content content/community/content/posts/article-title-slug.md --kind post
+    #OR
+    sh create-content.sh post article-title-slug
     ```
 
     Where `article-title-slug` should be a lowercase, slugified (i.e. recognizable, but unique) version of your article's title.
@@ -34,10 +36,12 @@ Articles are associated with authors, that are represented in your post by eithe
 
 - **Option 1:** an author page at `content/community/engage/people/your-name.md`
 
-    If you are an employee of Blackfire.io, Platform.sh, or Upsun and an author of the post, run the command:
+    If you are an employee of Blackfire.io, Platform.sh, or Upsun and an author of the post, from the `dev` folder, run the command:
 
     ```bash
     hugo new content content/community/engage/people/your-name.md --kind author
+    #OR
+    sh create-content.sh author your-name
     ```
 
     1. Navigate to the newly created file at `content/community/engage/people/your-name.md` in your IDE.
