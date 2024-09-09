@@ -159,14 +159,15 @@ Thanks for contributing!
 ### Setting up
 
 1. In a terminal window, [run this site locally via Docker](/community/about/contributing/local).
+1. Go to the `dev` folder: ``cd dev``
 1. In another window, navigate into the repository, and run the following command:
 
     ```bash
-    hugo new content content/community/content/videos/playlist-name-slug.md --kind video 
+    hugo new content content/videos/playlist-name-slug.md --kind video 
     ```
 
-1. Navigate to the newly created file at `content/community/content/videos/playlist-name-slug.md` in your IDE.
-1. Navigate to [http://localhost:1313/community/content/videos/playlist-name-slug](http://localhost:1313/community/videos/playlist-name-slug) in your browser to view your edits in real time.
+1. Navigate to the newly created file at `content/videos/playlist-name-slug.md` in your IDE.
+1. Navigate to [http://localhost:1313/videos/playlist-name-slug](http://localhost:1313/videos/playlist-name-slug) in your browser to view your edits in real time.
 
 ### Create an author profile
 
@@ -200,7 +201,7 @@ Articles are associated with authors, that are represented in your post by eithe
   Posts can be attributed to **up to three** authors, each of whom can be defined by any of the options described above.
   This configuration comes in the next step, but will look like this:
 
-```yaml {filename="content/community/content/videos/YOUTUBE_VIDEO_ID.md"}
+```yaml {filename="content/videos/YOUTUBE_VIDEO_ID.md"}
 ---
 author:
   - your-name # Author 1: a file at content/community/engage/people/your-name.md
@@ -216,7 +217,7 @@ author:
 Most of the changes you need to make at this point are to the [front matter](https://gohugo.io/content-management/front-matter/).
 The front matter contains variables that help tell Hugo how to display the page you're adding.
 
-```yaml {filename="content/community/content/videos/article-title-slug.md"}
+```yaml {filename="content/videos/article-title-slug.md"}
 ---
 #################################
 # Don't touch these settings.
@@ -235,7 +236,7 @@ Do **not** change values presented above between the `##########################
 
 1. Update the `playlist` attribute in the front matter of this file.
 
-    ```yaml {filename="content/community/content/posts/article-title-slug.md"}
+    ```yaml {filename="content/posts/article-title-slug.md"}
     ---
     playlist: "PLqDtPqS0UBnnm5fUqliJzBuXB_L_qr_yh"
     ---
@@ -245,7 +246,7 @@ Do **not** change values presented above between the `##########################
 
 1. Update the `title` attribute in the front matter of this file.
 
-    ```yaml {filename="content/community/content/posts/article-title-slug.md"}
+    ```yaml {filename="content/posts/article-title-slug.md"}
     ---
     title: "Include a short, descriptive title"
     # subtitle: "you can also include a subtitle - definitely use for podcast episode titles"
@@ -260,7 +261,7 @@ Do **not** change values presented above between the `##########################
 
     Below is the default behavior if no `image` value is defined.
 
-    ```yaml {filename="content/community/content/videos/article-title-slug.md"}
+    ```yaml {filename="content/videos/article-title-slug.md"}
     ---
     image: https://img.youtube.com/vi/YOUTUBE_ID/hqdefault.jpg
     ---
@@ -269,7 +270,7 @@ Do **not** change values presented above between the `##########################
 1. Update the `author` attribute array in the front matter of this file.
     Be sure to first follow the instructions above to define author profiles if needed.
 
-    ```yaml {filename="content/community/content/videos/article-title-slug.md"}
+    ```yaml {filename="content/videos/article-title-slug.md"}
     ---
     author:
       - your-name # Author 1: a file at content/community/engage/people/your-name.md
@@ -281,7 +282,7 @@ Do **not** change values presented above between the `##########################
 1. Update the `categories` attribute array in the front matter of this file.
 Choose only one of the listed available categories, and comment out the rest.
 
-    ```yaml {filename="content/community/content/videos/article-title-slug.md"}
+    ```yaml {filename="content/videos/article-title-slug.md"}
     ---
     categories:
       - demos
