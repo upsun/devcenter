@@ -2,6 +2,10 @@
 title: "Add videos"
 type: docs
 comments: false
+
+excludeSearch: true
+sidebar:
+  exclude: true
 ---
 
 {{% steps %}}
@@ -13,12 +17,12 @@ comments: false
 1. In another window, navigate into the repository, and run the following command:
 
     ```bash
-    hugo new content content/community/content/videos/YOUTUBE_VIDEO_ID.md --kind video 
+    hugo new content content/videos/YOUTUBE_VIDEO_ID.md --kind video 
     ```
 
     `YOUTUBE_ID` is the id as it appears on a YouTube video in a link (i.e. `https://www.youtube.com/watch?v=YOUTUBE_ID`). 
     This is necessary for the video to appear correctly on the site.
-1. Navigate to the newly created file at `content/community/content/videos/YOUTUBE_VIDEO_ID.md` in your IDE.
+1. Navigate to the newly created file at `content/videos/YOUTUBE_VIDEO_ID.md` in your IDE.
 1. Navigate to [http://localhost:1313/community/content/videos/YOUTUBE_VIDEO_ID](http://localhost:1313/community/videos/YOUTUBE_VIDEO_ID) in your browser to view your edits in real time.
 
 ### Create an author profile
@@ -53,7 +57,7 @@ Articles are associated with authors, that are represented in your post by eithe
   Posts can be attributed to **up to three** authors, each of whom can be defined by any of the options described above.
   This configuration comes in the next step, but will look like this:
 
-```yaml {filename="content/community/content/videos/YOUTUBE_VIDEO_ID.md"}
+```yaml {filename="content/videos/YOUTUBE_VIDEO_ID.md"}
 ---
 author:
   - your-name # Author 1: a file at content/community/engage/people/your-name.md
@@ -69,7 +73,7 @@ author:
 Most of the changes you need to make at this point are to the [front matter](https://gohugo.io/content-management/front-matter/).
 The front matter contains variables that help tell Hugo how to display the page you're adding.
 
-```yaml {filename="content/community/content/videos/YOUTUBE_VIDEO_ID.md"}
+```yaml {filename="content/videos/YOUTUBE_VIDEO_ID.md"}
 ---
 #################################
 # Don't touch these settings.
@@ -98,7 +102,7 @@ Do **not** change values presented above between the `##########################
 
     Below is the default behavior if no `image` value is defined.
 
-    ```yaml {filename="content/community/content/videos/YOUTUBE_VIDEO_ID.md"}
+    ```yaml {filename="content/videos/YOUTUBE_VIDEO_ID.md"}
     ---
     image: https://img.youtube.com/vi/YOUTUBE_ID/hqdefault.jpg
     ---
@@ -109,7 +113,7 @@ Do **not** change values presented above between the `##########################
 1. Update the `author` attribute array in the front matter of this file.
     Be sure to first follow the instructions above to define author profiles if needed.
 
-    ```yaml {filename="content/community/content/videos/YOUTUBE_VIDEO_ID.md"}
+    ```yaml {filename="content/videos/YOUTUBE_VIDEO_ID.md"}
     ---
     author:
       - your-name # Author 1: a file at content/community/engage/people/your-name.md
@@ -121,7 +125,7 @@ Do **not** change values presented above between the `##########################
 1. Update the `categories` attribute array in the front matter of this file.
 Choose only one of the listed available categories, and comment out the rest.
 
-    ```yaml {filename="content/community/content/videos/YOUTUBE_VIDEO_ID.md"}
+    ```yaml {filename="content/videos/YOUTUBE_VIDEO_ID.md"}
     ---
     categories:
       - demos

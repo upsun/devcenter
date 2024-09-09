@@ -1,8 +1,10 @@
 ---
-title: "Videos"
+# title: "Videos"
+linkTitle: Videos
+title: All Videos
 weight: 4
 comments: false
-type: post
+type: posts
 excludeSearch: true
 sidebar:
     excludechildren: true
@@ -19,4 +21,6 @@ sidebar:
 
 ## All articles -->
 
-{{< custom/contributions "all" "videos" >}}
+<!-- {{< custom/contributions "all" "videos" >}} -->
+
+{{< custom/content-list "videos" "all" >}}

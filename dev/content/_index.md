@@ -222,9 +222,10 @@ What can you build?
 
 <----->
 
+<div class="landing-code">
+
 ```yaml {filename=".upsun/config.yaml"}
 applications:
-
     frontend: 
         source:
             root: client
@@ -232,7 +233,6 @@ applications:
             - nodejs@22
             - nodePackages.npm
             - yq
-
     backend: 
         source:
             root: api
@@ -244,7 +244,6 @@ applications:
                     - apcu
                     - sodium
             - facedetect   
-
     docs: 
         source:
             root: docs     
@@ -252,8 +251,116 @@ applications:
             - hugo
             - golang@1.22
 ```
+</div>
 
 {{< /custom/hero-container >}}
+
+<!-- <div class="hx-mt-6" style="margin-top: 4rem; margin-left: auto; margin-right: auto;">
+
+{{< hextra/hero-headline >}}
+  Welcome to the <span style="color: #6046FF;"> Upsun Developer Center</span>
+{{< /hextra/hero-headline >}}
+
+{{< custom/search2 >}}
+
+</div> -->
+
+<!--  -->
+
+<!-- <div class="hx-mt-6" style="margin-top: 4rem; margin-left: auto; margin-right: auto;">
+
+{{< hextra/hero-headline >}}
+  Composable images, <span style="color: #6046FF;"> powered by Nix.</span>
+{{< /hextra/hero-headline >}}
+
+{{< tabs items="Installation script,Homebrew,Scoop" >}}
+
+{{< tab >}}
+```
+curl -fsSL https://raw.githubusercontent.com/platformsh/cli/main/installer.sh | VENDOR=upsun bash
+```
+{{< /tab >}}
+{{< tab >}}
+```
+brew install platformsh/tap/upsun-cli                                                            
+```
+{{< /tab >}}
+{{< tab >}}
+```
+scoop bucket add platformsh https://github.com/platformsh/homebrew-tap.git                       
+scoop install upsun
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+{{< hextra/hero-button text="Join the community" link="https://discord.gg/PkMc2pVCDV" 
+  class="upsun-button button-primary" style="margin-right: 10px;"
+>}}{{< hextra/hero-button text="Get support" link="https://docs.upsun.com/learn/overview/get-support.html" 
+  class="upsun-button button-secondary max-md:hx-hidden" style="margin-right: 0px;"
+>}}
+
+</div> -->
+
+<!-- <div class="hx-mt-6" style="margin-top: 4rem;"></div>
+
+{{< custom/hero-container 
+  class="hx-pt-6 hx-pb-6"
+>}}
+<div class="hx-mt-6 hx-mb-6">
+{{< hextra/hero-headline >}}
+  Composable images,
+  <br class="sm:hx-block hx-hidden" /><span style="color: #6046FF;"> powered by Nix.</span>
+{{< /hextra/hero-headline >}}
+</div>
+
+{{< hextra/hero-subtitle >}}
+<p class="not-prose hx-text-xl hx-text-gray-600 dark:hx-text-gray-400 sm:hx-text-xl">
+The Upsun composable image &mdash; built on Nix &mdash; provides flexibility when defining your app. You can install several runtimes into your application containers, in a “one image to rule them all” approach:
+</p><br class="sm:hx-block hx-hidden" />
+<ul class="not-prose hx-text-xl hx-text-gray-600 dark:hx-text-gray-400 sm:hx-text-xl" style="margin-left: 20px; list-style: disc;">
+  <li>Choose from over 80,000 packages from the Nixpkgs collection.</li>
+  <li>Build in isolation, even different versions of the same package.</li>
+  <li>No undeclared dependencies in your source code. What works on your local machine is guaranteed to work on any other.</li>
+</ul>
+<br class="sm:hx-block hx-hidden" />
+<p class="not-prose hx-text-xl hx-text-gray-600 dark:hx-text-gray-400 sm:hx-text-xl">
+What can you build?
+</p><br class="sm:hx-block hx-hidden" /><br class="sm:hx-block hx-hidden" />
+{{< /hextra/hero-subtitle >}} -->
+
+<!-- {{< hextra/hero-button text="See how it works" link="https://docs.upsun.com/create-apps/app-reference/composable-image.html" 
+  class="upsun-button button-primary" style="margin-right: 10px;"
+>}}{{< hextra/hero-button text="Why we chose Nix" link="https://www.youtube.com/watch?v=LhVjKes2Wsc" 
+  class="upsun-button button-secondary max-md:hx-hidden" style="margin-right: 0px;"
+>}} -->
+
+<!-- <-----> -->
+
+
+<!-- {{< tabs items="Installation script,Homebrew,Scoop" >}}
+
+{{< tab >}}
+```
+curl -fsSL https://raw.githubusercontent.com/platformsh/cli/main/installer.sh | \
+  VENDOR=upsun bash
+```
+{{< /tab >}}
+{{< tab >}}
+```
+brew install platformsh/tap/upsun-cli
+```
+{{< /tab >}}
+{{< tab >}}
+```
+scoop bucket add platformsh https://github.com/platformsh/homebrew-tap.git
+scoop install upsun
+```
+{{< /tab >}}
+{{< /tabs >}} -->
+
+<!-- {{< /custom/hero-container >}} -->
+
+<!--  -->
 
 <div class="hx-mt-6"></div>
 
@@ -269,7 +376,32 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie qua
 {{< /hextra/hero-subtitle >}}
 </div>
 
-{{< custom/community-cards >}}
+{{< hextra/feature-grid >}}
+    {{< hextra/feature-card
+    title="Upsun"
+    icon="upsun"
+    class="upsun-feature-card community-card"
+    style="min-height: 400px; background-color: #D5F800;"
+    subtitle="Upsun is committed to being champions of open source by sponsoring incredible projects around the world that can benefit us all as a global development community."
+    link="https://platform.sh/community/open-source/"
+  >}}
+  {{< hextra/feature-card
+    title="Platform.sh"
+    icon="platformsh"
+    class="platformsh-feature-card"
+    style="min-height: 400px; background-color: #0E1113; color: white;"
+    subtitle="Build a long-term, trusted partnership that empowers you to sell more of your agency's time and expertise."
+    link="https://platform.sh/solutions/digital-agencies/"
+  >}}
+  {{< hextra/feature-card
+    title="Blackfire.io"
+    icon="blackfire-black"
+    class="blackfire-feature-card"
+    style="min-height: 400px; background-color: #6046FF; color: white;"
+    subtitle="The tailored Upsun Startup Promotion is designed for technology startups eager to accelerate innovation while maintaining agility. "
+    link="https://upsun.com/startup-promotion/"
+  >}}
+{{< /hextra/feature-grid >}}
 
 <div class="hx-mt-6"></div>
 
@@ -326,10 +458,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie qua
 
 <div class="hx-mt-6" style="margin-top: 4rem;"></div>
 
-{{< hextra/hero-container 
-  image="/images/psh-console-main-view.png"
-  imageTitle="People"
-  imageWidth="100%"
+{{< custom/hero-container 
   class="hx-pt-6 hx-pb-6"
 >}}
 <div class="hx-mt-6 hx-mb-6">
@@ -340,10 +469,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie qua
 </div>
 
 <div class="hx-mb-12">
-{{< hextra/hero-subtitle >}}
-  Upsun is as much about optimizing and experimenting with your solutions as it is about deploying them in the first place. Need help? We're here to investigate. Found something interesting at the edge of the product? We want to know about it -- even the wildest experiments you've come up with.<br class="sm:hx-block hx-hidden" />
-  <br class="sm:hx-block hx-hidden" />Share your knowledge and join the community today!
-{{< /hextra/hero-subtitle >}}
+
+<p class="not-prose hx-text-xl hx-text-gray-600 dark:hx-text-gray-400 sm:hx-text-xl">
+  Upsun is as much about optimizing and experimenting with your solutions as it is about deploying them in the first place. Need help? We’re here to investigate. Found something interesting at the edge of the product? We want to know about it – even the wildest experiments you’ve come up with.<br class="sm:hx-block hx-hidden">
+<br class="sm:hx-block hx-hidden">Share your knowledge and join the community today!
+</p>
+
 </div>
 
 {{< hextra/hero-button text="Join the community" link="https://discord.gg/PkMc2pVCDV" 
@@ -351,4 +482,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie qua
 >}}{{< hextra/hero-button text="Get support" link="https://docs.upsun.com/learn/overview/get-support.html" 
   class="upsun-button button-secondary max-md:hx-hidden" style="margin-right: 0px;"
 >}}
-{{< /hextra/hero-container >}}
+
+<----->
+
+<img class="max-md:hx-hidden" src="/images/dev-center-upsun-sun.svg">
+
+{{< /custom/hero-container >}}

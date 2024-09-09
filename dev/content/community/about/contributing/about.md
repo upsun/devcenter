@@ -2,6 +2,9 @@
 title: "About this site"
 type: docs
 comments: false
+excludeSearch: true
+sidebar:
+  exclude: true
 ---
 
 The Upsun Developer Center is written using the Static Site Generator [Hugo](https://gohugo.io/). 

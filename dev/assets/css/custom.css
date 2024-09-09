@@ -14,9 +14,69 @@
     line-height: 36px;
 } */
 
-/* .contrib-item {
-    border: 1px solid #E1E3E4;
+/* .highlight {
+    background-color: white;
 } */
+
+/* .chroma .hl {
+    background-color: #DFDAFF;
+} */
+
+@media (min-width:1025px) { 
+
+    .footer-social {
+        justify-content: flex-end;
+    }    
+
+}
+
+.hextra-code-block > .filename {
+    font-family: "Space Grotesk", sans-serif; 
+    font-weight: 600;
+    background-color: #DFDAFF; 
+}
+
+.landing-code > .hextra-code-block > .filename {
+    font-family: "Space Grotesk", sans-serif; 
+    font-weight: 600;
+    background-color: #DFDAFF;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    padding: 1rem 1rem 1rem 2rem;
+
+}
+
+.landing-code > .hextra-code-block pre:not(.lntable pre) {
+    border-radius: 32px;
+}
+
+.landing-code > .hextra-code-block > div > div > pre > code {
+    font-family: "Space Grotesk", sans-serif; 
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    /* padding-top: 2rem; */
+    /* margin-left: 2rem; */
+}
+
+.landing-code > .hextra-code-block > .hextra-code-copy-btn-container {
+    top: 3.5rem !important;
+}
+
+/* .hextra-code-block > div > div > pre {
+    background-color: white !important;
+} */
+
+
+.landing-code > .hextra-code-block > div > div > pre {
+    background-color: white;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    padding-top: 5rem !important;
+    padding-bottom: 3rem !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+
+}
 
 .footer-button:hover {
     background: #0E1113 !important;
@@ -32,6 +92,30 @@
 .nav-item:hover > svg.search,
 .nav-item:hover > svg.search > path {
     fill: #6046FF;
+}
+
+.upsun-feature-card:hover {
+    border: 2px solid #4D38CC !important;
+}
+
+.upsun-feature-card {
+    border: 2px solid #D5F800 !important;
+}
+
+.platformsh-feature-card {
+    border: 2px solid #0E1113 !important;
+}
+
+.platformsh-feature-card:hover {
+    border: 2px solid #D5F800 !important;
+}
+
+.blackfire-feature-card {
+    border: 2px solid  #6046FF !important;
+}
+
+.blackfire-feature-card:hover {
+    border: 2px solid #D5F800 !important;
 }
 
 body {
@@ -112,6 +196,7 @@ figcaption > h4 {
         display: none;
     }
     .contrib-item {  
+        margin-bottom: 1rem;
         grid-template-columns: 1fr;
         grid-template-areas:
           "contrib-desc";
@@ -220,8 +305,12 @@ figcaption > h4 {
 }
 
 .topnav-container {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    /* padding-top: 1rem;
+    padding-bottom: 1rem; */
+
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+
     font-family: "Space Grotesk", sans-serif;
     font-size: 0.85rem;
     /* background-color: black; */
@@ -437,6 +526,11 @@ footer {
     margin-top: 1.5rem;
 }
 
+.search-results {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 .single-search-result > a {
     color: black;
     text-decoration: none;
@@ -539,6 +633,11 @@ span.hx-cursor-default {
 .hextra-feature-card:hover,
 .hextra-card:hover {
     border: 2px solid #6046FF;
+    /* border: 2x solid transparent;
+    border-radius: 32px;
+    border-image: linear-gradient(45deg, #ED49F0 , #6046FF);
+    border-image-slice: 1; */
+  
 }
 
 .hextra-card {
@@ -656,6 +755,7 @@ a.hextra-card > span, a.hextra-card > div {
 
     .footer-item {
         padding-left: 3rem;
+        padding-bottom: 0.75rem;
     }
 }
 

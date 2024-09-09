@@ -9,9 +9,9 @@
     {{ $categories = $categories | append $i }}
 {{ end }}
 
-{{ $posts := .Site.GetPage ( printf "/community/content/%s/" $contentType ) }}
+{{ $posts := .Site.GetPage ( printf "/%s/" $contentType ) }}
 
-{{ $written := $posts.Pages }}
+{{ $written := $posts.RegularPages }}
 {{ if ne ( index $author 0 ) "all" }}
     {{ $written = where $posts.Pages "Params.author" "intersect" $author }}
 {{ end }}
@@ -84,6 +84,7 @@
             
             <ul>
                 {{ range $written }}
+                {{ if ne .Params.sidebar.separator true }}
                     {{ $t := time.AsTime .Params.date }}
                     {{ if ne ( $t.Format "2006" ) $currentYear }}
                         {{ $currentYear = $t.Format "2006" }}
@@ -134,6 +135,7 @@
                             {{ end }}
                         </div>
                     </div>
+                {{ end }}
                 {{ end }}
             </ul>
 

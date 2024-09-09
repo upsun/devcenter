@@ -7,7 +7,7 @@ sidebar:
 type: media
 #################################
 # Update the title
-title: "Include a short, descriptive title"
+title: "Product, engineering, design: A guide to effective collaboration"
 
 # (optional) Override the image produced for the video page.
 # When undefined, the following will be used.
