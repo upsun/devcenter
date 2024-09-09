@@ -1,13 +1,14 @@
 ---
 #################################
 # Don't touch these settings.
-date: '2024-04-24T16:29:31+02:00'
+date: '2024-04-24T16:14:30-04:00'
 sidebar:
     exclude: true
 type: media
 #################################
 # Update the title
-title: "chmod 101: WTFM : Write that funky manual with Ryan Weaver"
+title: "chmod 101"
+subtitle: "(WTFM) Write that funky manual"
 
 # (optional) Override the image produced for the video page.
 # When undefined, the following will be used.
@@ -19,10 +20,11 @@ title: "chmod 101: WTFM : Write that funky manual with Ryan Weaver"
 #   -> AUTHORFirst AUTHORLast
 author:
   - mupsi
+  - "Ryan Weaver"
   
 # Choose ONE of the options below:
 categories:
-#  - demos
+#   - demos
 #   - livestreams
   - podcasts
 #   - talks

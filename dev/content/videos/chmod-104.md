@@ -1,31 +1,34 @@
 ---
 #################################
 # Don't touch these settings.
-date: '{{ .Date }}'
+date: '2024-07-12T16:20:57-04:00'
 sidebar:
     exclude: true
 type: media
 #################################
 # Update the title
-title: "Include a short, descriptive title"
-# subtitle: "You can add a subtitle if you want to as well"
+title: "chmod 104"
+subtitle: "The floor is Lava(Moat)"
 
 # (optional) Override the image produced for the video page.
 # When undefined, the following will be used.
-# image: https://img.youtube.com/vi/YOUTUBE_ID/hqdefault.jpg
+image: https://medias.podcastics.com/podcastics/episodes/7278/artwork/chmod-104-the-floor-is-lavamoat-with-zbyszek-tenerowicz-change-mode-podcast.png.7c3c576386aced862e03636d1fbf0a55.png
+
+link: "https://www.podcastics.com/podcast/episode/chmod-101-wtfm-write-that-funky-manual-with-ryan-weaver-290587/"
 
 # Update author with one or more
 #   -> content/community/engage/people/AUTHOR.md
 #   -> https://github.com/AUTHOR
 #   -> AUTHORFirst AUTHORLast
 author:
-  - upsun
+  - mupsi
+  - "Zbyszek Tenerowicz"
   
 # Choose ONE of the options below:
 categories:
-  - demos
+#   - demos
 #   - livestreams
-#   - podcasts
+  - podcasts
 #   - talks
 #   - webinars
 

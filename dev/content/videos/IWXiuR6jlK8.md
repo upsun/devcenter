@@ -1,13 +1,14 @@
 ---
 #################################
 # Don't touch these settings.
-date: '2024-07-17T14:11:04+02:00'
+date: '2024-07-17T15:29:56-04:00'
 sidebar:
     exclude: true
 type: media
 #################################
 # Update the title
-title: "chmod 105: Just in the Nix of time with Pol Dellaiera"
+title: "chmod 105"
+subtitle: "Just in the Nix of time"
 
 # (optional) Override the image produced for the video page.
 # When undefined, the following will be used.
@@ -19,12 +20,13 @@ title: "chmod 105: Just in the Nix of time with Pol Dellaiera"
 #   -> AUTHORFirst AUTHORLast
 author:
   - mupsi
+  - "Pol Dellaiera"
   
 # Choose ONE of the options below:
 categories:
-#  - chmodcast
+#   - demos
 #   - livestreams
-   - podcasts
+  - podcasts
 #   - talks
 #   - webinars
 
