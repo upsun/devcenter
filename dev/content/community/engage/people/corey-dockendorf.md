@@ -10,8 +10,7 @@ title: "Corey Dockendorf"
 team: "Customer Solutions"
 company: "Upsun"
 role: "Senior Solutions Architect"
-image: https://media.licdn.com/dms/image/D5603AQGusIAz-bNchA/profile-displayphoto-shrink_800_800/0/1691767179352?e=1727913600&v=beta&t=XNLoNY4ecAo9bXzJfDotUgP1cG4Zm28dFAl2XzR0NYA
-
+image: https://media.licdn.com/dms/image/v2/D5603AQFbaglw6GHWwg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725730499420?e=1731542400&v=beta&t=EDczB7YKhzGnz7OqqJlnN-J24TNXHbZ3bomShRIDYDY
 # Update these only if you'd like them to be public.
 # links:
 #     github: something

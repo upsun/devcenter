@@ -114,6 +114,14 @@ Container-based deployments built on Git. Managed services and custom applicatio
 
 {{< custom/whats-new >}}
 
+<div style="margin: 5rem auto 1rem auto;">
+
+{{< hextra/hero-button text="View all articles" link="/posts/" 
+  class="upsun-button button-primary" style="margin-right: 10px;"
+>}}
+
+</div>
+
 <div class="hx-mt-6"></div>
 
 <div class="hx-mt-6"></div>
@@ -452,7 +460,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie qua
     title="Podcast"
     icon="play"
     subtitle="From developers to enthusiasts, Change Mode is a podcast made by the community, for the community. #chmod."
-    link="https://www.podcastics.com/podcast/the-changemode-podcast/"
+    link="/videos/podcasts/"
   >}}
 {{< /hextra/feature-grid >}}
 

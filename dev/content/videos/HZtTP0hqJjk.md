@@ -1,13 +1,14 @@
 ---
 #################################
 # Don't touch these settings.
-date: '2024-09-03T14:26:28+02:00'
+date: '2024-07-11T15:29:56-04:00'
 sidebar:
     exclude: true
 type: media
 #################################
 # Update the title
-title: "chmod 103: Community is built through happy accidents with Aisha Bello and Leona So"
+title: "chmod 103"
+subtitle: "Community is built through happy accidents"
 
 # (optional) Override the image produced for the video page.
 # When undefined, the following will be used.
@@ -18,13 +19,15 @@ title: "chmod 103: Community is built through happy accidents with Aisha Bello a
 #   -> https://github.com/AUTHOR
 #   -> AUTHORFirst AUTHORLast
 author:
-  - upsun
+  - mupsi
+  - "Aisha Bello"
+  - "Leona So"
   
 # Choose ONE of the options below:
 categories:
-#  - chmodcast
+#   - demos
 #   - livestreams
-   - podcasts
+  - podcasts
 #   - talks
 #   - webinars
 

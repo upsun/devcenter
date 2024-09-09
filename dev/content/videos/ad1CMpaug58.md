@@ -1,13 +1,14 @@
 ---
 #################################
 # Don't touch these settings.
-date: '2024-06-11T09:26:50+02:00'
+date: '2024-07-10T16:01:20-04:00'
 sidebar:
     exclude: true
 type: media
 #################################
 # Update the title
-title: "chmod 102: COUNT your blessings (and check your indexes) with Lætitia Avrot"
+title: "chmod 102"
+subtitle: "COUNT your blessings (and check your indexes)"
 
 # (optional) Override the image produced for the video page.
 # When undefined, the following will be used.
@@ -19,12 +20,13 @@ title: "chmod 102: COUNT your blessings (and check your indexes) with Lætitia A
 #   -> AUTHORFirst AUTHORLast
 author:
   - mupsi
+  - "Lætitia Avrot"
   
 # Choose ONE of the options below:
 categories:
-#  - chmodcast
+#   - demos
 #   - livestreams
-   - podcasts
+  - podcasts
 #   - talks
 #   - webinars
 
