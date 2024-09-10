@@ -13,10 +13,11 @@ role: "DevRel Engineer"
 
 image: "/images/people/flovntp.webp"
 # Update these only if you'd like them to be public.
-# links:
-#     github: something
-#     twitter: something
-#     linkedin: something
+
+links:
+   github: https://github.com/flovntp
+   twitter: https://twitter.com/flovntp
+   linkedin: https://www.linkedin.com/in/florenthuck/
 #     website: https://www.something.com
 ---
 Florent works at Platform.sh, the hosting company, as a Developer Relation Engineer, helping people better understand how easy it is to use Platform.sh and Upsun on all your projects.
