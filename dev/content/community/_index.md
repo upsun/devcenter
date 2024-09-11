@@ -8,9 +8,7 @@ excludeSearch: true
 # type: docs
 ---
 
-Welcome to the Upsun Community!
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae nunc non tellus euismod pretium. Nam justo dui, venenatis in fermentum sit amet, vulputate ut enim. Aenean finibus felis id egestas aliquet.
+Welcome to the Upsun Community, a hub where developers can unlock the full potential of Upsun, Platform.sh, and Blackfire.io. Here, you'll find a treasure trove of community-driven resources, from insightful tutorials to battle-tested best practices, all designed to elevate your development experience and empower you to build, deploy, and optimize applications with unparalleled efficiency.
 
 <!-- {{% custom/contributors %}} -->
 
@@ -28,7 +26,7 @@ Featured articles
 
 {{< custom/content-list "posts" "featured" "false" >}}
 
-<div class="hx-mt-6 hx-text-center" style="margin-top: 4rem; font-size: 1.5rem; font-weight: 700;">
+<!-- <div class="hx-mt-6 hx-text-center" style="margin-top: 4rem; font-size: 1.5rem; font-weight: 700;">
 Meet the team
 </div>
 
@@ -38,7 +36,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae nunc no
 {{< hextra/hero-button text="Meet the team" link="/community/engage/people/" 
   class="upsun-button button-primary" style="margin-right: 10px;"
 >}}
-</div>
+</div> -->
 
 <!-- ## What's new -->
 
