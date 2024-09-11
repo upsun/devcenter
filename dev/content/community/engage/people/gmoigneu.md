@@ -19,7 +19,15 @@ role: "VP, Product Advocacy"
 #     website: https://www.something.com
 ---
 
-<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae nunc non tellus euismod pretium. Nam justo dui, venenatis in fermentum sit amet, vulputate ut enim. Aenean finibus felis id egestas aliquet. Proin urna ex, cursus dignissim aliquam quis, consectetur vel lorem. Sed non eleifend eros. Aliquam id molestie urna. Sed pretium finibus lorem, vitae egestas velit semper sit amet. Vestibulum imperdiet nunc ac nulla gravida, posuere pulvinar urna faucibus.  -->
+Guillaume Moigneu's journey in web development began in 1998, at the dawn of the modern internet era. As e-commerce was just starting to take shape, Guillaume dove headfirst into creating web applications and online stores. This early start gave him a unique perspective on the evolution of web technologies and best practices.
+
+Over the years, Guillaume developed a passionate obsession with two key aspects of web development: infrastructure efficiency and application performance. He recognized early on that these elements were crucial not just for user experience, but also for the scalability and cost-effectiveness of web projects.
+
+Guillaume's career has been marked by a constant drive to optimize and improve. He's likely seen and worked with a wide array of technologies, from the early days of static HTML and CGI scripts to modern frameworks and cloud-native architectures. This breadth of experience has undoubtedly informed his approach to problem-solving and innovation in the field.
+
+His focus on infrastructure efficiency suggests a deep understanding of server architectures, deployment strategies, and the intricacies of cloud computing. Meanwhile, his dedication to application performance hints at expertise in areas like code optimization, caching strategies, and efficient database design.
+
+Guillaume's long-standing career in web development, starting from the industry's early days, combined with his specific focuses, paints a picture of a developer who has not just kept pace with the rapid changes in web technology, but has been at the forefront of driving those changes. His experience and expertise likely make him a valuable asset in any development team or project aiming for high-performance, scalable web applications.
 
 <!-- excludeSearch -->
 {{< custom/contributions "gmoigneu" >}}
