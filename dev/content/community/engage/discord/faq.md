@@ -5,12 +5,60 @@ weight: 5
 comments: false
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae fermentum elit. Vivamus sagittis magna dictum scelerisque efficitur. Donec leo mauris, dignissim eget erat ac, faucibus cursus elit. Donec ac imperdiet elit. Phasellus faucibus dapibus lacus, ut fermentum urna ultricies non. Cras augue dui, molestie vitae fermentum at, ullamcorper non felis. Morbi tempor dignissim ipsum, in aliquet mauris vulputate et. Pellentesque tempus a urna ut venenatis.
+{{% details title="Why did the message I post disappear?" closed="true" %}}
 
-Fusce nisi ligula, elementum ut nunc non, vulputate tristique ante. Fusce bibendum nunc vestibulum purus accumsan ultrices. Donec eleifend eget nibh a pretium. Suspendisse condimentum nunc et sapien aliquet placerat. Pellentesque posuere sit amet ligula id varius. Aliquam at risus pulvinar, aliquam est eu, fringilla tortor. Morbi accumsan condimentum purus, id pellentesque arcu ultrices vitae. Sed tortor arcu, viverra vel commodo in, rhoncus at mi. Quisque mi nunc, semper laoreet ullamcorper in, tincidunt vel odio. Aliquam erat volutpat. Proin sodales ornare tortor. Vestibulum gravida posuere velit non sodales. Fusce at ante in turpis volutpat fermentum eget quis ligula. Etiam quis commodo velit, eu placerat nulla.
+- Bots and moderators often remove messages that are against our [rules](../rules).
+- Do not post it again, the bot may exclude you from the server if you do.
 
-Donec ullamcorper dui ipsum, vel condimentum nibh ornare nec. Aenean a libero massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce eget sapien ex. Mauris nec elit nec ex accumsan eleifend. Nam eleifend fermentum ipsum nec pulvinar. Vestibulum at aliquet diam, a pretium elit. Aliquam porttitor neque vel elementum mattis. Pellentesque eget augue sapien. In feugiat libero in elit rutrum semper. Curabitur ac porttitor dolor, at condimentum magna. Donec mollis neque ex, nec viverra elit ornare eu. Vivamus congue, orci at fermentum dapibus, orci tellus interdum libero, sit amet ultricies tellus tellus quis eros. Proin pretium tellus vel quam pharetra, id bibendum nisi cursus.
+{{% /details %}}
 
-Quisque arcu neque, blandit a placerat at, vehicula sit amet lacus. Donec sodales lacus sit amet mi molestie, ut aliquam metus rutrum. Sed ac accumsan dui. Suspendisse congue pharetra tempor. Etiam fermentum vestibulum tortor, nec posuere massa tincidunt ac. In mollis eros est, at rutrum ipsum cursus ac. Duis semper maximus lacinia.
+{{% details title="How do I report bad behaviour?" closed="true" %}}
 
-Fusce rhoncus cursus massa eget cursus. Nullam fringilla hendrerit feugiat. Ut venenatis elit eget sem efficitur ultricies. Maecenas eget ex lobortis ante gravida lacinia. In diam arcu, lobortis id tincidunt ac, bibendum at ipsum. Mauris id magna et urna finibus porttitor vel ac ante. Pellentesque quis ultrices massa. Praesent nec mi sed diam egestas varius. Aenean elit mauris, lobortis et dictum quis, volutpat et dui. In sit amet sapien id ligula ultrices commodo. Praesent dui ipsum, maximus ac vulputate non, sagittis quis lectus. Sed finibus sagittis porta. Nunc dignissim, eros quis sollicitudin varius, lectus augue dignissim quam, vel hendrerit enim elit id nibh. Aliquam at elit arcu. Fusce vitae malesuada arcu.
+- If the behaviour you would like to report occurs on this Discord, mention <code>@Mods</code> or <code>@Admins</code> and where it happened.
+- If you want to report an abuse to Upsun, Direct Message one of our <code>@Mods</code> or <code>@Admins</code> to report.
+
+{{% /details %}}
+
+{{% details title="How can I get help with Upsun?" closed="true" %}}
+
+- We do not provide official Support on Discord.
+- If you have an incident, please [create a support ticket](https://docs.upsun.com/learn/overview/get-support.html#create-a-support-ticket).
+- First thing to do is to check the [Upsun documentation](https://docs.upsun.com/).
+- Then, you can ask the community on Discord or in the forum channels.
+- Do not post personal information on Discord nor in private messages.
+- If you still need help, [open a ticket/contact the support team](https://docs.upsun.com/learn/overview/get-support.html#create-a-support-ticket).
+- The only exception is when the product or service is in BETA phase, then we will be there in best-effort to help you in your journey.
+
+{{< callout type="error" >}}
+  Do not ping or direct message staff members/moderators to get help/support; you will be banned from the Discord. 
+{{< /callout >}}
+
+{{% /details %}}
+
+{{% details title="How to get the `@Partner` role?" closed="true" %}}
+
+- This role is dedicated to companies that are members of the Platform.sh Partner Program (or partnering with Upsun).
+- If your company is member of the [Platform.sh Partner Program](https://platform.sh/solutions/digital-agencies/) we can provide you the partner role here on Discord.
+- Append <code> - \<Company name></code> to your Discord display name on this server (replace <code>\<Company name></code> with your own company name).
+- Reach our Partner Program team from your professional email address.
+- Provide your company name (member of the partner program) and your discord username (it will be shown inside the popup when clicking your name on the bottom left of the Discord client) and ask them for the Discord partner role.
+
+{{< callout type="info" >}}
+  You must keep your company name in your nickname on this server or your role will be revoked.
+{{< /callout >}}
+
+{{% /details %}}
+
+{{% details title="How to get the `@Invited_mods` role?" closed="true" %}}
+
+- This role is for chosen community members helping us moderate the Discord community.
+- We grant this role to certain members of the community who distinguish themselves over the long term by participating and helping other members, at our sole discretion. Please do not request this role, as we do not accept applications.
+
+{{% /details %}}
+
+{{% details title="How to get the `@Team` role?" closed="true" %}}
+
+- This role is dedicated to Upsun and Platform.sh employees.
+- If you are an Upsun/Platform.sh employee, we can provide you the staff role on Discord: from the internal communication system, please contact the Discord moderators internally to request this role.
+
+{{% /details %}}
