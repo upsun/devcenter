@@ -70,37 +70,37 @@ Container-based deployments built on Git. Managed services and custom applicatio
   {{< hextra/feature-card
     title="Runtime languages"
     icon="tree"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie quam. Curabitur eleifend ut tortor sit amet mollis."
+    subtitle="We support 10 popular runtimes out of the box and much more with a bit of tinkering. Whether you do 100% JS or use PHP, Java, Python, Ruby or Rust, we have you covered."
     link="https://docs.upsun.com/languages.html"
   >}}
   {{< hextra/feature-card
     title="Managed services"
     icon="backup"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie quam. Curabitur eleifend ut tortor sit amet mollis."
+    subtitle="Augment your application capabilities with our included services: Databases, caches, queues, indexes. Managed and ready to deploy."
     link="https://docs.upsun.com/add-services.html"
   >}}
   {{< hextra/feature-card
     title="Networking"
     icon="router"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie quam. Curabitur eleifend ut tortor sit amet mollis."
+    subtitle="Every project needs some hostnames and certificates. Dive into how HTTP routes are defined for your projects."
     link="https://docs.upsun.com/define-routes.html"
   >}}
   {{< hextra/feature-card
     title="Observability"
     icon="search"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie quam. Curabitur eleifend ut tortor sit amet mollis."
+    subtitle="Power is nothing without control. Keep an eye on how your applications behave on our platform. Dive into code bottlenecks with ease."
     link="https://docs.upsun.com/increase-observability.html"
   >}}
   {{< hextra/feature-card
     title="API"
     icon="webhook"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie quam. Curabitur eleifend ut tortor sit amet mollis."
+    subtitle="Did you know our platform can be fully automated by our API? Integrate other tools or create your own management layer."
     link="https://api.upsun.com/docs"
   >}}
   {{< hextra/feature-card
     title="CLI"
     icon="code"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie quam. Curabitur eleifend ut tortor sit amet mollis."
+    subtitle="As a developer first product, our CLI should be your main Upsun interface. Get it setup and start deploying your projects through the terminal."
     link="https://docs.upsun.com/administration/cli.html"
   >}}
 {{< /hextra/feature-grid >}}
@@ -382,7 +382,7 @@ scoop install upsun
 
 <div class="hx-mb-12">
 {{< hextra/hero-subtitle >}}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie quam. Curabitur eleifend ut tortor sit amet mollis. Aenean neque elit, fermentum quis sapien eget, commodo tempus ex. Donec finibus at nunc nec luctus. Etiam nec purus velit. Cras eleifend libero dui, tincidunt imperdiet nibh accumsan pulvinar.
+No matter if you are a single developer, an agency, a university or part of a team in a large corporation, we have the right offering for you. Reach out to us if you have any questions on how we can partner together on your projects.
 {{< /hextra/hero-subtitle >}}
 </div>
 
@@ -423,7 +423,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie qua
 
 <div class="hx-mb-12">
 {{< hextra/hero-subtitle >}}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie quam. Curabitur eleifend ut tortor sit amet mollis. Aenean neque elit, fermentum quis sapien eget, commodo tempus ex. Donec finibus at nunc nec luctus. Etiam nec purus velit. Cras eleifend libero dui, tincidunt imperdiet nibh accumsan pulvinar.
+At Upsun, we believe in the power of community to drive innovation and foster growth. Our community programs and resources are designed to support developers, startups, and open-source projects, creating a vibrant ecosystem of collaboration and learning. From sponsorships and partnerships to educational content and interactive platforms, we offer a diverse range of opportunities for engagement and advancement. Whether you're looking to contribute, learn, or connect with like-minded individuals, our community initiatives provide the perfect launchpad for your journey in the world of cloud application development.
 {{< /hextra/hero-subtitle >}}
 </div>
 
