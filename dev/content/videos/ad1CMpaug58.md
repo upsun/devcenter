@@ -67,3 +67,11 @@ Do you have an open-source story of your own that you want to share? Join us for
 Shoutout to our incredible podcast host this episode, Marine Gandy ( [mupsigraphy](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbVJhajk5My1LMHBua2U4VWNiN3NxVkhYb0hhd3xBQ3Jtc0tuWWNWS1RaQktrdG5ad011S0U2ZHl1d29yM1pCeUl6YkhnRGxJNXdNNXJRVW13TXRfSlUzYlZhVHlBOTh5Qm1NcXZnTERuZlYtc3NSeEk5VVFqNWoyN3EzLTBQbnZITWJJS1NmQXViXzE3Z0xlLWF4TQ&q=https%3A%2F%2Ftwitter.com%2Fmupsigraphy&v=HZtTP0hqJjk) ) , our resident Drupal expert and DevRel Engineer at Platform.sh. There’ll be plenty more from Marine coming soon, stay tuned!
 
 Follow us on X ( [upsuncom](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmo4VjNaT1ViZEk1V0ZGd0czd3ZSWXVkTHpTUXxBQ3Jtc0ttWmFsWmFuR1dEOFVYcWlTNGtUMXJ4S3hmVGg2a1VQZU5nYVo3SWF4TjIwaHlUck9CZ2NHN3o5ZnhnampZSVh1Y2JtQWZQMlgwLXNkYlBibmhtcmVTLWFaM3BtdXFLdHZ6Sk1Na2ptamFMODRyM1pwQQ&q=https%3A%2F%2Ftwitter.com%2Fupsuncom&v=HZtTP0hqJjk) )  to get the latest updates on upcoming episodes.
+
+<div class="hx-mt-6"></div>
+
+{{% details title="Listen to all the episodes" %}}
+
+<script data-eId="302480" data-format="playlist" data-pId="7278" src="https://players.podcastics.com/podcastics/player.js"></script>
+
+{{% /details %}}
