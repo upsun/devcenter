@@ -7,11 +7,11 @@ sidebar:
 type: post
 #################################
 # Update the title
-title: "Exploring JavaScript security and open source - Podcast"
+title: "Exploring JavaScript security and open source"
 
 # Replace if you have a good image. 
 # Images are not used (yet) on individual pages, only on lists of articles.
-image: /images/red-background.webp
+image: /images/lavamoat.webp
 
 # Define this value if listing an external blog post not written within this site.
 link: "https://upsun.com/blog/javascript-security-and-open-source-podcast/"
@@ -27,9 +27,10 @@ author:
 categories:
 #   - core-concepts
 #   - how-it-works
-   - discussions
+  #  - discussions
 #   - experiments
 #  - how-tos
+  - transcripts
 #   - releases
 #   - tutorials
 

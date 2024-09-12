@@ -7,11 +7,11 @@ sidebar:
 type: post
 #################################
 # Update the title
-title: "How to create and manage great documentation - Podcast"
+title: "How to create and manage great documentation"
 
 # Replace if you have a good image. 
 # Images are not used (yet) on individual pages, only on lists of articles.
-image: /images/red-background.webp
+image: /images/weaver.webp
 
 # Define this value if listing an external blog post not written within this site.
 link: "https://upsun.com/blog/create-and-manage-great-documentation-podcast/"
@@ -27,9 +27,10 @@ author:
 categories:
 #   - core-concepts
 #   - how-it-works
-   - discussions
+  #  - discussions
 #   - experiments
 #  - how-tos
+  - transcripts
 #   - releases
 #   - tutorials
 

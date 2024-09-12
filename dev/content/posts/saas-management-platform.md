@@ -14,7 +14,7 @@ title: "Upsun as a SaaS development and management platform"
 image: /images/saas-yb.webp
 
 # Define this value if listing an external blog post not written within this site.
-# link: "https://upsun.com/blog/blackfire-infrastructure-processes/"
+link: "https://upsun.com/blog/saas-management-platform/"
 
 # Update author with one or more
 #   -> content/community/engage/people/AUTHOR.md
@@ -29,9 +29,10 @@ categories:
 #   - how-it-works
 #   - discussions
 #   - experiments
-  - how-tos
+  # - how-tos
 #   - releases
 #   - tutorials
+  - use-cases
 
 # Tags don't do anything yet, so ignore for now.
 # tags:

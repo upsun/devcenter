@@ -1,6 +1,6 @@
 ---
 title: "Introducing the Upsun Developer Center"
-date: 2024-08-27T15:20:15+09:00
+date: 2024-10-01T15:20:15+09:00
 image: /images/background-blue.webp
 icon: release-notes
 featured: true

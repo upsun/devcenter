@@ -26,7 +26,8 @@ author:
 # Choose ONE of the options below:
 categories:
 #   - core-concepts
-  - discussions
+  # - discussions
+  - how-it-works
 #   - experiments
   # - how-tos
 #   - releases

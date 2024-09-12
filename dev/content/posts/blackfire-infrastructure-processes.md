@@ -11,7 +11,7 @@ title: "Up(sun) and running with infrastructure processes on Blackfire"
 
 # Replace if you have a good image. 
 # Images are not used (yet) on individual pages, only on lists of articles.
-image: /images/yellow_purple.webp
+image: /images/infra-processes.webp
 
 link: "https://upsun.com/blog/blackfire-infrastructure-processes/"
 

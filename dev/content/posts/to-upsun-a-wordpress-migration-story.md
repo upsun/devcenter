@@ -11,7 +11,7 @@ title: "To Upsun, a WordPress migration story"
 
 # Replace if you have a good image. 
 # Images are not used (yet) on individual pages, only on lists of articles.
-image: /images/background-yellow.webp
+image: /images/wp_migration.webp
 
 # Define this value if listing an external blog post not written within this site.
 link: "https://upsun.com/blog/to-upsun-a-wordpress-migration-story/"

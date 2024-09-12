@@ -11,7 +11,7 @@ title: "Platform engineering vs the Upsun Platform-as-a-Service"
 
 # Replace if you have a good image. 
 # Images are not used (yet) on individual pages, only on lists of articles.
-image: /images/red-background.webp
+image: /images/platform_engr.webp
 
 # Define this value if listing an external blog post not written within this site.
 link: "https://upsun.com/blog/platform-engineering-vs-the-upsun-paas/"
@@ -27,11 +27,12 @@ author:
 categories:
 #   - core-concepts
 #   - how-it-works
-   - discussions
+  #  - discussions
 #   - experiments
 #   - how-tos
 #   - releases
 #   - tutorials
+  - use-cases
 
 # Tags don't do anything yet, so ignore for now.
 # tags:

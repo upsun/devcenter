@@ -14,7 +14,7 @@ title: "An industry first: greener-region discount for Upsun users"
 image: /images/cover_7d070e7246.webp
 
 # Define this value if listing an external blog post not written within this site.
-# link: "https://upsun.com/blog/blackfire-infrastructure-processes/"
+link: "https://upsun.com/blog/greener-region-discount/"
 
 # Update author with one or more
 #   -> content/community/engage/people/AUTHOR.md
@@ -29,8 +29,8 @@ categories:
 #   - how-it-works
 #   - discussions
 #   - experiments
-  - how-tos
-#   - releases
+  # - how-tos
+  - releases
 #   - tutorials
 
 # Tags don't do anything yet, so ignore for now.

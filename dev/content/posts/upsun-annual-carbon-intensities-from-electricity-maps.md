@@ -27,10 +27,10 @@ author:
 categories:
 #   - core-concepts
 #   - how-it-works
-   - discussions
+  #  - discussions
 #   - experiments
 #  - how-tos
-#   - releases
+  - releases
 #   - tutorials
 
 # Tags don't do anything yet, so ignore for now.

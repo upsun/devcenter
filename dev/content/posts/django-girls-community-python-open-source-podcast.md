@@ -7,11 +7,11 @@ sidebar:
 type: post
 #################################
 # Update the title
-title: "Django Girls: community, python, and open source - Podcast"
+title: "Django Girls: community, python, and open source"
 
 # Replace if you have a good image. 
 # Images are not used (yet) on individual pages, only on lists of articles.
-image: /images/red-background.webp
+image: /images/django-girls.webp
 
 # Define this value if listing an external blog post not written within this site.
 link: "https://upsun.com/blog/django-girls-community-python-open-source-podcast/"
@@ -29,8 +29,9 @@ categories:
 #   - how-it-works
 #   - discussions
 #   - experiments
-  - how-tos
+  # - how-tos
 #   - releases
+  - transcripts
 #   - tutorials
 
 # Tags don't do anything yet, so ignore for now.

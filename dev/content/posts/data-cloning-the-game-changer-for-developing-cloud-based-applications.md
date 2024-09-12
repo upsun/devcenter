@@ -11,7 +11,7 @@ title: "What is instant data cloning? The game changer for developing cloud-base
 
 # Replace if you have a good image. 
 # Images are not used (yet) on individual pages, only on lists of articles.
-image: /images/red-background.webp
+image: /images/cloning.webp
 
 # Define this value if listing an external blog post not written within this site.
 link: "https://upsun.com/blog/data-cloning-the-game-changer-for-developing-cloud-based-applications/"
