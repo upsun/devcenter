@@ -5,7 +5,7 @@ layout: hextra-home
 
 <!-- <div class="hx-mt-6"></div> -->
 
-{{< hextra/hero-container 
+{{< hextra/hero-container
   image="images/upsun-hello-world.svg"
   imageTitle="Console"
   imageWidth="100%"
@@ -20,7 +20,9 @@ layout: hextra-home
 
 <div class="hx-mb-12">
 {{< hextra/hero-subtitle >}}
-  Your central hub for all resources related to the Upsun product offerings. All the latest demos, examples, documentation and articles for each of your frameworks and languages. Join the community and build something great on the Upsun application platform.<br class="sm:hx-block hx-hidden" />
+  Your hub for all resources related to the Upsun product offerings. All the latest demos, examples, documentation, and
+  articles for each of your frameworks and languages. Join the community. And build something great on the Upsun cloud
+  application platform.<br class="sm:hx-block hx-hidden" />
 {{< /hextra/hero-subtitle >}}
 </div>
 
@@ -68,37 +70,37 @@ Container-based deployments built on Git. Managed services and custom applicatio
   {{< hextra/feature-card
     title="Runtime languages"
     icon="tree"
-    subtitle="We support 10 popular runtimes out of the box and much more with a bit of tinkering. Whether you do 100% JS or use PHP, Java, Python, Ruby or Rust, we have you covered."
+    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie quam. Curabitur eleifend ut tortor sit amet mollis."
     link="https://docs.upsun.com/languages.html"
   >}}
   {{< hextra/feature-card
     title="Managed services"
     icon="backup"
-    subtitle="Augment your application capabilities with our included services: Databases, caches, queues, indexes. Managed and ready to deploy."
+    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie quam. Curabitur eleifend ut tortor sit amet mollis."
     link="https://docs.upsun.com/add-services.html"
   >}}
   {{< hextra/feature-card
     title="Networking"
     icon="router"
-    subtitle="Every project needs some hostnames and certificates. Dive into how HTTP routes are defined for your projects."
+    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie quam. Curabitur eleifend ut tortor sit amet mollis."
     link="https://docs.upsun.com/define-routes.html"
   >}}
   {{< hextra/feature-card
     title="Observability"
     icon="search"
-    subtitle="Power is nothing without control. Keep an eye on how your applications behave on our platform. Dive into code bottlenecks with ease."
+    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie quam. Curabitur eleifend ut tortor sit amet mollis."
     link="https://docs.upsun.com/increase-observability.html"
   >}}
   {{< hextra/feature-card
     title="API"
     icon="webhook"
-    subtitle="Did you know our platform can be fully automated by our API? Integrate other tools or create your own management layer."
+    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie quam. Curabitur eleifend ut tortor sit amet mollis."
     link="https://api.upsun.com/docs"
   >}}
   {{< hextra/feature-card
     title="CLI"
     icon="code"
-    subtitle="As a developer first product, our CLI should be your main Upsun interface. Get it setup and start deploying your projects through the terminal"
+    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie quam. Curabitur eleifend ut tortor sit amet mollis."
     link="https://docs.upsun.com/administration/cli.html"
   >}}
 {{< /hextra/feature-grid >}}
@@ -116,7 +118,7 @@ Container-based deployments built on Git. Managed services and custom applicatio
 
 <div style="margin: 5rem auto 1rem auto;">
 
-{{< hextra/hero-button text="View all articles" link="/posts/" 
+{{< hextra/hero-button text="View all articles" link="/posts/"
   class="upsun-button button-primary" style="margin-right: 10px;"
 >}}
 
@@ -197,7 +199,7 @@ Container-based deployments built on Git. Managed services and custom applicatio
 
 <div class="hx-mt-6" style="margin-top: 4rem;"></div>
 
-{{< custom/hero-container 
+{{< custom/hero-container
   class="hx-pt-6 hx-pb-6"
 >}}
 <div class="hx-mt-6 hx-mb-6">
@@ -222,9 +224,9 @@ What can you build?
 </p><br class="sm:hx-block hx-hidden" /><br class="sm:hx-block hx-hidden" />
 {{< /hextra/hero-subtitle >}}
 
-{{< hextra/hero-button text="See how it works" link="https://docs.upsun.com/create-apps/app-reference/composable-image.html" 
+{{< hextra/hero-button text="See how it works" link="https://docs.upsun.com/create-apps/app-reference/composable-image.html"
   class="upsun-button button-primary" style="margin-right: 10px;"
->}}{{< hextra/hero-button text="Why we chose Nix" link="https://www.youtube.com/watch?v=LhVjKes2Wsc" 
+>}}{{< hextra/hero-button text="Why we chose Nix" link="https://www.youtube.com/watch?v=LhVjKes2Wsc"
   class="upsun-button button-secondary max-md:hx-hidden" style="margin-right: 0px;"
 >}}
 
@@ -234,14 +236,14 @@ What can you build?
 
 ```yaml {filename=".upsun/config.yaml"}
 applications:
-    frontend: 
+    frontend:
         source:
             root: client
         stack:
             - nodejs@22
             - nodePackages.npm
             - yq
-    backend: 
+    backend:
         source:
             root: api
         stack:
@@ -251,10 +253,10 @@ applications:
                 extensions:
                     - apcu
                     - sodium
-            - facedetect   
-    docs: 
+            - facedetect
+    docs:
         source:
-            root: docs     
+            root: docs
         stack:
             - hugo
             - golang@1.22
@@ -290,20 +292,20 @@ curl -fsSL https://raw.githubusercontent.com/platformsh/cli/main/installer.sh | 
 {{< /tab >}}
 {{< tab >}}
 ```
-brew install platformsh/tap/upsun-cli                                                            
+brew install platformsh/tap/upsun-cli
 ```
 {{< /tab >}}
 {{< tab >}}
 ```
-scoop bucket add platformsh https://github.com/platformsh/homebrew-tap.git                       
+scoop bucket add platformsh https://github.com/platformsh/homebrew-tap.git
 scoop install upsun
 ```
 {{< /tab >}}
 {{< /tabs >}}
 
-{{< hextra/hero-button text="Join the community" link="https://discord.gg/PkMc2pVCDV" 
+{{< hextra/hero-button text="Join the community" link="https://discord.gg/PkMc2pVCDV"
   class="upsun-button button-primary" style="margin-right: 10px;"
->}}{{< hextra/hero-button text="Get support" link="https://docs.upsun.com/learn/overview/get-support.html" 
+>}}{{< hextra/hero-button text="Get support" link="https://docs.upsun.com/learn/overview/get-support.html"
   class="upsun-button button-secondary max-md:hx-hidden" style="margin-right: 0px;"
 >}}
 
@@ -311,7 +313,7 @@ scoop install upsun
 
 <!-- <div class="hx-mt-6" style="margin-top: 4rem;"></div>
 
-{{< custom/hero-container 
+{{< custom/hero-container
   class="hx-pt-6 hx-pb-6"
 >}}
 <div class="hx-mt-6 hx-mb-6">
@@ -336,9 +338,9 @@ What can you build?
 </p><br class="sm:hx-block hx-hidden" /><br class="sm:hx-block hx-hidden" />
 {{< /hextra/hero-subtitle >}} -->
 
-<!-- {{< hextra/hero-button text="See how it works" link="https://docs.upsun.com/create-apps/app-reference/composable-image.html" 
+<!-- {{< hextra/hero-button text="See how it works" link="https://docs.upsun.com/create-apps/app-reference/composable-image.html"
   class="upsun-button button-primary" style="margin-right: 10px;"
->}}{{< hextra/hero-button text="Why we chose Nix" link="https://www.youtube.com/watch?v=LhVjKes2Wsc" 
+>}}{{< hextra/hero-button text="Why we chose Nix" link="https://www.youtube.com/watch?v=LhVjKes2Wsc"
   class="upsun-button button-secondary max-md:hx-hidden" style="margin-right: 0px;"
 >}} -->
 
@@ -380,7 +382,7 @@ scoop install upsun
 
 <div class="hx-mb-12">
 {{< hextra/hero-subtitle >}}
-No matter if you are a single developer, an agency, a university or part of a team in a large corporation, we have the right offering for you. Reach out to us if you have any questions on how we can partner together on your projects.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie quam. Curabitur eleifend ut tortor sit amet mollis. Aenean neque elit, fermentum quis sapien eget, commodo tempus ex. Donec finibus at nunc nec luctus. Etiam nec purus velit. Cras eleifend libero dui, tincidunt imperdiet nibh accumsan pulvinar.
 {{< /hextra/hero-subtitle >}}
 </div>
 
@@ -421,7 +423,7 @@ No matter if you are a single developer, an agency, a university or part of a te
 
 <div class="hx-mb-12">
 {{< hextra/hero-subtitle >}}
-At Upsun, we believe in the power of community to drive innovation and foster growth. Our community programs and resources are designed to support developers, startups, and open-source projects, creating a vibrant ecosystem of collaboration and learning. From sponsorships and partnerships to educational content and interactive platforms, we offer a diverse range of opportunities for engagement and advancement. Whether you're looking to contribute, learn, or connect with like-minded individuals, our community initiatives provide the perfect launchpad for your journey in the world of cloud application development.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis molestie quam. Curabitur eleifend ut tortor sit amet mollis. Aenean neque elit, fermentum quis sapien eget, commodo tempus ex. Donec finibus at nunc nec luctus. Etiam nec purus velit. Cras eleifend libero dui, tincidunt imperdiet nibh accumsan pulvinar.
 {{< /hextra/hero-subtitle >}}
 </div>
 
@@ -466,7 +468,7 @@ At Upsun, we believe in the power of community to drive innovation and foster gr
 
 <div class="hx-mt-6" style="margin-top: 4rem;"></div>
 
-{{< custom/hero-container 
+{{< custom/hero-container
   class="hx-pt-6 hx-pb-6"
 >}}
 <div class="hx-mt-6 hx-mb-6">
@@ -485,9 +487,9 @@ At Upsun, we believe in the power of community to drive innovation and foster gr
 
 </div>
 
-{{< hextra/hero-button text="Join the community" link="https://discord.gg/PkMc2pVCDV" 
+{{< hextra/hero-button text="Join the community" link="https://discord.gg/PkMc2pVCDV"
   class="upsun-button button-primary" style="margin-right: 10px;"
->}}{{< hextra/hero-button text="Get support" link="https://docs.upsun.com/learn/overview/get-support.html" 
+>}}{{< hextra/hero-button text="Get support" link="https://docs.upsun.com/learn/overview/get-support.html"
   class="upsun-button button-secondary max-md:hx-hidden" style="margin-right: 0px;"
 >}}
 
