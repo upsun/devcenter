@@ -14,7 +14,7 @@ title: "Make the simple trivial, and the complex possible"
 image: /images/complex.webp
 
 # Define this value if listing an external blog post not written within this site.
-link: "https://upsun.com/blog/blackfire-infrastructure-processes/"
+link: "https://upsun.com/blog/make-the-simple-trivial-and-the-complex-possible/"
 
 # Update author with one or more
 #   -> content/community/engage/people/AUTHOR.md
@@ -26,8 +26,8 @@ author:
 # Choose ONE of the options below:
 categories:
 #   - core-concepts
-#   - how-it-works
-  - discussions
+  - how-it-works
+  # - discussions
 #   - experiments
   # - how-tos
 #   - releases

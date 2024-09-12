@@ -14,7 +14,7 @@ title: "Blackfire: a complete observability solution"
 image: /images/complete-observe.webp
 
 # Define this value if listing an external blog post not written within this site.
-# link: "https://upsun.com/blog/blackfire-infrastructure-processes/"
+link: "https://upsun.com/blog/monitoring-and-observability/"
 
 # Update author with one or more
 #   -> content/community/engage/people/AUTHOR.md

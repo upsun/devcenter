@@ -11,7 +11,7 @@ title: "Is Upsun a match for modern Drupal development?"
 
 # Replace if you have a good image. 
 # Images are not used (yet) on individual pages, only on lists of articles.
-image: /images/red-background.webp
+image: /images/drupal_dev.webp
 
 # Define this value if listing an external blog post not written within this site.
 link: "https://upsun.com/blog/a-match-for-modern-drupal-development/"

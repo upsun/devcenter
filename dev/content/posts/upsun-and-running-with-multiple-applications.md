@@ -11,10 +11,10 @@ title: "Up(sun) and running with multiple applications"
 
 # Replace if you have a good image. 
 # Images are not used (yet) on individual pages, only on lists of articles.
-image: /images/red-background.webp
+image: /images/multi-app.webp
 
 # Define this value if listing an external blog post not written within this site.
-# link: "https://upsun.com/blog/blackfire-infrastructure-processes/"
+link: "https://upsun.com/blog/upsun-and-running-with-multiple-applications/"
 
 # Update author with one or more
 #   -> content/community/engage/people/AUTHOR.md
@@ -29,9 +29,9 @@ categories:
 #   - how-it-works
 #   - discussions
 #   - experiments
-  - how-tos
+  # - how-tos
 #   - releases
-#   - tutorials
+  - tutorials
 
 # Tags don't do anything yet, so ignore for now.
 # tags:

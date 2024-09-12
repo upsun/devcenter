@@ -6,5 +6,6 @@ excludeSearch: true
 comments: false
 layout: list
 sidebar:
+    exclude: true
     excludechildren: true
 ---

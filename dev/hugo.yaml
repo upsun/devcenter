@@ -312,7 +312,7 @@ params:
       sidebar-active:
           "/community/content/posts/": "/community/content/posts/"
           "/community/content/videos/": "/community/content/videos/"
-          "/community/engage/people/": "/community/engage/people/"
+          # "/community/engage/people/": "/community/engage/people/"
       navbar-active:
           # matches identifier attribute above. 
           community:

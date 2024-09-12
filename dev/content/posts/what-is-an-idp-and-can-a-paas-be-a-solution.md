@@ -11,7 +11,7 @@ title: "What is an IDP and can a PaaS be the solution?"
 
 # Replace if you have a good image. 
 # Images are not used (yet) on individual pages, only on lists of articles.
-image: /images/red-background.webp
+image: /images/idp_paas.webp
 
 # Define this value if listing an external blog post not written within this site.
 link: "https://upsun.com/blog/what-is-an-idp-and-can-a-paas-be-a-solution/"
@@ -27,11 +27,12 @@ author:
 categories:
 #   - core-concepts
 #   - how-it-works
-   - discussions
+  #  - discussions
 #   - experiments
 #  - how-tos
 #   - releases
 #   - tutorials
+  - use-cases
 
 # Tags don't do anything yet, so ignore for now.
 # tags:

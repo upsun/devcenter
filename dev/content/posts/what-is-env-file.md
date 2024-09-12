@@ -1,26 +1,45 @@
 ---
-title: How to set up infrastructure events on multi-application architecture
-date: 2024-08-28T15:20:15+09:00
-image: /images/red-background.webp
-icon: release-notes
-author:
-  - flovntp
-
+#################################
+# Don't touch these settings.
+date: '2024-09-10T12:16:37-04:00'
 sidebar:
     exclude: true
 type: post
+#################################
+# Update the title
+title: "What is `.env`?"
 
-description: |
-    Join Greg Qualls in this video to better understand the process of setting up development environments on Upsun through the terminal.
-tags:
-  - events
-  - integrations
+# Replace if you have a good image. 
+# Images are not used (yet) on individual pages, only on lists of articles.
+image: /images/what-is-env.webp
+
+# Define this value if listing an external blog post not written within this site.
+link: "https://upsun.com/blog/what-is-env-file/"
+
+# Update author with one or more
+#   -> content/community/engage/people/AUTHOR.md
+#   -> https://github.com/AUTHOR
+#   -> AUTHORFirst AUTHORLast
+author:
+  - "Larry Garfield"
+
+# Choose ONE of the options below:
 categories:
-  - how-tos
-  - featured
-# excludeSearch: true
----
+#   - core-concepts
+#   - how-it-works
+  - discussions
+#   - experiments
+  # - how-tos
+#   - releases
+#   - tutorials
 
+# Tags don't do anything yet, so ignore for now.
+# tags:
+#   - events
+#   - integrations
+math: true
+---
+<!-- 
 ## Lorem markdownum?
 
 Lorem markdownum, Aries, cum formae, illius, gemitu in caelum, iste, praebet
@@ -34,6 +53,51 @@ lacertis!
 - Perdidimus pendens paratis continuere solet trepidare amplius
 - Officio sensit qui videtur mens
 - An fors est
+
+Sensit haec illo spectator frui gravidus ordine latitant. Quod eris, vota ensem
+pectus patria quidem; *lacrimae nutu*. 
+
+$$F(\omega) = \int_{-\infty}^{\infty} f(t) e^{-j\omega t} \, dt$$
+
+Nunc [additur](http://condit-filia.com/solvit), et munera geminos dixit, nec habemus,
+illi. Caeloque subdita flammasque hanc timide patuit causas nos solus fecisse:
+refert tibi, aera Cumaea.
+
+## Officio sensit qui videtur mens
+
+Lorem markdownum, Aries, cum formae, illius, gemitu in caelum, iste, praebet
+oculos. In quas alienisque requirenti caesis metallis vestros. Ocius suum
+accensum: iners [plangorem adhibere ensem](http://se-ora.com/) et aliquid meum
+lacertis!
+
+![Bike people](/images/hero-people-riding-bike.png)
+
+Sensit haec illo spectator frui gravidus ordine latitant. Quod eris, vota ensem
+pectus patria quidem; *lacrimae nutu*. Nunc
+[additur](http://condit-filia.com/solvit), et munera geminos dixit, nec habemus,
+illi. Caeloque subdita flammasque hanc timide patuit causas nos solus fecisse:
+refert tibi, aera Cumaea.
+
+{{< figure src="/images/upsun-console-main-view.png" title="Figure 1. All projects view for the ColsonInc organization in the Upsun console" >}}
+
+Sensit haec illo spectator frui gravidus ordine latitant. Quod eris, vota ensem
+pectus patria quidem; *lacrimae nutu* [^1]. Nunc
+[additur](http://condit-filia.com/solvit), et munera geminos dixit, nec habemus,
+illi. Caeloque subdita flammasque hanc timide patuit causas nos solus fecisse:
+refert tibi, aera Cumaea.
+
+[^1]: Congrats! You found the footnote. Use the link below to find the other one.
+
+## Alienisque requirent
+
+Lorem markdownum, Aries, cum formae, illius, gemitu in caelum, iste, praebet
+oculos. In quas alienisque requirenti caesis metallis vestros. Ocius suum
+accensum: iners [plangorem adhibere ensem](http://se-ora.com/) et aliquid meum
+lacertis!
+
+<div class="hx-mt-6"></div>
+
+{{< youtube fC3Cthm0HFU >}}
 
 Sensit haec illo spectator frui gravidus ordine latitant. Quod eris, vota ensem
 pectus patria quidem; *lacrimae nutu*. Nunc
@@ -100,7 +164,7 @@ refert tibi, aera Cumaea.
 Lorem markdownum, Aries, cum formae, illius, gemitu in caelum, iste, praebet
 oculos. In quas alienisque requirenti caesis metallis vestros. Ocius suum
 accensum: iners [plangorem adhibere ensem](http://se-ora.com/) et aliquid meum
-lacertis!
+lacertis! [^2]
 
 {{% details title="Lorem markdownum" closed="true" %}}
 
@@ -113,6 +177,14 @@ illi.
 
 Caeloque subdita flammasque hanc timide patuit causas nos solus fecisse:
 refert tibi, aera Cumaea.
+
+[^2]: Here's one with multiple paragraphs and code.
+
+    Indent paragraphs to include them in the footnote.
+
+    `{ my code }`
+
+    Add as many paragraphs as you like.
 
 ## Tibi, aera Cumaea
 
@@ -182,4 +254,4 @@ lacertis!
 {{< /tabs >}}
 
 Caeloque subdita flammasque hanc timide patuit causas nos solus fecisse:
-refert tibi, aera Cumaea.
+refert tibi, aera Cumaea. -->

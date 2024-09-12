@@ -11,7 +11,7 @@ title: "How to sanitize preview environment data"
 
 # Replace if you have a good image. 
 # Images are not used (yet) on individual pages, only on lists of articles.
-image: /images/red-background.webp
+image: /images/sanitize-data.webp
 
 # Define this value if listing an external blog post not written within this site.
 link: "https://upsun.com/blog/how-to-sanitize-preview-environment-data/"
@@ -29,9 +29,9 @@ categories:
 #   - how-it-works
 #   - discussions
 #   - experiments
-#  - how-tos
+ - how-tos
 #   - releases
-   - tutorials
+  #  - tutorials
 
 # Tags don't do anything yet, so ignore for now.
 # tags:

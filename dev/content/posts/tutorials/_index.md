@@ -1,6 +1,6 @@
 ---
 title: "Tutorials"
-weight: 11
+weight: 13
 # type: docs
 excludeSearch: true
 # sidebar:

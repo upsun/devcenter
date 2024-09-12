@@ -25,13 +25,16 @@ author:
 
 # Choose ONE of the options below:
 categories:
+#   - compare
 #   - core-concepts
 #   - how-it-works
 #   - discussions
 #   - experiments
   - how-tos
 #   - releases
+#   - transcripts
 #   - tutorials
+#   - use-cases
 
 # Tags don't do anything yet, so ignore for now.
 # tags:

@@ -1,6 +1,6 @@
 ---
 title: On Upsun preview environments
-date: 2024-08-30T15:20:15+09:00
+date: 2024-10-02T15:20:15+09:00
 image: /images/background-purple.webp
 icon: release-notes
 author:

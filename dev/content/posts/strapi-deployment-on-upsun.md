@@ -11,7 +11,7 @@ title: "Up(sun) and running with Strapi: a seamless journey to a powerful decoup
 
 # Replace if you have a good image. 
 # Images are not used (yet) on individual pages, only on lists of articles.
-image: /images/red-background.webp
+image: /images/strapi.webp
 
 # Define this value if listing an external blog post not written within this site.
 link: "https://upsun.com/blog/strapi-deployment-on-upsun/"
