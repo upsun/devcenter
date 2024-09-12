@@ -62,17 +62,17 @@ enableInlineShortcodes: true
 menu:
   main:
     - identifier: docs
-      name: Docs
+      name: "Docs <sup>↗</sup>"
       # pageRef: /docs
       url: "https://docs.upsun.com"
       weight: 1
     - identifier: cli
-      name: CLI
+      name: "CLI <sup>↗</sup>"
       # pageRef: /cli
       url: "https://docs.upsun.com/administration/cli.html"
       weight: 2
     - identifier: api
-      name: API
+      name: "API <sup>↗</sup>"
       url: https://api.upsun.com/docs
       # pageRef: /api
       weight: 3

@@ -72,3 +72,11 @@ Follow Ryan on his social channels linked below and if you can, please donate to
 Shoutout to our incredible podcast host this episode, Marine Gandy (  / mupsigraphy  ) , our resident Drupal expert and DevRel Engineer at Platform.sh (http://Platform.sh) . There’ll be plenty more from Marine coming soon, stay tuned!
 
 Follow us (https://upsun.com/)  on X (  / upsuncom  )  to stay up to speed on the latest episodes.
+
+<div class="hx-mt-6"></div>
+
+{{% details title="Listen to all the episodes" %}}
+
+<script data-eId="290587" data-format="playlist" data-pId="7278" src="https://players.podcastics.com/podcastics/player.js"></script>
+
+{{% /details %}}

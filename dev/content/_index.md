@@ -204,19 +204,21 @@ Container-based deployments built on Git. Managed services and custom applicatio
 >}}
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
-  Composable images,
-  <br class="sm:hx-block hx-hidden" /><span style="color: #6046FF;"> powered by Nix.</span>
+  Infrastructure-as-code,
+  <br class="sm:hx-block hx-hidden" /><span style="color: #6046FF;"> resources on demand.</span>
 {{< /hextra/hero-headline >}}
 </div>
 
 {{< hextra/hero-subtitle >}}
 <p class="not-prose hx-text-xl hx-text-gray-600 dark:hx-text-gray-400 sm:hx-text-xl">
-The Upsun composable image &mdash; built on Nix &mdash; provides flexibility when defining your app. You can install several runtimes into your application containers, in a “one image to rule them all” approach:
+Upsun provides flexibility when defining your environments. 
+<!-- You can deploy several runtimes across multiple applicaitons containers -->
+<!-- The Upsun composable image &mdash; built on Nix &mdash; provides flexibility when defining your app. You can install several runtimes into your application containers, in a “one image to rule them all” approach: -->
 </p><br class="sm:hx-block hx-hidden" />
 <ul class="not-prose hx-text-xl hx-text-gray-600 dark:hx-text-gray-400 sm:hx-text-xl" style="margin-left: 20px; list-style: disc;">
-  <li>Choose from over 80,000 packages from the Nixpkgs collection.</li>
-  <li>Build in isolation, even different versions of the same package.</li>
-  <li>No undeclared dependencies in your source code. What works on your local machine is guaranteed to work on any other.</li>
+  <li>You can deploy several runtimes across multiple application containers.</li>
+  <li>Provision one or many managed services with a few lines of YAML.</li>
+  <li>Completely customize your build and deploy process, locking configuration to reusable, environment-independent build images.</li>
 </ul>
 <br class="sm:hx-block hx-hidden" />
 <p class="not-prose hx-text-xl hx-text-gray-600 dark:hx-text-gray-400 sm:hx-text-xl">
@@ -224,9 +226,15 @@ What can you build?
 </p><br class="sm:hx-block hx-hidden" /><br class="sm:hx-block hx-hidden" />
 {{< /hextra/hero-subtitle >}}
 
-{{< hextra/hero-button text="See how it works" link="https://docs.upsun.com/create-apps/app-reference/composable-image.html"
+<!-- {{< hextra/hero-button text="See how it works" link="https://docs.upsun.com/create-apps/app-reference/composable-image.html" 
   class="upsun-button button-primary" style="margin-right: 10px;"
 >}}{{< hextra/hero-button text="Why we chose Nix" link="https://www.youtube.com/watch?v=LhVjKes2Wsc"
+  class="upsun-button button-secondary max-md:hx-hidden" style="margin-right: 0px;"
+>}} -->
+
+{{< hextra/hero-button text="View the specification" link="https://docs.upsun.com/create-apps.html" 
+  class="upsun-button button-primary" style="margin-right: 10px;"
+>}}{{< hextra/hero-button text="Understand resources" link="https://docs.upsun.com/manage-resources.html" 
   class="upsun-button button-secondary max-md:hx-hidden" style="margin-right: 0px;"
 >}}
 
@@ -234,33 +242,31 @@ What can you build?
 
 <div class="landing-code">
 
-```yaml {filename=".upsun/config.yaml"}
+```yaml {filename="Configure infrastructure with a commit and a push"}
 applications:
-    frontend:
-        source:
-            root: client
-        stack:
-            - nodejs@22
-            - nodePackages.npm
-            - yq
-    backend:
-        source:
-            root: api
-        stack:
-            - python@3.12
-            - python312Packages.pip
-            - php@8.3:
-                extensions:
-                    - apcu
-                    - sodium
-            - facedetect
-    docs:
-        source:
-            root: docs
-        stack:
-            - hugo
-            - golang@1.22
+  backend: 
+    source:
+      root: api
+    type: "python:3.12"
+    relationships:
+      db: 
+    hooks:
+      build: pip install -r requirements.txt
+      deploy: python manage.py migrate
+    web:
+      commands:
+        start: |
+          "gunicorn -b unix:$SOCKET myapp.wsgi:application"
+services:
+  db:
+    type: postgresql:16 
 ```
+
+```yaml {filename="Set your resources"}
+upsun resources:set --count backend:2 \
+  --disk backend:512 --size db:0.5
+```
+
 </div>
 
 {{< /custom/hero-container >}}

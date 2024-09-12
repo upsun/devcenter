@@ -69,3 +69,11 @@ There’ll be plenty more from Marine coming soon, stay tuned!
 
 Follow us on X ( [upsuncom](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmo4VjNaT1ViZEk1V0ZGd0czd3ZSWXVkTHpTUXxBQ3Jtc0ttWmFsWmFuR1dEOFVYcWlTNGtUMXJ4S3hmVGg2a1VQZU5nYVo3SWF4TjIwaHlUck9CZ2NHN3o5ZnhnampZSVh1Y2JtQWZQMlgwLXNkYlBibmhtcmVTLWFaM3BtdXFLdHZ6Sk1Na2ptamFMODRyM1pwQQ&q=https%3A%2F%2Ftwitter.com%2Fupsuncom&v=HZtTP0hqJjk) ) 
 to get the latest updates on upcoming episodes.
+
+<div class="hx-mt-6"></div>
+
+{{% details title="Listen to all the episodes" %}}
+
+<script data-eId="302380" data-format="playlist" data-pId="7278" src="https://players.podcastics.com/podcastics/player.js"></script>
+
+{{% /details %}}

@@ -6,6 +6,7 @@
     {{ range $data }}
         {{ if ne $limitThree 3 }}
             {{ $title := "tempTitle" }}
+            {{ $subtitle := "" }}
             {{ $link := "tempLink" }}
             {{ $category := "tempCategory" }}
             {{ $authors := slice "John Doe" }}
@@ -17,6 +18,9 @@
                 {{ $link = .pageRef }}
                 {{ with $context.Site.GetPage .pageRef }}
                     {{ $title = .Title }}
+                    {{ if isset .Params "subtitle" }}
+                        {{ $subtitle = printf ": %s" ( .Params.subtitle ) }}
+                    {{ end }}
                     {{ $imgLink = .Params.image }}
                     {{ if isset . "image" }}
                         {{ $imgLink = .image }}
@@ -43,7 +47,7 @@
             <img alt="{{ $title }}" class="hextra-card-image" loading="lazy" decoding="async" src="{{ $imgLink }}" style="object-fit:cover; aspect-ratio: 4/3;">
             <div class="post-category hx-text-sm hx-px-4 hx-mb-2 hx-mt-4">{{ upper $category }}</div>
             <span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-mb-4 hx-pt-4 hx-px-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">
-            {{ $title }}</span>
+            {{ $title }}{{ $subtitle }}</span>
             <div class="author-info hx-line-clamp-3 hx-text-sm hx-font-normal hx-text-gray-500 dark:hx-text-gray-400 hx-mt-4 hx-px-4">
 
                 {{ if eq ( len $authors) 1 }}

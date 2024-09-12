@@ -8,4 +8,5 @@ layout: list
 sidebar:
     exclude: true
     excludechildren: true
+    exclude: true
 ---

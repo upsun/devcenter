@@ -73,3 +73,11 @@ Shoutout to our incredible podcast host, Marine Gandy ( [mupsigraphy](https://ww
 There’ll be plenty more from Marine coming soon, stay tuned!
 
 Follow us on X ( [upsuncom](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbFdjQ3hnVl8zWWotWjRlWk5FUzJPeGJkUzFhUXxBQ3Jtc0tsWkpRZkpxNHZoWTA1aUQ5VzlOMWhCVDhyYVhxakwwYU5ZeEFzZ0dlZUYyUWdmeDJlOXhJMDFHdV9zWkt0WGVQNTVkRXlJN1FlNHZTMlZEXzFHRzVvcHpVb2VpX2ktbGZoQ1BST3NwX1pSdlFVUVNwMA&q=https%3A%2F%2Ftwitter.com%2Fupsuncom&v=IWXiuR6jlK8) )  to get the latest updates on upcoming episodes.
+
+<div class="hx-mt-6"></div>
+
+{{% details title="Listen to all the episodes" %}}
+
+<script data-eId="306594" data-format="playlist" data-pId="7278" src="https://players.podcastics.com/podcastics/player.js"></script>
+
+{{% /details %}}

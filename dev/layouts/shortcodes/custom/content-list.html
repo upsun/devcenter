@@ -74,7 +74,7 @@
                             {{ end -}}
                         </span>
                         {{ if isset .Params "link" }}
-                            <a href="{{ .Params.link }}" target="_blank">{{ .Title | markdownify }}{{ if isset .Params "subtitle" }}: {{ .Params.subtitle | markdownify }}{{ end }}</a>
+                            <a href="{{ .Params.link }}" target="_blank">{{ .Title | markdownify }}{{ if isset .Params "subtitle" }}: {{ .Params.subtitle | markdownify }}{{ end }} <sup>↗</sup></a>
                         {{ else }}
                             <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}{{ if isset .Params "subtitle" }}: {{ .Params.subtitle | markdownify }}{{ end }}</a>
                         {{ end }}
