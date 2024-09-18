@@ -2,12 +2,18 @@ posts:
     tutorials:
         single: "Tutorial"
         list: "Tutorials"
+    compare:
+        single: "Comparison"
+        list: "Comparisons"
     core-concepts:
         single: "Core concept"
         list: "Core concepts"
     how-tos:
         single: "How-to guide"
         list: "How-to guides"
+    transcripts:
+        single: "Transcript"
+        list: "Transcripts"
     discussions:
         single: "Discussion"
         list: "Discussions"
@@ -20,6 +26,9 @@ posts:
     how-it-works:
         single: "How Upsun works"
         list: "How Upsun works"
+    use-cases:
+        single: "Use case"
+        list: "Use cases"
 videos:
     demos: 
         single: "Demo"

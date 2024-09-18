@@ -30,7 +30,7 @@ His focus on infrastructure efficiency suggests a deep understanding of server a
 Guillaume's long-standing career in web development, starting from the industry's early days, combined with his specific focuses, paints a picture of a developer who has not just kept pace with the rapid changes in web technology, but has been at the forefront of driving those changes. His experience and expertise likely make him a valuable asset in any development team or project aiming for high-performance, scalable web applications.
 
 <!-- excludeSearch -->
-{{< custom/contributions "gmoigneu" >}}
+{{< custom/contributions-posts "gmoigneu" >}}
 
 {{< custom/contributions "gmoigneu" "videos" >}}
 <!-- /excludeSearch -->

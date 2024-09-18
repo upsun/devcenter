@@ -30,7 +30,7 @@ Today he can typically be found gardening, practicing running/hiking/skiing/skyd
 He is looking forward to talk to you, let’s catch up each other!
 
 <!-- excludeSearch -->
-{{< custom/contributions "flovntp" >}}
+{{< custom/contributions-posts "flovntp" >}}
 
 {{< custom/contributions "flovntp" "videos" >}}
 <!-- /excludeSearch -->

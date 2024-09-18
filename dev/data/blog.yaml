@@ -1,0 +1,457 @@
+'/converting-to-typescript':
+  date: '2024-02-05T10:42:52+02:00'
+  author:
+    - tim-anderson
+  image: '/images/convert_typescript.webp'
+  categories:
+    - experiments
+'/upsun-origin-story':
+  date: '2023-09-01T16:40:40-04:00'
+  author:
+    - fabpot
+  image: '/images/background-purple.webp'
+  categories:
+    - how-it-works
+'/monitoring-and-observability':
+  date: '2024-01-10T15:44:36-04:00'
+  author:
+    - thomasdiluccio
+  image: '/images/complete-observe.webp'
+  categories:
+    - discussions
+'/application-modernization':
+  date: '2023-12-28T15:30:29-04:00'
+  author:
+    - quentin-sinig
+  image: '/images/modern-purple.webp'
+  categories:
+    - discussions
+'/setting-up-django-on-upsun':
+  date: '2023-12-21T15:24:53-04:00'
+  author:
+    - chadwcarlson
+  image: '/images/django-purple.webp'
+  categories:
+    - tutorials
+'/saas-management-platform':
+  date: '2023-12-18T15:09:07-04:00'
+  author:
+    - vinnie-russo
+  image: '/images/saas-yb.webp'
+  categories:
+    -  use-cases
+'/deterministic-vs-probabilistic-profiling':
+  date: '2023-12-15T14:47:20-04:00'
+  author:
+    - thomasdiluccio
+  image: '/images/observ-blue.webp'
+  categories:
+    - discussions
+'/application-security':
+  date: '2024-08-06T15:05:37+02:00'
+  author:
+    - ori-pekelman
+  image: '/images/app_security.webp'
+  categories:
+    - discussions
+'/edge-layer-upsun':
+  date: '2023-12-11T14:19:54-04:00'
+  author:
+    - ajmal
+  image: '/images/red-background.webp'
+  categories:
+    - how-it-works
+'/setting-up-express-on-upsun':
+  date: '2024-01-26T15:53:51-04:00'
+  author:
+    - flovntp
+  image: '/images/qs-express.webp'
+  categories:
+    - tutorials
+'/ultimate-paas-solution':
+  date: '2023-12-22T15:28:13-04:00'
+  author:
+    - thomasdiluccio
+  image: '/images/zen.webp'
+  categories:
+    - discussions
+'/paas-to-scale-laravel-apps':
+  date: '2024-01-03T15:35:55-04:00'
+  author:
+    - thomasdiluccio
+  image: '/images/laravel-paas.webp'
+  categories:
+    - tutorials
+'/crafting-a-new-developer-experience-through-user-research':
+  date: '2023-12-06T14:08:00-04:00'
+  author:
+    - natalie-harper
+  image: '/images/dx-research.webp'
+  categories:
+    - how-it-works
+'/improving-onboarding-with-upsunify':
+  date: '2024-01-24T15:41:12-04:00'
+  author:
+    - akalipetis
+  image: '/images/integrations.webp'
+  categories:
+    - releases
+'/chapter-2-upsun-and-the-decades-of-the-open-web':
+  date: '2024-01-05T15:51:26-04:00'
+  author:
+    - ori-pekelman
+  image: '/images/chapter2.webp'
+  categories:
+    - discussions
+'/make-the-simple-trivial-and-the-complex-possible':
+  date: '2024-01-08T15:48:11-04:00'
+  author:
+    - ori-pekelman
+  image: '/images/complex.webp'
+  categories:
+    - how-it-works
+'/upsun-annual-carbon-intensities-from-electricity-maps':
+  date: '2024-02-15T14:20:09+02:00'
+  author:
+    - alicia-bevilacqua
+  image: '/images/upsun_carbon_intensities_electricity_maps_blog_header_74224e2a9c.webp'
+  categories:
+    - releases
+'/upsun-a-bright-brand':
+  date: '2023-09-01T16:34:33-04:00'
+  author:
+    - savannah-bergeron
+  image: '/images/background-yellow.webp'
+  categories:
+    - how-it-works
+'/paas-versus-iaas':
+  date: '2023-09-01T16:29:38-04:00'
+  author:
+    - fred-plais
+  image: '/images/pollution.webp'
+  categories:
+    - use-cases
+'/tools-for-sso-in-django':
+  date: '2024-02-05T10:42:52+02:00'
+  draft: true
+  author:
+    - flovntp
+  image: '/images/red-background.webp'
+  categories:
+    - discussions
+'/upsun-and-running-with-multiple-applications':
+  date: '2024-03-14T15:15:11+02:00'
+  author:
+    - flovntp
+  image: '/images/multi-app.webp'
+  categories:
+    - tutorials
+'/a-heroku-alternative':
+  date: '2024-04-24T14:18:16+02:00'
+  author:
+    - flovntp
+  image: '/images/heroku.webp'
+  categories:
+    - compare
+'/upsun-and-running-with-symfony-demo':
+  date: '2024-04-17T14:03:18+02:00'
+  author:
+    - flovntp
+  image: '/images/symfony_demo.webp'
+  categories:
+    - tutorials
+'/what-is-an-idp-and-can-a-paas-be-a-solution':
+  date: '2024-03-15T16:36:31+02:00'
+  author:
+    - vinnie-russo
+  image: '/images/idp_paas.webp'
+  categories:
+    - discussions
+'/strapi-deployment-on-upsun':
+  date: '2024-02-05T10:42:52+02:00'
+  author:
+    - flovntp
+  image: '/images/strapi.webp'
+  categories:
+    - use-cases
+'/python-gevent-best-practices':
+  date: '2024-02-22T15:19:32-04:00'
+  author:
+    - sumer
+  image: '/images/gevent-red.webp'
+  categories:
+    - discussions
+
+
+'/gdpr-compliance-everywhere':
+  date: '2024-03-01T14:45:21+02:00'
+  author:
+    - joey-stanford
+  image: '/images/gdpr_everywhere.webp'
+  categories:
+    - discussions
+'/blackfire-infrastructure-processes':
+  date: '2024-08-19T10:53:08-04:00'
+  author:
+    - flovntp
+  image: '/images/infra-processes.webp'
+  categories:
+    - experiments
+
+'/bedrock-wordpress-development':
+  date: '2024-09-05T15:16:23+02:00'
+  author:
+    - chadwcarlson
+  image: '/images/bedrock.webp'
+  categories:
+    - tutorials
+'/greener-region-discount':
+  date: '2024-02-28T14:39:03+02:00'
+  author:
+    - niti-malwade
+  image: '/images/cover_7d070e7246.webp'
+  categories:
+    - releases
+
+'/a-match-for-modern-drupal-development':
+  date: '2024-03-19T16:44:00+02:00'
+  author:
+    - mupsi
+  image: '/images/drupal_dev.webp'
+  categories:
+    - tutorials
+'/monetizing-foss-paas-solutions-for-open-source-software':
+  date: '2024-04-16T14:01:36+02:00'
+  author:
+    - vinnie-russo
+  image: '/images/foss.webp'
+  categories:
+    - use-cases
+'/platform-engineering-vs-the-upsun-paas':
+  date: '2024-03-21T11:11:31+02:00'
+  author:
+    - ori-pekelman
+  image: '/images/platform_engr.webp'
+  categories:
+    - use-cases
+
+'/upsun-and-running-with-flask':
+  date: '2024-04-02T13:49:14+02:00'
+  author:
+    - gilzow
+  image: '/images/flask_tutorial.webp'
+  categories:
+    - tutorials
+'/nginx-config-nested-locations-blocks':
+  date: '2024-02-13T11:30:57+02:00'
+  author:
+    - michael-sharp
+  image: '/images/nested_location_blocks_2f24304c1c.webp'
+  categories:
+    - discussions
+
+'/chapter-3-upsun-and-the-decades-of-the-open-web':
+  date: '2024-02-23T14:36:10+02:00'
+  author:
+    - ori-pekelman
+  image: '/images/upsun_and_decades_of_the_web_chapter_3_a90631cff8.webp'
+  categories:
+    - discussions
+'/witty-works-case-study':
+  date: '2024-03-25T13:36:58+02:00'
+  image: '/images/witty.webp'
+  categories:
+    - use-cases
+
+'/to-upsun-a-wordpress-migration-story':
+  date: '2024-02-19T14:36:12-04:00'
+  author:
+    - chadwcarlson
+  image: '/images/wp_migration.webp'
+  categories:
+    - tutorials
+'/rust-programming-language-has-arrived':
+  date: '2024-03-05T15:02:10+02:00'
+  author:
+    - remi-lejeune
+  image: '/images/rust.webp'
+  categories:
+    - tutorials
+
+
+
+
+
+'/what-is-env-file':
+  date: '2024-09-10T12:16:37-04:00'
+  author:
+    - "Larry Garfield"
+  image: '/images/what-is-env.webp'
+  categories:
+    - discussions
+
+
+'/introducing-vinego':
+  date: '2024-06-07T14:51:49+02:00'
+  author:
+    - andrew-baxter
+  image: '/images/vinego.webp'
+  categories:
+    - releases
+'/how-to-start-a-ruby-on-rails-project-with-devenv.sh':
+  date: '2024-05-31T14:46:10+02:00'
+  author:
+    - laurent-arnoud
+  image: '/images/ruby_rails.webp'
+  categories:
+    - tutorials
+
+'/numbered-lists':
+  date: '2024-02-05T10:42:52+02:00'
+  draft: true
+
+'/chapter-1-upsun-and-the-decades-of-the-open-web':
+  date: '2023-10-26T14:01:06-04:00'
+  author:
+    - ori-pekelman
+  image: '/images/open-web.webp'
+  categories:
+    - discussions
+'/create-and-manage-great-documentation-podcast':
+  date: '2024-08-01T15:01:46+02:00'
+  author:
+    - mupsi
+  image: '/images/weaver.webp'
+  categories:
+    - transcripts
+'/a-brief-history-of-application-deployment-with-upsun':
+  date: '2024-05-08T14:38:41+02:00'
+  author:
+    - ori-pekelman
+  image: '/images/app_deploy.webp'
+  categories:
+    - discussions
+'/nix-open-source-contributions-podcast':
+  date: '2024-08-22T15:14:07+02:00'
+  author:
+    - mupsi
+  image: '/images/exploring-nix.webp'
+  categories:
+    - transcripts
+
+
+
+'/django-girls-community-python-open-source-podcast':
+  date: '2024-08-08T15:11:26+02:00'
+  author:
+    - mupsi
+  image: '/images/django-girls.webp'
+  categories:
+    - transcripts
+'/understanding-graphs-data-code-analysis-presentation':
+  date: '2024-02-05T10:42:52+02:00'
+  draft: true
+
+
+'/automated-end-to-end-testing-with-cypress-presentation':
+  date: '2024-09-13T10:42:52+02:00'
+  author:
+    - gilzow
+  image: '/images/cypress.webp'
+  categories:
+    - transcripts
+'/how-to-sanitize-preview-environment-data':
+  date: '2024-05-17T14:39:55+02:00'
+  author:
+    - flovntp
+  image: '/images/sanitize-data.webp'
+  categories:
+    - how-tos
+'/optimize-resource-allocation-and-cloud-database-services-for-Express-applications':
+  date: '2024-04-30T14:31:45+02:00'
+  author:
+    - flovntp
+  image: '/images/express_optimize.webp'
+  categories:
+    - how-tos
+
+'/postgresql-and-open-source-podcast':
+  date: '2024-08-07T15:10:33+02:00'
+  author:
+    - mupsi
+  image: '/images/laetitia.webp'
+  categories:
+    - transcripts
+'/upsun-and-running-with-frankenphp':
+  date: '2024-05-28T14:43:02+02:00'
+  author:
+    - flovntp
+  image: '/images/frankenphp.webp'
+  categories:
+    - tutorials
+
+
+
+'/data-cloning-the-game-changer-for-developing-cloud-based-applications':
+  date: '2024-06-13T14:56:26+02:00'
+  author:
+    - guguss
+  image: '/images/cloning.webp'
+  categories:
+    - how-it-works
+'/github-actions-presentation':
+  date: '2024-08-30T15:14:59+02:00'
+  author:
+    - gilzow
+  image: '/images/gh-actions.webp'
+  categories:
+    - transcripts
+'/master-regex-presentation':
+  date: '2024-09-06T15:30:55+02:00'
+  author:
+    - mupsi
+  image: '/images/regex.webp'
+  categories:
+    - transcripts
+
+
+
+'/javascript-security-and-open-source-podcast':
+  date: '2024-08-09T15:12:28+02:00'
+  author:
+    - mupsi
+  image: '/images/lavamoat.webp'
+  categories:
+    - transcripts
+'/making-our-project-API-faster-with-blackfire-profiler':
+  date: '2024-02-02T16:53:10+02:00'
+  author:
+    - sumer
+  image: '/images/bf_profiler.webp'
+  categories:
+    - how-it-works
+'/cloud-adoption-challenges':
+  date: '2024-02-05T10:42:52+02:00'
+  draft: true 
+
+'/first-project-incentive':
+  date: '2024-09-12T12:18:18-04:00'
+  author:
+    - tylermills
+  image: '/images/first-project-incentive.webp'
+  categories:
+    - releases
+'/reinforce-your-app-and-infrastructure':
+  date: '2024-09-12T12:20:33-04:00'
+  author:
+    - thomasdiluccio
+  image: '/images/reinforce.webp'
+  categories:
+    - discussions
+'/high-performing-devops-teams-presentation':
+  date: '2024-02-05T10:42:52+02:00'
+  draft: true
+
+'/nix-container-maintenance-management-presentation':
+  date: '2024-02-05T10:42:52+02:00'
+  draft: true

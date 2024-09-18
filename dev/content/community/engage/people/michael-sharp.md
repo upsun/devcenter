@@ -27,7 +27,7 @@ image: "/images/people/michael-sharp.webp"
 ---
 
 <!-- excludeSearch -->
-{{< custom/contributions "michael-sharp" >}}
+{{< custom/contributions-posts "michael-sharp" >}}
 
 {{< custom/contributions "michael-sharp" "videos" >}}
 <!-- /excludeSearch -->

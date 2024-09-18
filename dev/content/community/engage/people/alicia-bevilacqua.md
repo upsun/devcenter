@@ -13,9 +13,9 @@ sidebar:
 #################################
 title: "Alicia Bevilacqua"
 #TODO FHK i don't know where she was
-team: "Environment"
-company: "Upsun"
-role: "Environmental, Social, and Governance Intern"
+# team: "Environment"
+# company: "Upsun"
+role: "ESG Intern"
 former: true
 
 image: "/images/people/alicia-bevilacqua.webp"
@@ -28,7 +28,7 @@ image: "/images/people/alicia-bevilacqua.webp"
 #     website: https://www.something.com
 ---
 <!-- excludeSearch -->
-{{< custom/contributions "alicia-bevilacqua" >}}
+{{< custom/contributions-posts "alicia-bevilacqua" >}}
 
 {{< custom/contributions "alicia-bevilacqua" "videos" >}}
 <!-- /excludeSearch -->

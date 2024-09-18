@@ -27,7 +27,7 @@ image: "/images/people/remi-lejeune.webp"
 ---
 
 <!-- excludeSearch -->
-{{< custom/contributions "remi-lejeune" >}}
+{{< custom/contributions-posts "remi-lejeune" >}}
 
 {{< custom/contributions "remi-lejeune" "videos" >}}
 <!-- /excludeSearch -->
