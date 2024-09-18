@@ -27,7 +27,7 @@ image: "/images/people/tim-anderson.webp"
 ---
 
 <!-- excludeSearch -->
-{{< custom/contributions "tim-anderson" >}}
+{{< custom/contributions-posts "tim-anderson" >}}
 
 {{< custom/contributions "tim-anderson" "videos" >}}
 <!-- /excludeSearch -->

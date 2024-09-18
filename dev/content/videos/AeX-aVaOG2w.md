@@ -18,7 +18,8 @@ title: "Mastering linked data in PHP: Graphs and algorithms"
 #   -> https://github.com/AUTHOR
 #   -> AUTHORFirst AUTHORLast
 author:
-  - christian-rades
+  # - christian-rades
+  - "Christian Rades"
   
 # Choose ONE of the options below:
 categories:

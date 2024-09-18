@@ -12,9 +12,9 @@ sidebar:
   exclude: true
 #################################
 title: "Augustin Delaporte"
-team: "Product"
-company: "Upsun"
-role: "VP, Product"
+# team: "Product"
+# company: "Upsun"
+role: "VP, Product Management"
 #image: "/images/people/<author>.webp"
 
 # Update these only if you'd like them to be public.
@@ -28,7 +28,7 @@ role: "VP, Product"
 <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae nunc non tellus euismod pretium. Nam justo dui, venenatis in fermentum sit amet, vulputate ut enim. Aenean finibus felis id egestas aliquet. Proin urna ex, cursus dignissim aliquam quis, consectetur vel lorem. Sed non eleifend eros. Aliquam id molestie urna. Sed pretium finibus lorem, vitae egestas velit semper sit amet. Vestibulum imperdiet nunc ac nulla gravida, posuere pulvinar urna faucibus.  -->
 
 <!-- excludeSearch -->
-{{< custom/contributions "guguss" >}}
+{{< custom/contributions-posts "guguss" >}}
 
 {{< custom/contributions "guguss" "videos" >}}
 <!-- /excludeSearch -->
