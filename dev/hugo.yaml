@@ -161,17 +161,6 @@ menu:
         icon: search
       # params:
         # type: search
-    # - name: YouTube
-    #   weight: 11
-    #   url: "https://www.youtube.com/@upsun_com"
-    #   params:
-    #     icon: youtube
-    # - name: Discord
-    #   weight: 12
-    #   url: "https://discord.gg/PkMc2pVCDV"
-    #   params:
-    #     icon: discord
-        # icon: user
     - name: Upsun Console
       weight: 13
       url: "https://console.upsun.com"
@@ -197,7 +186,7 @@ menu:
   #     weight: 2
   #   - identifier: discord
   #     name: "Join the Discord"
-  #     url: "https://discord.gg/PkMc2pVCDV"
+  #     url: "https://discord.gg/platformsh"
   #     weight: 3
   #   - identifier: errors
   #     name: "Ask a question"
@@ -214,7 +203,8 @@ params:
     logo:
       path: images/logos/devcenter_light.svg
       dark: images/logos/devcenter_light.svg
-      width: 217
+      # Scale 85%
+      width: 223
       height: 41
       # width: 255
       # height: 48
@@ -325,7 +315,7 @@ params:
       message: "Welcome to the brand new Upsun Developer Center! [Find out more](/community/content/posts/introducing-dev-center/)"
 
   social:
-      discord: "https://discord.gg/PkMc2pVCDV"
+      discord: "https://discord.gg/platformsh"
       forum: "https://community.platform.sh"
       github: "https://github.com/upsun"
       youtube: "https://www.youtube.com/@upsun_com"
@@ -355,8 +345,9 @@ params:
 
   featured:
     - pageRef: /posts/introducing-dev-center
-    - pageRef: /posts/on-preview-environments
-    - pageRef: /videos/orrxx4japwc/
+    - pageRef: /posts/preview-environments-a-developers-secret-weapon
+    - pageRef: /videos/OrrxX4japwc
+    # - pageRef: /posts/automate-with-gatling-1
     # - pageRef: /community/content/posts/infra-events-multi-app/
     # - pageRef: /community/post/why-we-chose-nix
     # - media: true

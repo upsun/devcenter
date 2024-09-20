@@ -88,41 +88,139 @@ routes:
 ```
 ````
 
+```yaml {filename=".upsun/config.yaml" hl_Lines="2 26"}
+applications:
+  devcenter:
+    source:
+      root: dev
+    stack:
+      - nodejs@22
+      - nodePackages.npm
+      - python312
+      - hugo
+    hooks:
+      build: |
+        npm install
+        npm run build 
+    web:
+      locations:
+        /:
+          root: "public"
+          passthru: true
+          index:
+            - index.html
+
+routes:
+  "https://{default}/":
+    type: upstream
+    primary: true
+    upstream: "devcenter:http"
+  "https://www.{default}":
+    type: redirect
+    to: "https://{default}/"
+```
+
 ## Callouts 
 
-{{< callout emoji="👾">}}
+{{< callout >}}
   A **callout** is a short piece of text intended to attract attention.
 {{< /callout >}}
 
-{{< callout type="info" >}}
+{{< callout type="pink" >}}
   A **callout** is a short piece of text intended to attract attention.
 {{< /callout >}}
 
-{{< callout type="warning" >}}
+{{< callout type="blue" >}}
   A **callout** is a short piece of text intended to attract attention.
 {{< /callout >}}
 
-{{< callout type="error" >}}
+{{< callout type="orange" >}}
+  A **callout** is a short piece of text intended to attract attention.
+{{< /callout >}}
+
+{{< callout type="yellow" >}}
+  A **callout** is a short piece of text intended to attract attention.
+{{< /callout >}}
+
+{{< callout type="success" >}}
+  A **callout** is a short piece of text intended to attract attention.
+{{< /callout >}}
+
+{{< callout type="critical" >}}
   A **callout** is a short piece of text intended to attract attention.
 {{< /callout >}}
 
 ```markdown
-{{</* callout emoji="👾" */>}}
+{{</* callout */>}}
   A **callout** is a short piece of text intended to attract attention.
 {{</* /callout */>}}
 
-{{</* callout type="info" */>}}
+{{</* callout type="pink" */>}}
   A **callout** is a short piece of text intended to attract attention.
 {{</* /callout */>}}
 
-{{</* callout type="warning" */>}}
+{{</* callout type="blue" */>}}
   A **callout** is a short piece of text intended to attract attention.
 {{</* /callout */>}}
 
-{{</* callout type="error" */>}}
+{{</* callout type="orange" */>}}
+  A **callout** is a short piece of text intended to attract attention.
+{{</* /callout */>}}
+
+{{</* callout type="yellow" */>}}
+  A **callout** is a short piece of text intended to attract attention.
+{{</* /callout */>}}
+
+{{</* callout type="success" */>}}
+  A **callout** is a short piece of text intended to attract attention.
+{{</* /callout */>}}
+
+{{</* callout type="critical" */>}}
   A **callout** is a short piece of text intended to attract attention.
 {{</* /callout */>}}
 ```
+
+### Nesting
+
+{{< callout type="blue" >}}
+  You can also include code blocks within callouts:
+
+  ```yaml {filename=".upsun/config.yaml" lineNos="true" lineNoStart="1" hl_Lines="2 26"}
+  applications:
+    devcenter:
+      source:
+        root: dev
+      stack:
+        - nodejs@22
+        - nodePackages.npm
+        - python312
+        - hugo
+      hooks:
+        build: |
+          npm install
+          npm run build 
+      web:
+        locations:
+          /:
+            root: "public"
+            passthru: true
+            index:
+              - index.html
+
+  routes:
+    "https://{default}/":
+      type: upstream
+      primary: true
+      upstream: "devcenter:http"
+    "https://www.{default}":
+      type: redirect
+      to: "https://{default}/"
+  ```
+
+  Take note of the shared application name `devcenter` used in the `applications` and `routes` configuration above.
+  Pretty neat, huh?
+
+{{< /callout >}}
 
 ## Details
 

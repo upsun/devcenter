@@ -1,6 +1,6 @@
 {{ $context := . }}
 {{ $media := .Site.Data.media }}
-    <div class="hextra-cards hx-mt-4 hx-gap-4 hx-grid not-prose" style="--hextra-cards-grid-cols: 4; column-gap: 2.5rem; row-gap: 2.5rem;">
+    <div class="hextra-cards hx-mt-4 hx-w-full hx-gap-4 hx-grid not-prose" style="--hextra-cards-grid-cols: 4; column-gap: 2.5rem; row-gap: 2.5rem;">
     {{- $data := .Site.Params.featured -}}
     {{ $limitThree := 0 }}
     {{ range $data }}
@@ -60,6 +60,7 @@
                     {{ $attribution }} {{ $author0 }}
                 {{ else }}
                     {{ $author0 := site.GetPage ( printf "/community/engage/people/%s" ( index $authors 0 ) )}}
+                    {{ printf "/community/engage/people/%s" ( index $authors 0 ) }}
                     {{ if ne $author0.Title "" }}
                         {{ $author0 = $author0.Title }}
                     {{ else }}

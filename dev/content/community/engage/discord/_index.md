@@ -46,17 +46,17 @@ The Upsun community is here for:
 
 We're excited to have you here, and we can't wait to get to know you better. Enjoy your stay!
 <!-- <div class="hx-text-center hx-mt-6">
-{{< hextra/hero-button text="Join us on Discord" link="https://discord.gg/PkMc2pVCDV"
+{{< hextra/hero-button text="Join us on Discord" link="https://discord.gg/platformsh"
   style="margin-right: 10px; background: #6046FF; border: 2px solid #6046FF; font-family: \"Space Grotesk\", sans-serif; font-weight: 700;"
 >}}
 </div> -->
 <!--
 {{< cards >}}
-  {{< card link="https://discord.gg/PkMc2pVCDV" title="Join" >}}
+  {{< card link="https://discord.gg/platformsh" title="Join" >}}
   {{< card link="./faq" title="FAQ" >}}
   {{< card link="./rules" title="Rules" >}}
 {{< /cards >}} -->
 
-- [Join the Discord](https://discord.gg/PkMc2pVCDV)
+- [Join the Discord](https://discord.gg/platformsh)
 - [FAQ](./faq)
 - [Rules](./rules)
