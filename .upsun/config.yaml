@@ -18,6 +18,7 @@ applications:
                 fi
             post_deploy: |
                 bash "${PLATFORM_APP_DIR}"/search.sh
+                bash "${PLATFORM_APP_DIR}"/purge.sh
 
         web:
             locations:

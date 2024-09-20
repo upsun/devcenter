@@ -60,7 +60,6 @@
                     {{ $attribution }} {{ $author0 }}
                 {{ else }}
                     {{ $author0 := site.GetPage ( printf "/community/engage/people/%s" ( index $authors 0 ) )}}
-                    {{ printf "/community/engage/people/%s" ( index $authors 0 ) }}
                     {{ if ne $author0.Title "" }}
                         {{ $author0 = $author0.Title }}
                     {{ else }}

@@ -2,7 +2,7 @@
 title: "Preview Environments"
 subtitle: "A Developer's Secret Weapon"
 date: 2024-09-19T15:20:15+09:00
-image: /images/preview-environments-a-developers-secret-weapon/preview-environments-thumbnail.png
+image: /images/preview-environments-a-developers-secret-weapon/branches.jpg
 icon: release-notes
 featured: true
 author:
@@ -22,6 +22,8 @@ categories:
 math: true
 # excludeSearch: true
 ---
+
+![branches](/images/preview-environments-a-developers-secret-weapon/branches.jpg)
 
 Most developers have a love-hate relationship with deployment. We love seeing our code running in production, but we hate the stress of wondering if it will actually work the way we want it to or if it will have any side effects (regressions). 
 

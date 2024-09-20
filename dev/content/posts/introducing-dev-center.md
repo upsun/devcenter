@@ -21,166 +21,56 @@ categories:
 
 {{< figure src="/images/devcenter.png" >}}
 
+This month our Developer Relations and Advocacy teams are excited to share with you our latest resource: the Upsun Developer Center. 
 
-## Lorem markdownum?
+## What's it for?
 
-Lorem markdownum, Aries, cum formae, illius, gemitu in caelum, iste, praebet
-oculos. In quas alienisque requirenti caesis metallis vestros. Ocius suum
-accensum: iners [plangorem adhibere ensem](http://se-ora.com/) et aliquid meum
-lacertis!
+In short, the Developer Center is meant to act as the central resource, a primary hub, for all technical content you as an Upsun, Platform.sh, and Blackfire user will need to be successful using our tools. Whether that's training, reference documentation, technical articles, example code, demos, talks, or community news. Everything happening in the world of Upsun resources will be found right here at [devcenter.upsun.com](https://devcenter.upsun.com), or will be accessible from here.
 
-- Est si easdem omnes correptus
-- Carmen nixus
-- Ulcisci imas blanditiis suam innumeris ubi
-- Perdidimus pendens paratis continuere solet trepidare amplius
-- Officio sensit qui videtur mens
-- An fors est
+## Why do we need one?
 
-Sensit haec illo spectator frui gravidus ordine latitant. Quod eris, vota ensem
-pectus patria quidem; *lacrimae nutu*. Nunc
-[additur](http://condit-filia.com/solvit), et munera geminos dixit, nec habemus,
-illi. Caeloque subdita flammasque hanc timide patuit causas nos solus fecisse:
-refert tibi, aera Cumaea.
+I've worked at Platform.sh for over 6 years, always in some capacity within Developer resources, training, and public documentation. In that time we've produced a lot of helpful things for (and with) the community:
 
-## Carmen nixus?
+- the [public documentation](https://docs.upsun.com), and the [API documentation](https://api.upsun.com/docs/)
+- [many, many templates](https://github.com/platformsh-templates/), [example repositories](https://github.com/search?q=topic%3Aupsun-example+org%3Aupsun&type=Repositories), and [public](https://github.com/platformsh?q=config-reader&type=all&language=&sort=) [libraries](https://github.com/platformsh?q=platformsh-client&type=all&language=&sort=)
+- [awesome repositories](https://github.com/platformsh/awesome-platformsh) of helpful [snippets](https://github.com/platformsh/snippets)
+- [a community forum](https://community.platform.sh)
+- talks, demos, podcasts and livestreams on our [YouTube channels](https://www.youtube.com/@upsun_com)
+- our [Upsun](https://upsun.com/blog/), [Platform.sh](https://platform.sh/blog/), and [Blackfire](https://blog.blackfire.io/) blogs
 
-Lorem markdownum, Aries, cum formae, illius, gemitu in caelum, iste, praebet
-oculos. In quas alienisque requirenti caesis metallis vestros. Ocius suum
-accensum: iners [plangorem adhibere ensem](http://se-ora.com/) et aliquid meum
-lacertis!
+Now while these resources are available to you, and while my colleagues and long-time users may understand where these pieces are and how they fit together to answer questions like:
 
-```yaml {filename=".upsun/config.yaml" lineNos="true" lineNoStart="1" hl_Lines="5-9"}
-applications:
-  myapp:
-    source:
-      root: dev
-    stack:
-      - nodejs@22
-      - nodePackages.npm
-      - python312
-      - hugo
-    hooks:
-      build: |
-        npm install
-        npm run build 
-    web:
-      locations:
-        /:
-          root: "public"
-          passthru: true
-          index:
-            - index.html
-```
+- Can I deploy Meilisearch on Upsun?
+- How do I set up load testing?
+- Why is the file system read-only at runtime?
 
-Sensit haec illo spectator frui gravidus ordine latitant. Quod eris, vota ensem
-pectus patria quidem; *lacrimae nutu*. Nunc
-[additur](http://condit-filia.com/solvit), et munera geminos dixit, nec habemus,
-illi. Caeloque subdita flammasque hanc timide patuit causas nos solus fecisse:
-refert tibi, aera Cumaea.
+you do kind of have to know where all these resources are - on top of the "rules" of Upsun in the first place - to put the pieces together to answer questions like these ones. 
 
-## Gemitu in caelum?
+As you can imagine, the problem isn't made simpler with the three brands of Upsun, Platform.sh and Blackfire. 
 
-Lorem markdownum, Aries, cum formae, illius, gemitu in caelum, iste, praebet
-oculos. In quas alienisque requirenti caesis metallis vestros. Ocius suum
-accensum: iners [plangorem adhibere ensem](http://se-ora.com/) et aliquid meum
-lacertis!
+Obviously, this is not what we want for users in their first days working with our platform (or on any day for that matter). While our resources are excellent they can be difficult to find unless you know exactly where to look. They should be more discoverable, more intuitive to navigate, and it should be much clearer how different kinds of documentation fit together via common product concepts. 
 
-{{< callout type="warning" >}}
-  Sensit haec illo spectator frui gravidus ordine latitant. Quod eris, vota ensem
-pectus patria quidem.
-{{< /callout >}}
+## What's in the MVP?
 
-Sensit haec illo spectator frui gravidus ordine latitant. Quod eris, vota ensem
-pectus patria quidem; *lacrimae nutu*. Nunc
-[additur](http://condit-filia.com/solvit), et munera geminos dixit, nec habemus,
-illi. Caeloque subdita flammasque hanc timide patuit causas nos solus fecisse:
-refert tibi, aera Cumaea.
+Today in the Upsun Developer Center you can find:
 
-## Caeloque subdita flammasque?
+- **[A new landing page](/)** with quick access to the most useful documentation and resources
+- **[New search](/search)** combining Dev Center, documentation, and blogs in one place
+- **[A new technical blog](/posts)** containing tutorials, how-to guides, and in-depth discussions about how Upsun works under the hood
+- **[A videos pane](/videos)** to bring visibility to all our talks, demos, livestreams and podcasts
+- **[Community resources](/community)** with details around our Discord, how to view and provide feedback on the product roadmap, as well as our community programs.
 
-Lorem markdownum, Aries, cum formae, illius, gemitu in caelum, iste, praebet
-oculos. In quas alienisque requirenti caesis metallis vestros. Ocius suum
-accensum: iners [plangorem adhibere ensem](http://se-ora.com/) et aliquid meum
-lacertis!
+## What's next?
 
-{{% details title="Lorem markdownum" closed="true" %}}
+This MVP is just that -- an MVP. It's only the beginning, but we have big plans for this site. Some of the things we see ahead include:
 
-Sensit haec illo spectator frui gravidus ordine latitant. Quod eris, vota ensem
-pectus patria quidem; *lacrimae nutu*. Nunc
-[additur](http://condit-filia.com/solvit), et munera geminos dixit, nec habemus,
-illi.
+- Continue to improve the search experience, especially as it brings together resources across all of our sites, and code examples on GitHub.
+- Integrate and bring visibility to public code examples, but also forum discussions, FAQs, and popular topics on our new [Discord server](/community/engage/discord).
+- Improve the way we interact with our users within the Dev Center - not just in retrieving product and documentation feedback, but also in providing ways that you can contribute yourself to the resources seen here.
+- Modernize [docs.upsun.com](https://docs.upsun.com) by folding it into the Dev Center.
+- Introduce new community programs and sponsorships, details of and submissions to which will also be found here in the Dev Center.
+- Expand training, certifications, CLI/API reference docs, and much, much more.
 
-{{% /details %}}
+This launch is an exciting first step in our team's efforts to better enable our community with the resources you need to succeed on our platforms. Be sure to join us on [Discord](/community/engage/discord) to stay tuned for updates and to share with us what you'd like to see on this site.
 
-Caeloque subdita flammasque hanc timide patuit causas nos solus fecisse:
-refert tibi, aera Cumaea.
-
-## Tibi, aera Cumaea
-
-Lorem markdownum, Aries, cum formae, illius, gemitu in caelum, iste, praebet
-oculos. In quas alienisque requirenti caesis metallis vestros. Ocius suum
-accensum: iners [plangorem adhibere ensem](http://se-ora.com/) et aliquid meum
-lacertis!
-
-{{< filetree/container >}}
-  {{< filetree/folder name=".upsun" >}}
-    {{< filetree/file name="config.yaml" >}}
-  {{< /filetree/folder >}}
-  {{< filetree/folder name="hello" state="open" >}}
-    {{< filetree/file name="\_\_init\_\_.py" >}}
-    {{< filetree/file name="settings.py" >}}
-    {{< filetree/file name="urls.py" >}}
-    {{< filetree/file name="wsgi.py" >}}
-  {{< /filetree/folder >}}
-  {{< filetree/folder name="myapp" state="open" >}}
-    {{< filetree/file name="\_\_init\_\_.py" >}}
-    {{< filetree/file name="admin.py" >}}
-    {{< filetree/file name="apps.py" >}}
-    {{< filetree/file name="models.py" >}}
-    {{< filetree/file name="tests.py" >}}
-    {{< filetree/file name="urls.py" >}}
-    {{< filetree/file name="views.py" >}}
-  {{< /filetree/folder >}}
-  {{< filetree/file name="requirements.txt" >}}
-{{< /filetree/container >}}
-
-Sensit haec illo spectator frui gravidus ordine latitant. Quod eris, vota ensem
-pectus patria quidem; *lacrimae nutu*. {{< icon "backup" >}} 
-
-Nunc [additur](http://condit-filia.com/solvit), et munera geminos dixit, nec habemus,
-illi. Caeloque subdita flammasque hanc timide patuit causas nos solus fecisse:
-refert tibi, aera Cumaea.
-
-{{% steps %}}
-
-### Step 1
-
-This is the first step.
-
-### Step 2
-
-This is the second step.
-
-### Step 3
-
-This is the third step.
-
-{{% /steps %}}
-
-## Caeloque subdita flammasque?
-
-Lorem markdownum, Aries, cum formae, illius, gemitu in caelum, iste, praebet
-oculos. In quas alienisque requirenti caesis metallis vestros. Ocius suum
-accensum: iners [plangorem adhibere ensem](http://se-ora.com/) et aliquid meum
-lacertis!
-
-{{< tabs items="JSON,YAML,TOML" >}}
-
-{{< tab >}}**JSON**: JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax.{{< /tab >}}
-{{< tab >}}**YAML**: YAML is a human-readable data serialization language.{{< /tab >}}
-{{< tab >}}**TOML**: TOML aims to be a minimal configuration file format that's easy to read due to obvious semantics.{{< /tab >}}
-
-{{< /tabs >}}
-
-Caeloque subdita flammasque hanc timide patuit causas nos solus fecisse:
-refert tibi, aera Cumaea.
+Be seeing you!
