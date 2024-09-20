@@ -20,7 +20,7 @@
   {{- if $enableFooterSwitches -}}
     <div class="hx-mx-auto hx-flex hx-gap-2 hx-py-2 hx-px-4 {{ $footerWidth }}" style="border-top: 1px solid #646F754D;">
       <!-- {{- partial "language-switch.html" (dict "context" .) -}} -->
-      {{- partial "custom/footer-links.html" -}}
+      {{- partial "custom/footer-links.html" (dict "context" . ) -}}
       {{- with $displayThemeToggle }}{{ partial "theme-toggle.html" }}{{ end -}}
     </div>
     {{- if or hugo.IsMultilingual $displayThemeToggle -}}

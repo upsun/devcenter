@@ -14,7 +14,7 @@ subtitle: "The floor is Lava(Moat)"
 # When undefined, the following will be used.
 image: https://medias.podcastics.com/podcastics/episodes/7278/artwork/chmod-104-the-floor-is-lavamoat-with-zbyszek-tenerowicz-change-mode-podcast.png.7c3c576386aced862e03636d1fbf0a55.png
 
-link: "https://www.podcastics.com/podcast/episode/chmod-101-wtfm-write-that-funky-manual-with-ryan-weaver-290587/"
+link: "https://www.podcastics.com/podcast/episode/chmod-104-the-floor-is-lavamoat-with-zbyszek-tenerowicz-303572/"
 
 # Update author with one or more
 #   -> content/community/engage/people/AUTHOR.md
@@ -38,7 +38,7 @@ categories:
 #   - integrations
 ---
 
-Lorem markdownum, Aries, cum formae, illius, gemitu in caelum, iste, praebet
+<!-- Lorem markdownum, Aries, cum formae, illius, gemitu in caelum, iste, praebet
 oculos. In quas alienisque requirenti caesis metallis vestros. Ocius suum
 accensum: iners [plangorem adhibere ensem](http://se-ora.com/) et aliquid meum
 lacertis!
@@ -54,4 +54,4 @@ Sensit haec illo spectator frui gravidus ordine latitant. Quod eris, vota ensem
 pectus patria quidem; *lacrimae nutu*. Nunc
 [additur](http://condit-filia.com/solvit), et munera geminos dixit, nec habemus,
 illi. Caeloque subdita flammasque hanc timide patuit causas nos solus fecisse:
-refert tibi, aera Cumaea.
+refert tibi, aera Cumaea. -->

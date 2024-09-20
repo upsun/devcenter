@@ -142,7 +142,7 @@ Choose only one of the listed available categories, and comment out the rest.
 
     The categories are summarized at [`/posts/#article-categories`](/posts/#article-categories)
 
-    Tagging a post with the category `featured` will promote it to show on the `/posts/' page.
+    Tagging a post with the category `featured` will promote it to show on the `/posts/` page.
 
     * You may need to restart the Hugo process after changing the categories.
      

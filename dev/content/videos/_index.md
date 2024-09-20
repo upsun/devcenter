@@ -2,12 +2,12 @@
 # title: "Videos"
 linkTitle: Videos
 title: All Videos
-weight: 4
+weight: 5
 comments: false
 type: posts
 excludeSearch: true
-sidebar:
-    excludechildren: true
+# sidebar:
+#     excludechildren: true
 # type: docs
 # sidebar:
 #   separator: true

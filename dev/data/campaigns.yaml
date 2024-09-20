@@ -1,0 +1,17 @@
+default: 
+  "utm_campaign": "dc_first_project_incentive"
+  cta: 
+    title: "Get started"
+    body: "Enjoy the same, game-changing Upsun features for less. Introducing First Project Incentive."
+    tac: "Terms and conditions apply"
+    link:
+      text: "Start your trial"
+
+java:
+  "utm_campaign": "dc_java"
+  cta: 
+    title: "Get started with Java"
+    body: "Deploy Java apps with build management tools such as Gradle, Maven, and Ant."
+    tac: false
+    link:
+      text: "Let's go!"

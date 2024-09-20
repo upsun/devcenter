@@ -36,20 +36,4 @@ categories:
 #   - integrations
 ---
 
-Lorem markdownum, Aries, cum formae, illius, gemitu in caelum, iste, praebet
-oculos. In quas alienisque requirenti caesis metallis vestros. Ocius suum
-accensum: iners [plangorem adhibere ensem](http://se-ora.com/) et aliquid meum
-lacertis!
-
-1. Est si easdem omnes correptus
-1. Carmen nixus
-1. Ulcisci imas blanditiis suam innumeris ubi
-1. Perdidimus pendens paratis continuere solet trepidare amplius
-1. Officio sensit qui videtur mens
-1. An fors est
-
-Sensit haec illo spectator frui gravidus ordine latitant. Quod eris, vota ensem
-pectus patria quidem; *lacrimae nutu*. Nunc
-[additur](http://condit-filia.com/solvit), et munera geminos dixit, nec habemus,
-illi. Caeloque subdita flammasque hanc timide patuit causas nos solus fecisse:
-refert tibi, aera Cumaea.
+Live event with [Greg Qualls](/community/engage/people/gregqualls/), Enablement Director, and [Thomas di Luccio](/community/engage/people/thomasdiluccio/), Sr. DevRel Engineer. Join Greg and Thomas live as they discuss performance boosts, scaling, observability, and all the best practices to reinforce your application and infrastructure in time for the most intense period of the year.
