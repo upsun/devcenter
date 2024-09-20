@@ -140,6 +140,13 @@ Choose only one of the listed available categories, and comment out the rest.
     ---
     ```
 
+    The categories are summarized at [`/posts/#article-categories`](/posts/#article-categories)
+
+    Tagging a post with the category `featured` will promote it to show on the `/posts/' page.
+
+    * You may need to restart the Hugo process after changing the categories.
+     
+
 1. (Optional) Update the `link` attribute in the front matter of this file. 
 **Only update** this value if you want to list an article that is hosted externally somewhere, such as on the Upsun blog or the Upsun Dev.to acccount.
 

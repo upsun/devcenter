@@ -9,7 +9,7 @@ sidebar:
   exclude: true
 ---
 
-Docker and Hugo are required.
+Docker and [Hugo](https://gohugo.io/getting-started/installing/) are required.
 
 - Clone [this repository](https://lab.plat.farm/devrel/community/upsun-developer-center) locally
 - Start Docker
