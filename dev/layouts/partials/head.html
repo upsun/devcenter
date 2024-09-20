@@ -16,6 +16,8 @@
       {{ end -}}
     </title>
     <meta name="description" content="{{ partial "utils/page-description.html" . }}" />
+
+    <meta name="image" content="{{ .Site.Params.prodURL }}/images/devcenter.png"/>
   
     {{ with .Params.canonical }}
       <link rel="canonical" href="{{ . }}" itemprop="url" />
