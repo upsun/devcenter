@@ -2,3 +2,6 @@ env
 upsun_commands.json
 test.md
 archive
+dev/search-sources
+dev/public
+

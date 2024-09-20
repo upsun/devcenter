@@ -9,6 +9,7 @@ pkgs.mkShellNoCC {
     nodePackages.npm
     python312
     hugo
+    jq
   ];
   shellHook = ''
     npm install
