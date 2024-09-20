@@ -24,6 +24,10 @@
 
 /* additional callouts */
 
+a.ot-sdk-show-settings:hover {
+    cursor: pointer;
+}
+
 .hx-border-2 {
     border-width: 2px !important;
 }
