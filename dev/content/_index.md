@@ -309,7 +309,7 @@ scoop install upsun
 {{< /tab >}}
 {{< /tabs >}}
 
-{{< hextra/hero-button text="Join the community" link="https://discord.gg/PkMc2pVCDV"
+{{< hextra/hero-button text="Join the community" link="https://discord.gg/platformsh"
   class="upsun-button button-primary" style="margin-right: 10px;"
 >}}{{< hextra/hero-button text="Get support" link="https://docs.upsun.com/learn/overview/get-support.html"
   class="upsun-button button-secondary max-md:hx-hidden" style="margin-right: 0px;"
@@ -398,24 +398,24 @@ No matter if you are a single developer, an agency, a university or part of a te
     icon="upsun"
     class="upsun-feature-card community-card"
     style="min-height: 400px; background-color: #D5F800;"
-    subtitle="Upsun is committed to being champions of open source by sponsoring incredible projects around the world that can benefit us all as a global development community."
-    link="https://platform.sh/community/open-source/"
+    subtitle="Self-service. Usage-based pricing. Customize your resources, runtimes, users, frontends, backends, APIs. All the choices are yours. Welcome to the Upsun PaaS."
+    link="https://docs.upsun.com"
   >}}
   {{< hextra/feature-card
     title="Platform.sh"
     icon="platformsh"
     class="platformsh-feature-card"
     style="min-height: 400px; background-color: #0E1113; color: white;"
-    subtitle="Build a long-term, trusted partnership that empowers you to sell more of your agency's time and expertise."
-    link="https://platform.sh/solutions/digital-agencies/"
+    subtitle="Perfect for monolithic CMS and ecommerce applications. Predictable pricing. Your code, data, Git workflows, and tech stack + our fully managed cloud infrastructure, including security."
+    link="https://docs.platform.sh"
   >}}
   {{< hextra/feature-card
     title="Blackfire.io"
     icon="blackfire-black"
     class="blackfire-feature-card"
     style="min-height: 400px; background-color: #6046FF; color: white;"
-    subtitle="The tailored Upsun Startup Promotion is designed for technology startups eager to accelerate innovation while maintaining agility. "
-    link="https://upsun.com/startup-promotion/"
+    subtitle="Blackfire empowers you to take back control over your application's performance. Stop firefighting by smoothly integrating Blackfire into your workflows. Build out a Continuous Observability Strategy with Blackfire."
+    link="https://docs.blackfire.io/index"
   >}}
 {{< /hextra/feature-grid >}}
 
@@ -462,7 +462,7 @@ At Upsun, we believe in the power of community to drive innovation and foster gr
     title="Discord"
     icon="discord"
     subtitle="Need help? Have a question or something interesting to share? Come join us in the Discord and tell us what's on your mind."
-    link="https://discord.gg/PkMc2pVCDV"
+    link="https://discord.gg/platformsh"
   >}}
   {{< hextra/feature-card
     title="Podcast"
@@ -493,7 +493,7 @@ At Upsun, we believe in the power of community to drive innovation and foster gr
 
 </div>
 
-{{< hextra/hero-button text="Join the community" link="https://discord.gg/PkMc2pVCDV"
+{{< hextra/hero-button text="Join the community" link="https://discord.gg/platformsh"
   class="upsun-button button-primary" style="margin-right: 10px;"
 >}}{{< hextra/hero-button text="Get support" link="https://docs.upsun.com/learn/overview/get-support.html"
   class="upsun-button button-secondary max-md:hx-hidden" style="margin-right: 0px;"

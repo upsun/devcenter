@@ -10,7 +10,7 @@ comments: false
 The Upsun community welcomes everyone, regardless of gender, age, sexual orientation, disability, physical appearance, race, or religion. 
 We value each member of our community, and believe that everyone should feel welcome, included, and safe.
 
-Our [Discord server](https://discord.gg/PkMc2pVCDV/) allows Upsun employees and users to discuss all things Upsun and open source topics and projects, get product feedback, and build a community. 
+Our [Discord server](https://discord.gg/platformsh allows Upsun employees and users to discuss all things Upsun and open source topics and projects, get product feedback, and build a community. 
 We are passionate about our work and love to share about it.
 
 Keep the questions and discussions where they can benefit everyone. 

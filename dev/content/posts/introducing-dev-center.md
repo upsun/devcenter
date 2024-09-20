@@ -1,7 +1,7 @@
 ---
 title: "Introducing the Upsun Developer Center"
-date: 2024-10-01T15:20:15+09:00
-image: /images/background-blue.webp
+date: 2024-09-18T15:20:15+09:00
+image: /images/devcenter.png
 icon: release-notes
 featured: true
 author:
@@ -11,9 +11,6 @@ sidebar:
     exclude: true
 type: post
 
-description: |
-    Join Greg Qualls in this video to better understand the process of setting up development environments on Upsun through the terminal.
-
 tags:
   - developer-center
 categories:
@@ -21,6 +18,9 @@ categories:
   - featured
 # excludeSearch: true
 ---
+
+{{< figure src="/images/devcenter.png" >}}
+
 
 ## Lorem markdownum?
 

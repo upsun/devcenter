@@ -13,7 +13,7 @@ Welcome to the Upsun Community, a hub where developers can unlock the full poten
 <!-- {{% custom/contributors %}} -->
 
 <div class="hx-text-center hx-mt-6" style="margin-top: 4rem;">
-{{< hextra/hero-button text="Join us on Discord" link="https://discord.gg/PkMc2pVCDV" 
+{{< hextra/hero-button text="Join us on Discord" link="https://discord.gg/platformsh" 
   class="upsun-button button-primary" style="margin-right: 10px;"
 >}}{{< hextra/hero-button text="Ask a question on the forum" link="https://community.platform.sh" 
   class="upsun-button button-secondary max-md:hx-hidden" style="margin-right: 0px;"
