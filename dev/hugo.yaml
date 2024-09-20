@@ -371,7 +371,7 @@ params:
   featured:
     - pageRef: /posts/introducing-dev-center
     - pageRef: /posts/preview-environments-a-developers-secret-weapon
-    - pageRef: /videos/OrrxX4japwc
+    - pageRef: /videos/orrxx4japwc
     # - pageRef: /posts/automate-with-gatling-1
     # - pageRef: /community/content/posts/infra-events-multi-app/
     # - pageRef: /community/post/why-we-chose-nix
