@@ -2,6 +2,7 @@
 title: "Community"
 comments: false
 excludeSearch: true
+weight: 6
 # title: "upsun<sup>tv</sup>"
 # type: media
 # layout: list

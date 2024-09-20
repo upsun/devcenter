@@ -1,9 +1,11 @@
 {{/* Table of Contents */}}
 {{/* TODO: toc bottom part should be able to hide */}}
+{{- $context := . -}}
 {{- $toc := .Params.toc | default true -}}
 {{- $onThisPage := (T "onThisPage") | default "On this page"}}
 {{- $editThisPage := (T "editThisPage") | default "Edit this page"}}
 {{- $backToTop := (T "backToTop") | default "Scroll to top" -}}
+{{ $currentPage := printf "%s%s" ( .Site.BaseURL ) ( .Page.RelPermalink ) }}
 
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
   {{- if $toc }}
@@ -23,20 +25,37 @@
         {{- $ctaBorderClass = "" -}}
       {{- end -}}
 
+
+      {{ $campaign := .Page.Params.campaign | default "default" }}
+      {{ $utmSuffix := printf "utm_source=%s&utm_medium=%s&utm_campaign=%s" .Site.Params.utm.source .Site.Params.utm.medium ( index .Site.Data.campaigns $campaign "utm_campaign" ) }}
+      {{ $ctaLinkURL := printf "https://auth.upsun.com/register?%s" $utmSuffix }}
+
+      {{ $ctaTitle := index .Site.Data.campaigns $campaign "cta" "title" }}
+      {{ $ctaBody := index .Site.Data.campaigns $campaign "cta" "body" }}
+      {{ $ctaTAC := index .Site.Data.campaigns $campaign "cta" "tac" }}
+      {{ $ctaLinkText := index .Site.Data.campaigns $campaign "cta" "link" "text" }}
+
       <div class="{{ $ctaBorderClass }} hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
-        <p class="toc-cta-title">Get started</p>
-        <p class="toc-cta-body">Enjoy the same, game-changing Upsun features for less. Introducing First Project Incentive.<sup>1</sup></p>
-        <p class="toc-cta-tac"><sup>1</sup>Terms and conditions apply</p>
-        <a href="https://auth.upsun.com/register?" 
+        <p class="toc-cta-title">{{ $ctaTitle }}</p>
+        {{ if ne $ctaTAC false }}
+        <p class="toc-cta-body">{{ $ctaBody }}<sup>1</sup></p>
+        <p class="toc-cta-tac"><sup>1</sup>{{ $ctaTAC }}</p>
+        {{ else }}
+        <p class="toc-cta-body">{{ $ctaBody }}</p>
+        {{ end }}
+        <a href="{{ $ctaLinkURL }}" 
+            onclick="dataLayer.push({'event': 'click_free_trial', 'click_name': 'Free trial', 'link_url': '{{ $currentPage }}'});"
             class="toc-cta-button not-prose hx-font-medium hx-cursor-pointer hx-rounded-full hx-text-center hx-text-white hx-inline-block hx-bg-primary-600 hover:hx-bg-primary-700 focus:hx-outline-none focus:hx-ring-4 focus:hx-ring-primary-300 dark:hx-bg-primary-600 dark:hover:hx-bg-primary-700 dark:focus:hx-ring-primary-800 hx-transition-all hx-ease-in hx-duration-200" 
-            target="_blank" rel="noreferrer">Start your trial</a>
+            target="_blank" rel="noreferrer">{{ $ctaLinkText }}</a>
       </div>
 
       {{/* TOC bottom part */}}
       <div style="text-align: center; padding-top: 1.25rem; border-top-width: 1px; border-color: rgb(229 229 229 / 0.7);">
         <!-- <p class="toc-cta-title">Connect</p> -->
         <span class="author-social">
-            <a href="{{ .Site.Params.social.discord }}" target="_blank">{{- partial "utils/icon.html" (dict "name" "discord" "attributes" "height=1.5em") -}}</a>
+            <a href="{{ .Site.Params.social.discord }}" target="_blank"
+              onclick="dataLayer.push({'event': 'click_discord', 'click_name': 'Join Discord', 'link_url': '{{ $currentPage }}'});"
+            >{{- partial "utils/icon.html" (dict "name" "discord" "attributes" "height=1.5em") -}}</a>
         </span>
         <span class="author-social">
             <a href="{{ .Site.Params.social.forum }}" target="_blank">{{- partial "utils/icon.html" (dict "name" "chat" "attributes" "height=1.5em") -}}</a>

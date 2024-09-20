@@ -18,14 +18,14 @@ Whether you're wrestling with PHP intricacies, exploring the latest JavaScript l
 The Upsun community is a friendly and supportive environment, and we expect all members to abide by the following
 policies.
 
-### ❤️ A Welcoming Community
+## A Welcoming Community
 
 The Upsun community welcomes everyone regardless of gender, age, sexual orientation, disability, physical appearance,
 race, or religion. We value each member of our site, and believe that everyone should feel welcome, included, and safe.
 
 We do not tolerate harassment of any sort and expect all members to act with respect for each other.
 
-### ✨ We believe in being supportive to our community
+## We believe in being supportive to our community
 
 Help answer questions and guide community members in the various help channels. 
 There are no dumb questions, always approach all questions with humility and an open mind.

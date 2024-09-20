@@ -455,7 +455,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // console.log(result);
         let li = createElement(`
           <li class="single-search-result">
-            <a data-index="${i}" href="${result.route}" class=${i === 0 ? "active" : ""}>
+            <a data-index="${i}" href="${result.route}" class=${i === 0 ? "active" : ""} onClick="dataLayer.push({'event': 'click_search_result', 'click_name': '${result.children.title}', 'link_url': '${result.children.full}'});">
               <div class="title">`+ highlightMatches(result.children.title, query) + `</div>` +
               `<div class="result-url">${result.children.full}</div>` +
           (result.children.content ?

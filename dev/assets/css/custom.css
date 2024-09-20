@@ -677,6 +677,7 @@ footer {
 .search-results {
     padding-left: 2rem;
     padding-right: 2rem;
+    margin-left: 0;
 }
 
 .single-search-result > a {

@@ -20,6 +20,12 @@ applications:
                     passthru: true
                     index:
                       - index.html
+                    scripts: false
+                    allow: true
+                    expires: 24h
+                    rules:
+                        \.(css|js|gif|jpe?g|png|ttf|eot|woff2?|otf|cast|mp4|json|yaml|ico|svg?|cast|mp4|json|yaml|svg?|ttf)$:
+                            expires: 4w
 
 routes:
     "https://{default}/":

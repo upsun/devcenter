@@ -197,6 +197,31 @@ params:
   description: A central hub for all Upsun product offerings, resources, and community details.
   titleMain: Upsun Developer Center
   prodURL: "https://devcenter.upsun.com"
+
+  utm: 
+    source: "dev_center"
+    medium: "dev_center"
+    # campaign: "dev_center"
+    # content: "dev_center"
+    # term: "dev_center"
+
+  services:
+    heap:
+      ID: 3324064225
+    gtm:
+      ID: "GTM-MMXL8H6Q"
+    site:
+      zd: "vfhn57gsamhodmcebl0hpr"
+      google: "AA3wwwZ69DTZVM0_qzBVXOWa5i4Dim8HNql-jGdOKvA"
+
+  # cta: 
+  #   title: "Get started"
+  #   body: "Enjoy the same, game-changing Upsun features for less. Introducing First Project Incentive."
+  #   tac: "Terms and conditions apply"
+  #   link:
+  #     text: "Start your trial"
+  #     url: "https://auth.upsun.com/register?"
+      
   navbar:
     displayTitle: false
     displayLogo: true
@@ -298,17 +323,17 @@ params:
       # inputPosition: top
       # lang: en
 
-  overrides:
-      sidebar-active:
-          "/community/content/posts/": "/community/content/posts/"
-          "/community/content/videos/": "/community/content/videos/"
-          # "/community/engage/people/": "/community/engage/people/"
-      navbar-active:
-          # matches identifier attribute above. 
-          community:
-              exclude:
-                - "/community/content/posts/"
-                - "/community/content/videos/"
+  # overrides:
+  #     sidebar-active:
+  #         "/community/content/posts/": "/community/content/posts/"
+  #         "/community/content/videos/": "/community/content/videos/"
+  #         # "/community/engage/people/": "/community/engage/people/"
+  #     navbar-active:
+  #         # matches identifier attribute above. 
+  #         community:
+  #             exclude:
+  #               - "/community/content/posts/"
+  #               - "/community/content/videos/"
 
   announcement:
       enable: false
