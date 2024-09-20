@@ -67,8 +67,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
 
-    const searchDataURL = '{{ $searchData.RelPermalink }}';
-  
+    // let searchDataURL = '{{ $searchData.RelPermalink }}';
+    let searchDataURL = '/search/search.json';
+
     const inputElements = document.querySelectorAll('.search-input');
     window.addEventListener('DOMContentLoaded', test)
     for (const el of inputElements) {
@@ -88,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function test(e) {
-        console.log("test")
+        // console.log("test")
         init(e);
         search(e);
     }
@@ -257,7 +258,7 @@ document.addEventListener("DOMContentLoaded", function () {
         cache: 100,
         document: {
           id: 'id',
-          store: ['title'],
+          store: ['title','full'],
           index: "content"
         }
       });
@@ -343,14 +344,15 @@ document.addEventListener("DOMContentLoaded", function () {
       resultsElement.classList.remove('hx-hidden');
   
       const pageResults = window.pageIndex.search(query, 5, { enrich: true, suggest: true })[0]?.result || [];
-      console.log(pageResults)
+      //console.log(JSON.stringify(pageResults))
       const results = [];
       const pageTitleMatches = {};
   
       for (let i = 0; i < pageResults.length; i++) {
         const result = pageResults[i];
         pageTitleMatches[i] = 0;
-  
+        //console.log("looking at page id " + i)
+        //console.log(JSON.stringify(result))
         // Show the top 5 results for each page
         const sectionResults = window.sectionIndex.search(query, 5, { enrich: true, suggest: true, tag: `page_${result.id}` })[0]?.result || [];
         let isFirstItemOfPage = true
@@ -358,44 +360,70 @@ document.addEventListener("DOMContentLoaded", function () {
   
         for (let j = 0; j < sectionResults.length; j++) {
           const { doc } = sectionResults[j]
+          //console.log("looking at page counter id " + j)
+          //console.log(doc)
           const isMatchingTitle = doc.display !== undefined
           if (isMatchingTitle) {
             pageTitleMatches[i]++
           }
-          const { url, title, full } = doc
+          const { url, title, full, base } = doc
         //   console.log(doc);
           const content = doc.display || doc.content
-  
+          const myRegexp = new RegExp("^https?:\/\/([^\/]+)", "g");
+          const domainMatches = myRegexp.exec(result.doc.full)
+          const domain = domainMatches[1]
+
+          let domainRank = 10
+
+          if ('devcenter.upsun.com' === domain) {
+            domainRank = 1;
+          }
+
           if (occurred[url + '@' + content]) continue
           occurred[url + '@' + content] = true
           results.push({
             _page_rk: i,
             _section_rk: j,
+            _domain_rank: domainRank,
             route: url,
+            //base: base,
             prefix: isFirstItemOfPage ? result.doc.title : undefined,
             full: result.doc.full || undefined,
-            children: { title, content, full }
+            //domain: domain,
+            children: { title, content, full}
           })
           isFirstItemOfPage = false
         }
       }
+
+      //console.log('pageTitleMatches:')
+      //console.log(JSON.stringify(pageTitleMatches))
+
       const sortedResults = results
         .sort((a, b) => {
-          // Sort by number of matches in the title.
-          if (a._page_rk === b._page_rk) {
-            return a._section_rk - b._section_rk
+          if(a._domain_rank === b._domain_rank) {
+            if (a._page_rk === b._page_rk) {
+              return a._section_rk - b._section_rk
+            } else {
+              if (pageTitleMatches[a._page_rk] !== pageTitleMatches[b._page_rk]) {
+                return pageTitleMatches[b._page_rk] - pageTitleMatches[a._page_rk]
+              }
+              return a._page_rk - b._page_rk
+            }
+          } else {
+            return a._domain_rank - b._domain_rank
           }
-          if (pageTitleMatches[a._page_rk] !== pageTitleMatches[b._page_rk]) {
-            return pageTitleMatches[b._page_rk] - pageTitleMatches[a._page_rk]
-          }
-          return a._page_rk - b._page_rk
         })
         .map(res => ({
-          id: `${res._page_rk}_${res._section_rk}`,
+          id: `${res._domain_rank}_${res._page_rk}_${res._section_rk}`,
           route: res.route,
           prefix: res.prefix,
-          children: res.children
+          children: res.children,
+          full:res.full,
+          //domain: res.domain,
         }));
+      //console.log('Sorted results:')
+      //console.log(sortedResults)
       displayResults(sortedResults, query);
     }
   
@@ -452,10 +480,20 @@ document.addEventListener("DOMContentLoaded", function () {
           fragment.appendChild(createElement(`
             <div class="post-category prefix">${result.prefix}</div>`));
         }
-        // console.log(result);
+        const myRegexp = new RegExp("^https?:\/\/([^\/]+)", "g");
+        const domainMatches = myRegexp.exec(result.children.full)
+        const domain = domainMatches[1]
+
+        let result_link = result.children.full;
+        let target = "target=\"_blank\""
+        if ('devcenter.upsun.com' === domain) {
+          result_link = result.route;
+          target = ""
+        }
+
         let li = createElement(`
           <li class="single-search-result">
-            <a data-index="${i}" href="${result.route}" class=${i === 0 ? "active" : ""} onClick="dataLayer.push({'event': 'click_search_result', 'click_name': '${result.children.title}', 'link_url': '${result.children.full}'});">
+            <a data-index="${i}" href="${result_link}" ${target} class=${i === 0 ? "active" : ""} onClick="dataLayer.push({'event': 'click_search_result', 'click_name': '${result.children.title}', 'link_url': '${result.children.full}'});">
               <div class="title">`+ highlightMatches(result.children.title, query) + `</div>` +
               `<div class="result-url">${result.children.full}</div>` +
           (result.children.content ?

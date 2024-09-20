@@ -11,8 +11,14 @@ applications:
         hooks:
             build: |
                 npm install
-                npm run build 
-        
+                npm run build
+                if [ ! -e "${PLATFORM_APP_DIR}/public/search/search.json" ] || [ ! -L "${PLATFORM_APP_DIR}/public/search/search.json" ]; then
+                    echo "symlink for search.json doesn't exist. I'll attempt to create it."
+                    ln -s -f "${PLATFORM_APP_DIR}/search-sources/search.json" "${PLATFORM_APP_DIR}/public/search/search.json"
+                fi
+            post_deploy: |
+                bash "${PLATFORM_APP_DIR}"/search.sh
+
         web:
             locations:
                 /:
@@ -26,6 +32,21 @@ applications:
                     rules:
                         \.(css|js|gif|jpe?g|png|ttf|eot|woff2?|otf|cast|mp4|json|yaml|ico|svg?|cast|mp4|json|yaml|svg?|ttf)$:
                             expires: 4w
+
+        mounts:
+            'search-sources':
+                source: storage
+
+        operations:
+            update-search-index:
+                commands:
+                    start: bash "${PLATFORM_APP_DIR}"/search.sh
+
+        crons:
+          update-search-index:
+            spec: 19 7,19 * * *
+            commands:
+              start: bash "${PLATFORM_APP_DIR}"/search.sh
 
 routes:
     "https://{default}/":
