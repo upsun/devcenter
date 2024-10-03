@@ -1,6 +1,7 @@
 node_modules/
 public/
 resources/
+!content/cli/ref/resources
 
 .hugo_build.lock
 .git

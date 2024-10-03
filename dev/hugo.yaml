@@ -67,9 +67,8 @@ menu:
       url: "https://docs.upsun.com"
       weight: 1
     - identifier: cli
-      name: "CLI <sup>↗</sup>"
-      # pageRef: /cli
-      url: "https://docs.upsun.com/administration/cli.html"
+      name: "CLI"
+      pageRef: /cli
       weight: 2
     - identifier: api
       name: "API <sup>↗</sup>"

@@ -191,7 +191,7 @@
     href="{{ $link }}"
     {{ if $external }}target="_blank" rel="noreferer"{{ end }}
   >
-    {{- $title -}}
+    {{- $title | safeHTML -}}
       {{- if or .RegularPages .Sections }}
         {{- if not .Params.sidebar.excludechildren -}}
         <span class="hextra-sidebar-collapsible-button">
