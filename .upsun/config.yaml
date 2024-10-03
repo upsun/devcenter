@@ -10,6 +10,10 @@ applications:
             - hugo
         hooks:
             build: |
+                export HUGO_ENVIRONMENT=development
+                if [ "$PLATFORM_ENVIRONMENT_TYPE" = "production" ]; then
+                    export HUGO_ENVIRONMENT=production
+                fi
                 npm install
                 npm run build
                 if [ ! -e "${PLATFORM_APP_DIR}/public/search/search.json" ] || [ ! -L "${PLATFORM_APP_DIR}/public/search/search.json" ]; then
