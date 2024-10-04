@@ -15,7 +15,6 @@ tags:
   - developer-center
 categories:
   - releases
-  - featured
 # excludeSearch: true
 ---
 
