@@ -35,7 +35,7 @@
       {{ $ctaTAC := index .Site.Data.campaigns $campaign "cta" "tac" }}
       {{ $ctaLinkText := index .Site.Data.campaigns $campaign "cta" "link" "text" }}
 
-      <div class="{{ $ctaBorderClass }} hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
+      <div class="cta-section {{ $ctaBorderClass }} hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
         <p class="toc-cta-title">{{ $ctaTitle }}</p>
         {{ if ne $ctaTAC false }}
         <p class="toc-cta-body">{{ $ctaBody }}<sup>1</sup></p>

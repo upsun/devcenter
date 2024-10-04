@@ -24,6 +24,10 @@
 
 /* additional callouts */
 
+.cta-section {
+    background-color: #F7F8F8;
+}
+
 a.ot-sdk-show-settings:hover {
     cursor: pointer;
 }
