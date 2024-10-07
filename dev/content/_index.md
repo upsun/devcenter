@@ -6,25 +6,8 @@ layout: hextra-home
 <!-- <div class="hx-mt-6"></div> -->
 
 {{< hextra/hero-container
-  image="images/upsun-hello-world.svg"
-  imageTitle="Console"
-  imageWidth="100%"
-  imageClass="max-md:hx-hidden"
   class="hx-pt-6 hx-pb-6"
 >}}
-<div class="hx-mt-6 hx-mb-6">
-{{< hextra/hero-headline style="line-height: 1.25 !important;">}}
-  Welcome to the&nbsp;<br class="sm:hx-block hx-mt-6 hx-hidden" /><span style="color: #6046FF;">Upsun Developer Center</span>
-{{< /hextra/hero-headline >}}
-</div>
-
-<div class="hx-mb-12">
-{{< hextra/hero-subtitle >}}
-  Your hub for all resources related to the Upsun product offerings. All the latest demos, examples, documentation, and
-  articles for each of your frameworks and languages. Join the community. And build something great on the Upsun cloud
-  application platform.<br class="sm:hx-block hx-hidden" />
-{{< /hextra/hero-subtitle >}}
-</div>
 
 {{< hextra/hero-button text="Get Started" link="https://docs.upsun.com/get-started/here.html" class="upsun-button button-primary"
   style="margin-right: 10px;"

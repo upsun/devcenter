@@ -24,6 +24,14 @@
 
 /* additional callouts */
 
+.landing-hero-container {
+    background: var(--gradient-CallToAction-Light, 
+            linear-gradient(182deg, #F7F8F8 3%, rgba(255, 255, 255, 0.00) 113.2%, rgba(255, 255, 255, 0.02) 169.42%), 
+            linear-gradient(260deg, #F7FECC 0%, #FFEDE7 33.56%, #FDE8FD 75.58%, #DFDAFF 100%), 
+            linear-gradient(180deg, rgba(25, 28, 30, 0.00) 0%, #191C1E 100%)
+        );
+}
+
 a.ot-sdk-show-settings:hover {
     cursor: pointer;
 }
