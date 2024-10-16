@@ -21,6 +21,8 @@ applications:
                 bash "${PLATFORM_APP_DIR}"/purge.sh
 
         web:
+            commands:
+                start: "node index.js"
             locations:
                 /:
                     root: "public"
