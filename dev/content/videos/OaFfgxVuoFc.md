@@ -32,7 +32,7 @@ categories:
 
 **Mastering Preview Environments and Data Syncing on Upsun**
 
-In this video, we explore the powerful capabilities of Upsun's preview environments, including how to branch from production to create an instant clone, manage databases, and sync data. We'll demonstrate how to tunnel into a Postgres database, make and test changes in a preview environment, and seamlessly synchronize data back from production. Additionally, learn about data sanitization options for sensitive projects and the key benefits of eliminating discrepancies between environments. Join us to understand how these features can enhance your development workflow.
+In this video, we explore the powerful capabilities of Upsun's preview environments, including how to branch from production to create an instant clone, manage databases, and sync data. We'll demonstrate how to tunnel into a PostgreSQL database, make and test changes in a preview environment, and seamlessly synchronize data back from production. Additionally, learn about data sanitization options for sensitive projects and the key benefits of eliminating discrepancies between environments. Join us to understand how these features can enhance your development workflow.
 
 1. Introduction to Preview Environments
 1. Creating a New Preview Environment

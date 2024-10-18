@@ -49,17 +49,17 @@ Greg, the director of global enablement at Upsun and Platform SH, provides a det
 
 ## 2. The Project Page
 
-This video provides a thorough walkthrough of the Upsun project page, detailing all its features and functionalities. From navigating between organizations and understanding the breadcrumb trail for easy navigation back to the projects page. The video covers how to switch between projects across organizations, delve into specific environments, and adjust settings for the whole project or individual aspects. It explores the dashboard sidebar, which displays project details like hosting information, environmental sustainability, total count of environments, resource usage, and a quick view of team members with access. Additionally, the script touches on configuring resources, managing apps and services, accessing the command line interface for Upsun, understanding the branch-based structure of the project's Git repository, making use of the activity log to track project changes, and enhancing performance with Blackfire integration. Finally, it explains the visualization of apps and services within the project, emphasizing resource configuration for the production environment.
+This video provides a thorough walkthrough of the Upsun project page, detailing all its features and functionalities. From navigating between organizations and understanding the breadcrumb trail for navigation back to the projects page. The video covers how to switch between projects across organizations, delve into specific environments, and adjust settings for the whole project or individual aspects. It explores the dashboard sidebar, which displays project details like hosting information, environmental sustainability, total count of environments, resource usage, and a quick view of team members with access. Additionally, the script touches on configuring resources, managing apps and services, accessing the command line interface for Upsun, understanding the branch-based structure of the project's Git repository, making use of the activity log to track project changes, and enhancing performance with Blackfire integration. Finally, it explains the visualization of apps and services within the project, emphasizing resource configuration for the production environment.
 
 **Key moments:**
 
 - 00:00 - Introduction to the Project Page
-- 00:02 - INavigating the Project Interface
-- 00:15 - IUnderstanding Project Settings and Resources
-- 02:47 - IExploring Code Integration and Deployment
-- 03:17 - IManaging Environments and Workflows
-- 04:35 - IActivity Log Insights
-- 05:37 - IFinal Overview and Additional Features
+- 00:02 - Navigating the Project Interface
+- 00:15 - Understanding Project Settings and Resources
+- 02:47 - Exploring Code Integration and Deployment
+- 03:17 - Managing Environments and Workflows
+- 04:35 - Activity Log Insights
+- 05:37 - Final Overview and Additional Features
 
 ## 3. Environment Pages
 
@@ -76,11 +76,11 @@ This walkthrough offers an overview of managing and working with environments in
 
 ## 4. Settings, Access, and Integrations
 
-This video provides a comprehensive overview of the Upson console, focusing on project and environment settings. It covers how to manage general settings like naming and hosting regions, team and individual access controls, integrating with services like GitHub, GitLab, and Slack, managing TLS certificates and domains, and setting up deployment keys. Additionally, it explains how to utilize variables for both project and environment levels, customize settings for different environments, and adjust personal profile settings including theme preferences. The guide concludes with an encouragement to use Upson's discord server or documentation for further assistance.
+This video provides a comprehensive overview of the Upsun console, focusing on project and environment settings. It covers how to manage general settings like naming and hosting regions, team and individual access controls, integrating with services like GitHub, GitLab, and Slack, managing TLS certificates and domains, and setting up deployment keys. Additionally, it explains how to utilize variables for both project and environment levels, customize settings for different environments, and adjust personal profile settings including theme preferences. The guide concludes with an encouragement to use Upsun's Discord server or documentation for further assistance.
 
 **Key moments:**
 
-- 00:00 - Introduction to Upson Console Settings
+- 00:00 - Introduction to Upsun Console Settings
 - 00:09 - Project Settings Overview
 - 00:47 - Access Control and Team Management
 - 01:31 - Security and Domain Configuration

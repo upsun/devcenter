@@ -36,9 +36,9 @@ categories:
 #   - integrations
 ---
 
-Summer Special. In Episode 6 of The Change Mode Podcast, host [Chad Carlson](/community/engage/people/chadwcarlson/) sits down with [Randy Fay](https://github.com/rfay) , the lead maintainer of DDEV, to dive into the world of development environments, TRS-80 nostalgia, and the evolution of open-source communities. Randy takes us on a journey from his early days in programming to his pivotal role in creating DDEV—a tool that’s changing the game for web developers using Docker. With a dash of humor, Randy breaks down how DDEV offers a consistent, isolated workspace across operating systems and why this is a game-changer for devs juggling multiple projects.
+Summer Special. In Episode 6 of The Change Mode Podcast, host [Chad Carlson](/community/engage/people/chadwcarlson/) sits down with [Randy Fay](https://github.com/rfay) , the lead maintainer of DDEV, to dive into the world of development environments, TRS-80 nostalgia, and the evolution of open-source communities. Randy takes us on a journey from his early days in programming to his pivotal role in creating DDEV—a tool that’s changing the game for web developers using Docker. With a dash of humor, Randy breaks down how DDEV offers a consistent, isolated workspace across operating systems and why this is a game-changer for developers juggling multiple projects.
 
-Whether you're a seasoned dev or just tech-curious, Randy’s insights on community-driven development and DDEV’s roadmap for 2024 will keep you hooked. Plus, he shares the importance of financial support from sponsors like Platform.sh, which helps the project thrive. Don't miss out on learning how DDEV is empowering developers worldwide and what exciting new features are coming soon—trust us, it’s a conversation you won’t want to miss.
+Whether you're a seasoned developer or just tech-curious, Randy’s insights on community-driven development and DDEV’s roadmap for 2024 will keep you hooked. Plus, he shares the importance of financial support from sponsors like Platform.sh, which helps the project thrive. Don't miss out on learning how DDEV is empowering developers worldwide and what exciting new features are coming soon—trust us, it’s a conversation you won’t want to miss.
 
 - 02:30 - Randy's early interest in programming, starting with a TRS-80 Model 1
 - 04:15 - Transition from teaching to programming, starting with documentation
@@ -50,7 +50,7 @@ Whether you're a seasoned dev or just tech-curious, Randy’s insights on commun
 - 19:15 - Discussion of DDEV being written in Go and its advantages
 - 22:30 - Focus on contributor training and growing the DDEV community
 - 24:45 - Financial support for DDEV, including sponsorship from Platform.sh
-- 27:30 - Introduction of Stas Zhuk as a paid maintainer
+- 27:30 - Introduction of Stas Zhuk as a paid maintainer 
 - 29:15 - DDEV's plans for 2024, including improved add-on ecosystem
 - 32:45 - Impact of add-ons on community involvement
 - 35:00 - Randy's interests outside of software (mountain biking)
@@ -63,7 +63,7 @@ Thank you to Randy for taking us on his journey, but it doesn’t end there! Che
 - DDEV (https://ddev.com/) 
 - GitHub (https://github.com/rfay) 
      
-Follow us on X ( [upsuncom](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbFdjQ3hnVl8zWWotWjRlWk5FUzJPeGJkUzFhUXxBQ3Jtc0tsWkpRZkpxNHZoWTA1aUQ5VzlOMWhCVDhyYVhxakwwYU5ZeEFzZ0dlZUYyUWdmeDJlOXhJMDFHdV9zWkt0WGVQNTVkRXlJN1FlNHZTMlZEXzFHRzVvcHpVb2VpX2ktbGZoQ1BST3NwX1pSdlFVUVNwMA&q=https%3A%2F%2Ftwitter.com%2Fupsuncom&v=IWXiuR6jlK8) )  to get the latest updates on upcoming episodes.
+Follow us on X ( [upsuncom](https://x.com/upsuncom) )  to get the latest updates on upcoming episodes.
 
 <div class="hx-mt-6"></div>
 

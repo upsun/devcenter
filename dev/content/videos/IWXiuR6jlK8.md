@@ -35,7 +35,7 @@ tags:
   - chmodcast
 #   - integrations
 ---
-Embark in an unconventional open source journey with Pol Dellaiera ( [poldellaiera](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbWFjblhpMXNWTWo1em9jM3NDaUtKSFMtU0hkd3xBQ3Jtc0tscGVKV2YyRWRjUm9Lc3NnYUJBVnFHRi1oT1plYWRMeENHZUFwLWgtQWpPc2NKeUF6UFRtcFRIX2lQd0dHSnI1dWNFLXNKTE5VclN4QjVBWHAtcVZzbENWMzlnQi1GMWd4b1BnS3pkNlh1TG5uSE9MZw&q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fpoldellaiera&v=IWXiuR6jlK8) ) in episode 5 of the chmodcast. 
+Embark in an unconventional open source journey with Pol Dellaiera ( [poldellaiera](https://www.linkedin.com/in/poldellaiera/) ) in episode 5 of the chmodcast. 
 It all starts with saving every euro to buy his first computer as a kid… 
 Then it goes to Drupal, Symfony, and now Nix, where Pol’s contributions as a maintainer 
 with commits rights make the lives of PHP developers easier than ever. 
@@ -69,10 +69,10 @@ and stay in the loop with his work.
 
 Do you have an open-source story of your own that you want to share? Join us for an episode of Change Mode, apply now to be a guest (https://forms.gle/56X2fMxdEJbDRXZD6) .
 
-Shoutout to our incredible podcast host, Marine Gandy ( [mupsigraphy](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbDBLWFlfQzZ4MmsxRXpwc2l5M2ZnR1drTjRCUXxBQ3Jtc0ttaTlRSGNEVVp6QkluT1dNRXlXQ09MYlN4QUNmdGFVUWk2Y2YtdnRXWlZDdWk3TUIzUk9ucWdxRlpmYmg5aWJYVHowakw5V05fc1NNVzhDNHRMcjNWaVp5Y3k1bjNOMHp4VHZ1andoSDFmd2ZEYWdnaw&q=https%3A%2F%2Ftwitter.com%2Fmupsigraphy&v=IWXiuR6jlK8) ), our resident Drupal expert and DevRel Engineer at Platform.sh. 
+Shout out to our incredible podcast host, Marine Gandy ( [mupsigraphy](https://x.com/mupsigraphy) ), our resident Drupal expert and DevRel Engineer at Platform.sh. 
 There’ll be plenty more from Marine coming soon, stay tuned!
 
-Follow us on X ( [upsuncom](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbFdjQ3hnVl8zWWotWjRlWk5FUzJPeGJkUzFhUXxBQ3Jtc0tsWkpRZkpxNHZoWTA1aUQ5VzlOMWhCVDhyYVhxakwwYU5ZeEFzZ0dlZUYyUWdmeDJlOXhJMDFHdV9zWkt0WGVQNTVkRXlJN1FlNHZTMlZEXzFHRzVvcHpVb2VpX2ktbGZoQ1BST3NwX1pSdlFVUVNwMA&q=https%3A%2F%2Ftwitter.com%2Fupsuncom&v=IWXiuR6jlK8) )  to get the latest updates on upcoming episodes.
+Follow us on X ( [upsuncom](https://x.com/upsuncom) )  to get the latest updates on upcoming episodes.
 
 <div class="hx-mt-6"></div>
 

@@ -17,12 +17,12 @@ sidebar:
 1. In another window, navigate into the repository, and run the following command from the `dev` folder:
 
     ```bash
-    hugo new content content/community/content/posts/article-title-slug.md --kind post
+    hugo new content content/posts/article-title-slug.md --kind post
     #OR
     sh create-content.sh post article-title-slug
     ```
 
-    Where `article-title-slug` should be a lowercase, slugified (i.e. recognizable, but unique) version of your article's title.
+    Where `article-title-slug` should be a lowercase, slug-ified (i.e. recognizable, but unique) version of your article's title.
 1. Navigate to the newly created file at `content/posts/article-title-slug.md` in your IDE.
 1. Navigate to [http://localhost:1313/community/content/posts/article-title-slug](http://localhost:1313/community/content/posts/article-title-slug) in your browser to view your edits in real time.
 

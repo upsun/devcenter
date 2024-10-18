@@ -42,13 +42,11 @@ We will close out with a little peek at how applying this knowledge can even hel
 
 This will enable you to spot the links in your data and apply well-known methods to get the most out of it.
 
-Christian Rades, Pricipal Software Engineer, shopware AG.
+Christian Rades, Pricipal Software Engineer, Shopware AG.
 ______________________________________
 
 Enterprise Symfony for the future: Platform.sh is the official Symfony Cloud Platform.
 ______________________________________
-
-Experiment easily. Iterate quickly. Deploy responsibly. Introducing the Upsun PaaS.
 
 Links to check out:
 👉 Get your free Upsun trial: https://brnw.ch/21wFxKr
@@ -82,7 +80,7 @@ Key moments:
 
 21:25 - Git is a graph
 * Introduces Git as a graph, explaining its structure as a directed tree and its relevance to project history and optimization.
-* Explores how Git's history can be leveraged to optimize software architecture by transforming Git data into a social network.
+* Explores how Git history can be leveraged to optimize software architecture by transforming Git data into a social network.
 
 22:43 - Transformation into a social network
 * Describes the process of transforming Git data into a social network to analyze how files in a project are interconnected through commits.
