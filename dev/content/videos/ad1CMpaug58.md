@@ -36,21 +36,21 @@ tags:
 #   - events
 #   - integrations
 ---
-Episode 2 of Change Mode! Sit down with us as we chat with Lætitia Avrot (https://twitter.com/l_avrot?lang=en) , Practice Leader, Postgres and Security at EBD (https://www.enterprisedb.com/) , Postgres Europe Treasurer (https://www.postgresql.eu/) , and founder of Postgres Women (  / postgreswomen  ) . Lætitia shares her journey in building such an impressive resume, her thoughts on why developers need to get better with databases, and provides insider insights on the Postgres community—including SQL norms, how to submit your feature, and when to expect the next update.
+Episode 2 of Change Mode! Sit down with us as we chat with Lætitia Avrot (https://twitter.com/l_avrot?lang=en) , Practice Leader, PostgreSQL and Security at EBD (https://www.enterprisedb.com/) , PostgreSQL Europe Treasurer (https://www.postgresql.eu/) , and founder of PostgreSQL Women. Lætitia shares her journey in building such an impressive resume, her thoughts on why developers need to get better with databases, and provides insider insights on the PostgreSQL community—including SQL norms, how to submit your feature, and when to expect the next update.
 
 * 01:42 — What does Change Mode mean?
-* 04:02 — Meet Lætitia Avrot, our PostgresSQL insider
+* 04:02 — Meet Lætitia Avrot, our PostgreSQL insider
 * 05:05 — What does a Field CTO do?
 * 06:06 — Database Admin, the role you don’t want to need
-* 07:12 — Lætitia’s journey into Postgres
-* 09:59 — “Postgres is to other databases, what Linux is to operating systems”
+* 07:12 — Lætitia’s journey into PostgreSQL
+* 09:59 — “PostgreSQL is to other databases, what Linux is to operating systems”
 * 10:34 — Developers need to know how to write SQL
 * 11:56 — Diving into SQL standards
 * 15:59 — Can anyone join the SQL committee?
-* 18:00 — Governance and changes, how Postgres is a truly open-source project
+* 18:00 — Governance and changes, how PostgreSQL is a truly open-source project
 * 22:02 — The best way to take part is to join Commitfest
-* 24:12 — The Postgres release cycle: no governance, no deadline
-* 26:29 — Postgres Women and the importance of women on stage
+* 24:12 — The PostgreSQL release cycle: no governance, no deadline
+* 26:29 — PostgreSQL Women and the importance of women on stage
 * 29:15 — Cross-community open-source contributions
 * 30:33 — The secret to maintaining attention when presenting
 * 32:31 — New year, new job title
@@ -60,11 +60,11 @@ Episode 2 of Change Mode! Sit down with us as we chat with Lætitia Avrot (https
 * 42:39 — If you could invent a new permission, what would it be?
 * 43:24 — What do you think is your greatest power?
 
-Thank you to the wonderful Lætitia for joining us for this episode and sharing her open-source story, you can stay up-to-date on her work on LinkedIn ( l%c3%a6titia-avrot ) and X (https://twitter.com/l_avrot?lang=en) .
+Thank you to the wonderful Lætitia for joining us for this episode and sharing her open-source story, you can stay up-to-date on her work on LinkedIn and X (https://twitter.com/l_avrot?lang=en) .
 
 Do you have an open-source story of your own that you want to share? Join us for an episode of Change Mode, apply now to be a guest. (https://forms.gle/56X2fMxdEJbDRXZD6)
 
-Shoutout to our incredible podcast host this episode, Marine Gandy ( [mupsigraphy](https://twitter.com/mupsigraphy) ) , our resident Drupal expert and DevRel Engineer at Platform.sh. There’ll be plenty more from Marine coming soon, stay tuned!
+Shout out to our incredible podcast host this episode, Marine Gandy ( [mupsigraphy](https://twitter.com/mupsigraphy) ) , our resident Drupal expert and DevRel Engineer at Platform.sh. There’ll be plenty more from Marine coming soon, stay tuned!
 
 Follow us on X ( [upsuncom](https://twitter.com/upsuncom) )  to get the latest updates on upcoming episodes.
 

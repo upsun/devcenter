@@ -41,7 +41,7 @@ comments: false
 - If your company is member of the [Platform.sh Partner Program](https://platform.sh/solutions/digital-agencies/) we can provide you the partner role here on Discord.
 - Append <code> - \<Company name></code> to your Discord display name on this server (replace <code>\<Company name></code> with your own company name).
 - Reach our Partner Program team from your professional email address.
-- Provide your company name (member of the partner program) and your discord username (it will be shown inside the popup when clicking your name on the bottom left of the Discord client) and ask them for the Discord partner role.
+- Provide your company name (member of the partner program) and your Discord username (it will be shown inside the popup when clicking your name on the bottom left of the Discord client) and ask them for the Discord partner role.
 
 {{< callout type="info" >}}
   You must keep your company name in your nickname on this server or your role will be revoked.

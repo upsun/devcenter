@@ -35,7 +35,7 @@ tags:
 ---
 The script demonstrates the process of setting up a development environment on Upsun through a terminal session. 
 It outlines the steps to clone a staging environment into a new development environment named 'dev1', 
-utilizing the 'infrastructure as code' approach specified in a config yaml file. 
+utilizing the 'infrastructure as code' approach specified in a config YAML file. 
 The process includes provisioning resources, copying codes, caches, and databases. 
 The video shows real-time construction of the environment in the console and examines the build process through logs. 
 The presenter manages to set up the environment within approximately two minutes, concluding with a comparison between the newly created development environment 

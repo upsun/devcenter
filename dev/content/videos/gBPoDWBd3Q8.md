@@ -35,19 +35,17 @@ tags:
 ---
 We all know we should be doing more automation of our software development lifecycle, but getting started can be challenging. Even if you have experience in continuous integration and continuous delivery (CI/CD) automation, learning a specific platform’s terminology and idiosyncrasies can be frustrating.
 
-This presentation is designed to provide an overview of GitHub Actions, a CI/CD platform that allows you to automate your build, test and deployment pipelines, and writing one’s first action, a reusable component that can automate repeatable tasks. We’ll start by going over key terms and concepts in the GitHub Actions platform, such as actions, workflows, events and jobs, and explain how they can be pieced together to build robust and dynamic automations.
+This presentation is designed to provide an overview of GitHub Actions, a CI/CD platform that allows you to automate your build, test and deployment pipelines, and writing one’s first action, a reusable component that can automate repeatable tasks. We’ll start by going over key terms and concepts in the GitHub Actions platform, such as actions, workflows, events and jobs, and explain how they can be pieced together to build robust and dynamic automation.
 
 Then, we’ll dive into the process of building your first GitHub Action, walking through the steps of creating a new action, the types of actions you can create, defining inputs and outputs, and required properties. We’ll then work together to build an action that can be immediately used in your own workflows.
 
-Whether you’re a seasoned developer looking to move to GitHub Actions or a newcomer to automation looking to get started with your first CI/CD automation, Paul Gilzow will help you jumpstart your journey.
+Whether you’re a seasoned developer looking to move to GitHub Actions or a newcomer to automation looking to get started with your first CI/CD automation, Paul Gilzow will help you jump start your journey.
 ______________________________________
 
 Enterprise Symfony for the future: Platform.sh is the official Symfony Cloud Platform.
 ______________________________________
 
-Learn more: https://platform.sh/blog/measuring-th...
-
-Experiment easily. Iterate quickly. Deploy responsibly. Introducing the Upsun PaaS.
+Learn more: https://platform.sh/blog/measuring-the-success-of-a-deployment-with-githubactions/
 
 A bright, new offer powered by Platform.sh—adopted (and ❤️) by 16,000+ developers, 7,000 customers, and proven over the last 8 years—Upsun provides out-of-the-box capabilities that serve as the launchpad for creative development teams’ out-of-the-box thinking. A single, fully managed, self-service PaaS for development teams who just want to build their next, great application.
 
