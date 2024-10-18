@@ -3,6 +3,8 @@ title: Upsun Developer Center
 layout: hextra-home
 ---
 
+<!-- vale off -->
+
 <!-- <div class="hx-mt-6"></div> -->
 
 {{< hextra/hero-container
@@ -501,6 +503,8 @@ At Upsun, we believe in the power of community to drive innovation and foster gr
 
 <----->
 
-<img class="max-md:hx-hidden" src="/images/dev-center-upsun-sun.svg">
+<img class="max-md:hx-hidden" src="/images/dev-center-upsun-sun.svg" alt="Dev Center Upsun Sun character">
 
 {{< /custom/hero-container >}}
+
+<!-- vale on -->

@@ -1,0 +1,36 @@
+DirectoryPath: public
+
+EnforceHTTPS: true
+
+IgnoreDirectoryMissingTrailingSlash: true
+
+IgnoreHTTPS:
+  - http://localhost:1313/community/content/posts/article-title-slug
+  - http://localhost:1313/community/engage/people/your-name
+  - http://localhost:1313/community/videos/YOUTUBE_VIDEO_ID
+  - http://localhost:1313/videos/playlist-name-slug
+  - http://localhost:1313
+
+IgnoreAltMissing: false
+IgnoreAltEmpty: false
+
+IgnoreURLs:
+  # 999
+  - https://linkedin.com/company/upsuncom
+  - https://linkedin.com/in/*
+  # 403
+  - https://community.platform.sh/*
+  - https://unsplash.com/*
+  - https://media.licdn.com/dms/image/*
+  - https://support.platform.sh/*
+  # Known 404s/Dummy URLs
+  - https://api.example.com
+  - https://example.com
+  - http://localhost:1313/community/content/posts/article-title-slug
+  - http://localhost:1313/community/engage/people/your-name
+  - http://localhost:1313/community/videos/YOUTUBE_VIDEO_ID
+  - http://localhost:1313/videos/playlist-name-slug
+  - http://localhost:1313
+
+
+CheckExternal: true

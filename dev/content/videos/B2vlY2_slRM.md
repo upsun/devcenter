@@ -41,8 +41,6 @@ ______________________________________
 Enterprise Symfony for the future: Platform.sh is the official Symfony Cloud Platform.
 ______________________________________
 
-Experiment easily. Iterate quickly. Deploy responsibly. Introducing the Upsun PaaS.
-
 A bright, new offer powered by Platform.sh—adopted (and ❤️) by 16,000+ developers, 7,000 customers, and proven over the last 8 years—Upsun provides out-of-the-box capabilities that serve as the launchpad for creative development teams’ out-of-the-box thinking. A single, fully managed, self-service PaaS for development teams who just want to build their next, great application.
 
 Links to check out:
@@ -99,7 +97,7 @@ Key moments:
 * The concept of continuous profiling is explored, highlighting its integration into the development process to proactively identify and address performance issues.
 
 31:02 - Discount
-* This chapter referes to providing discounts for tools mentioned in the video, encouraging viewers to take advantage of special offers to support their performance testing efforts.
+* This chapter refers to providing discounts for tools mentioned in the video, encouraging viewers to take advantage of special offers to support their performance testing efforts.
 
 31:36 - Game
 * Employ different tactics and tools to achieve success in performance testing and optimization.

@@ -96,7 +96,7 @@ Understanding the difference between simple and preflight requests is important 
 
 ### `CORS` and Security
 
-While `CORS` allows for more flexible web applications, it's important to understand that it's not a security feature in itself. `CORS` doesn't protect your server from unauthorized access; it simply tells the browser to allow certain `cross-origin` requests.
+While `CORS` allows for more flexible web applications, it's important to understand that it's not a security feature in itself. `CORS` doesn't protect your server from unauthorized access; it tells the browser to allow certain `cross-origin` requests.
 
 Proper security measures, such as authentication and authorization, should always be implemented on the server side. **`CORS` should be configured to allow only the necessary origins, methods, and headers.**
 

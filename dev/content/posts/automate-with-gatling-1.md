@@ -41,7 +41,7 @@ categories:
 math: true
 ---
 
-{{< figure src="/images/gatling.png" >}}
+{{< figure src="/images/gatling.png" alt="Gatling header image" >}}
 
 When I was on your side of the keyboard, developing cool and funny applications (more or less :D), load tests were (most of the time) executed a few days before going live. 
 We sometimes discover rabbits in the hole, doing too much stuff, and then, we switch to firefighter mode to solve all of the issues. That was not a great experience. 
@@ -55,7 +55,7 @@ Gatling CORP is a french company and they provide tools to load test your applic
 {{< callout >}}
 **Note:**
 
-If you want to learn more about what and why it is important to load test your application, please see [this blogpost](https://gatling.io/blog/why-we-test-the-beginners-guide-to-why-load-testing-is-important) from [Peter Dukta](https://gatling.io/blog/author/pdutka) (Gatling), you will find everything you want. 
+If you want to learn more about what and why it is important to load test your application, please see [this blog post](https://gatling.io/blog/why-we-test-the-beginners-guide-to-why-load-testing-is-important) from [Peter Dukta](https://gatling.io/blog/author/pdutka) (Gatling), you will find everything you want. 
 {{< /callout >}}
 
 ## Gatling and load tests
@@ -331,7 +331,7 @@ applications:
 ## Conclusions
 
 Load testing your application is crucial if you are running applications with a lot of 
-traffic spikes or if you’re facing tv show effects.
+traffic spikes or if you’re facing TV show effects.
 
 In this guide, we took a look at how to set up an on-demand set of load tests with Gatling community edition that could be triggered (and observed) on a new Upsun preview environment using a runtime operation.
 Some next steps could include automatically triggering these operations when preview environments (merge/pull requests) are opened. 

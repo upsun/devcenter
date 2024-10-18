@@ -40,7 +40,7 @@ categories:
 #   - integrations
 ---
 
-{{< figure src="/images/ovhpaas.png" class="header-img" attr="Photo by [Marc Wieland](https://unsplash.com/@marcwieland95?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/cloud-photo-zrj-TPjcRLA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)">}}
+{{< figure src="/images/ovhpaas.png" class="header-img" alt="Unsplash photo by Marc Wieland" attr="Photo by [Marc Wieland](https://unsplash.com/@marcwieland95?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/cloud-photo-zrj-TPjcRLA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)">}}
 
 This document aims to explain how to migrate your existing Web PaaS project to Platform.sh from OVHcloud infrastructure, and also how you can benefit from an Upsun voucher that will give you roughly two months for free.
 
@@ -202,7 +202,7 @@ Once your project has been set up, it's time to move your application code and (
 
     Run the command and answer the questions.
     Once the integration has been configured, your environments should now be visible on either Upsun or Platform.sh.
-    The inital activities may fail since the configuration needs to be updated, but that will be updated in the next steps.
+    The initial activities may fail since the configuration needs to be updated, but that will be updated in the next steps.
 
 1.  **(Option 2) Clone project locally from OVH Web PaaS:**
     Now that your new project is ready, we can start the code migration.
@@ -363,7 +363,7 @@ You can use the following command to list all the existing integrations:
 webpaas integrations
 ```
 
-You can configure them easily in your new project:
+You can configure them in your new project:
 
 ```bash
 upsun integration:add

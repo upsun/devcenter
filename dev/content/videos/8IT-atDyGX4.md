@@ -34,7 +34,7 @@ tags:
 #   - events
 #   - integrations
 ---
-From monolith to multi-app join us as we explore more in this Symfony demo: Once upon a time, great people created a great Symfony demo, to be used as a living code example and help us all learn: Bigfoot. Since then, the DevRel team at Platform.sh has forked this repo and created a really fun escape game to showcase Blackfire. And we thought it would be good to have a dedicated frontend for our game, instead of reusing the Bigfoot design.
+From monolith to multi-app join us as we explore more in this Symfony demo: Once upon a time, great people created a great Symfony demo, to be used as a living code example and help us all learn: Bigfoot. Since then, the DevRel team at Platform.sh has forked this repository and created a really fun escape game to showcase Blackfire. And we thought it would be good to have a dedicated frontend for our game, instead of reusing the Bigfoot design.
 
 So we forked it to create an instance for Django. And then we forked it again to make an instance for Drupal. And then another fork, and another. Slowly, we realized that the way forward was to refactor our dear monolith to better fit our needs. Let Florent HUCK show you how we stopped forking around!
 ______________________________________
@@ -42,9 +42,7 @@ ______________________________________
 Enterprise Symfony for the future: Platform.sh is the official Symfony Cloud Platform.
 ______________________________________
 
-Learn more: https://platform.sh/blog/how-to-host-...
-
-Experiment easily. Iterate quickly. Deploy responsibly. Introducing the Upsun PaaS.
+Learn more: https://platform.sh/blog/how-to-host-multiple-applications/
 
 Links to check out:
 👉 Get your free Upsun trial: https://brnw.ch/21wFxKr
@@ -70,7 +68,7 @@ Key moments:
 * Highlights Platform.sh's simplicity in deployment and management.
 
 4:40 - Bigfoot App
-* Introduces Bigfoot website's transition from a monolith to multiple apps using Symfony, API Platform, Gatsby, and Mercur.
+* Introduces Bigfoot website's transition from a monolith to multiple apps using Symfony, API Platform, Gatsby, and Mercure.
 
 7:03 - Steps from single to multi-app
 * Outlines steps to transition from single Symfony app to multiple apps.
@@ -85,7 +83,7 @@ Key moments:
 * Introduces separate folders for each app.
 
 10:19 - Add other application sources
-* Explains adding Symfony, API Platform, Gatsby, and Mercur as separate applications.
+* Explains adding Symfony, API Platform, Gatsby, and Mercure as separate applications.
 * Provides guidance on copying existing Symfony source code.
 
 10:55 - Configure apps

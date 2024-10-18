@@ -46,11 +46,9 @@ ______________________________________
 Enterprise Symfony for the future: Platform.sh is the official Symfony Cloud Platform.
 ______________________________________
 
-Experiment easily. Iterate quickly. Deploy responsibly. Introducing the Upsun PaaS.
-
 A bright, new offer powered by Platform.sh—adopted (and ❤️) by 16,000+ developers, 7,000 customers, and proven over the last 8 years—Upsun provides out-of-the-box capabilities that serve as the launchpad for creative development teams’ out-of-the-box thinking. A single, fully managed, self-service PaaS for development teams who just want to build their next, great application.
 
-Learn more: https://platform.sh/blog/the-containe...
+Learn more: https://platform.sh/blog/the-container-is-a-lie/
 
 Links to check out:
 👉 Get your free Upsun trial: https://brnw.ch/21wFxKr
@@ -85,7 +83,7 @@ Key moments:
 * They specify their desired PHP version, extensions, and other dependencies.
 * NYX shell is used to create a temporary environment with the required packages.
 * Pre-downloaded packages are used to avoid long wait times during the demonstration.
-* The speaker highlights the simplicity of NYX's language for specifying package dependencies.
+* The speaker highlights the simplicity of Nix's language for specifying package dependencies.
 * They showcase the successful setup of the PHP environment with the desired versions of PHP, Python, ImageMagick, etc.
 * The speaker emphasizes the time-saving aspect of automating environment setup with NYX.
 
