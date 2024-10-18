@@ -7,9 +7,26 @@ layout: hextra-home
 
 <!-- <div class="hx-mt-6"></div> -->
 
+
 {{< hextra/hero-container
+  image="images/upsun-hello-world.svg"
+  imageTitle="Console"
+  imageWidth="90%"
+  imageClass="max-md:hx-hidden"
   class="hx-pt-6 hx-pb-6"
 >}}
+<div class="hx-mt-6 hx-mb-6">
+{{< hextra/hero-headline style="line-height: 1.25 !important;">}}
+  Time to <span style="color: #6046FF;">git started</span>
+{{< /hextra/hero-headline >}}
+</div>
+
+<div class="hx-mb-12">
+{{< hextra/hero-subtitle >}}
+  Python, Go, microservices, monoliths, backend APIs, frontend user interfaces, inference and RAG apps. Build anything on the self-service, user-extensible, general-purpose cloud application platform.
+  <br class="sm:hx-block hx-hidden" />
+{{< /hextra/hero-subtitle >}}
+</div>
 
 {{< hextra/hero-button text="Get Started" link="https://docs.upsun.com/get-started/here.html" class="upsun-button button-primary"
   style="margin-right: 10px;"

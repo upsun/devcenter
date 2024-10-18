@@ -24,6 +24,24 @@
 
 /* additional callouts */
 
+.search-wrapper-home {
+    width: 90% !important;
+}
+
+.landing-hero-text {
+    width: 90% !important;
+}
+
+@media (min-width:1025px) {
+    .landing-hero-text {
+        width: 60% !important;
+    }
+
+    .search-wrapper-home {
+        width: 50% !important;
+    }
+ }
+
 .landing-hero-container {
     background: var(--gradient-CallToAction-Light, 
             linear-gradient(182deg, #F7F8F8 3%, rgba(255, 255, 255, 0.00) 113.2%, rgba(255, 255, 255, 0.02) 169.42%), 

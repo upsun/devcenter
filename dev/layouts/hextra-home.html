@@ -1,15 +1,18 @@
 {{ define "main" }}
-  <div class='landing-hero-container hx-mx-auto' style="padding-top: 6rem; padding-bottom: 6rem;">
-    <div class='landing-hero-text hx-mx-auto {{ partial "utils/page-width" . }}' style="font-family: 'Instrument Sans'; text-align: center; font-size: 3.5rem; font-weight: 700;">
+  <div class='landing-hero-container hx-mx-auto' style="padding-top: 5rem; padding-bottom: 5rem;">
+    <div class='landing-hero-text hx-mx-auto {{ partial "utils/page-width" . }}' style="font-family: 'Instrument Sans'; text-align: center; font-size: 2rem; font-weight: 700;">
+      Welcome to the
+    </div>
+    <div class='landing-hero-text hx-mx-auto {{ partial "utils/page-width" . }}' style="color:#6046ff; font-family: 'Instrument Sans'; text-align: center; font-size: 3.5rem; font-weight: 700;">
         Upsun Developer Center
     </div>
-    <div class='landing-hero-text hx-mx-auto {{ partial "utils/page-width" . }}' style="padding-top: 1.5rem; font-family: 'Instrument Sans'; text-align: center; width: 60% !important;">
-        Your hub for all resources related to the Upsun product offerings. All the latest demos, examples, documentation, and articles for each of your frameworks and languages. Join the community. And build something great on the Upsun cloud application platform.
+    <div class='landing-hero-text hx-mx-auto {{ partial "utils/page-width" . }} hx-text-xl' style="padding-top: 1.5rem; font-family: 'Instrument Sans'; text-align: center;">
+        Your hub for all resources related to the Upsun ecosystem. All the latest demos, examples, documentation, and articles for all your frameworks and languages. Join the community, and build something great on the Upsun cloud application platform.
     </div>
 
-    <div class="search-wrapper hx-relative md:hx-w-64" style="margin: 3rem auto; width: 50% !important;">
+    <div class="search-wrapper-home hx-relative md:hx-w-64" style="margin: 3rem auto;">
         <form class="search-form hx-relative hx-flex hx-items-center hx-text-gray-900 contrast-more:hx-text-gray-800 dark:hx-text-gray-300 contrast-more:dark:hx-text-gray-300" 
-        style="border-radius: 1rem; border: 2px solid #646F75; background-color: white;">
+        style="border-radius: 1rem; border: 2px solid #646F75; background-color: white;" action="/search">
           <div style="width: 30px; margin: 1rem 1rem;">
               {{ partial "utils/icon.html" (dict "name" "search") -}}
           </div>
@@ -24,13 +27,6 @@
             spellcheck="false"
             required
           />
-        </div>
-      
-        <div id="results-wrapper" class="results-wrapper">
-          <ul
-            class="search-results hextra-scrollbar hx-bg-white dark:hx-border-neutral-800 dark:hx-bg-neutral-900 hx-top-full hx-z-20 hx-mt-2 hx-overscroll-contain hx-rounded-xl hx-py-2.5 hx-max-h-[min(calc(50vh-11rem-env(safe-area-inset-bottom)),400px)] md:hx-max-h-[min(calc(100vh-5rem-env(safe-area-inset-bottom)),400px)] hx-inset-x-0 ltr:md:hx-left-auto rtl:md:hx-right-auto contrast-more:hx-border contrast-more:hx-border-gray-900 contrast-more:dark:hx-border-gray-50 hx-w-screen hx-min-h-[100px]"
-            style="transition: max-height 0.2s ease 0s; margin-top: 2rem; list-style: none !important; width: 100%; max-height: 100%;"
-          ></ul>
         </div>
       
       </div>
