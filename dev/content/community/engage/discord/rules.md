@@ -17,8 +17,6 @@ Keep the questions and discussions where they can benefit everyone.
 Please do not ping or direct message staff members/moderators without being asked to do so. 
 Specific support issues require a [support ticket](https://docs.upsun.com/learn/overview/get-support.html#create-a-support-ticket).
 
-<!-- The only exception is when the product or service is in BETA phase. Then we will be there in best-effort to help you in your journey. -->
-
 ## Rules
 
 In addition to the rules specific to the Discord, you are required to follow the [Discord Terms of Service](https://discordapp.com/terms).

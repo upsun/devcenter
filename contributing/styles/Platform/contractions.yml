@@ -1,0 +1,26 @@
+extends: existence
+message: "Feel free to use a contraction instead of '%s'"
+link: 'https://github.com/platformsh/platformsh-docs/blob/main/contributing/content-style.md#use-contractions'
+level: suggestion
+ignorecase: true
+scope: raw
+tokens:
+  - are not
+  - cannot
+  - could not
+  - did not
+  - do not
+  - does not
+  - has not
+  - have not
+  - how is
+  - is not
+  - (?<!(?:where|how|what) )it is
+  - should not
+  - that is
+  - (?<!(?:where|how) )they are
+  - was not
+  - were not
+  - what is
+  - when is
+  - where is

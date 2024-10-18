@@ -35,7 +35,7 @@ tags:
 #   - integrations
 ---
 
-After the Covid surge, has remote work recently gotten unpopular in 2023?
+After the COVID-19 surge, has remote work recently gotten unpopular in 2023?
 Many large tech companies have now turned their backs on remote work. Remote work would decrease productivity, hurt the company culture, generate silos... leading to reestablishing back to the office policies in many tech companies.
 
 How much of this stands and how much can be mitigated? Join our CEO and co-founder, Fred Plais and Chief People Officer, Caroline Leroy to explore good practices from the field and actionable testimonials that can help make remote work fine both for employers and employees.
@@ -44,8 +44,6 @@ ______________________________________
 
 Enterprise Symfony for the future: Platform.sh is the official Symfony Cloud Platform.
 ______________________________________
-
-Experiment easily. Iterate quickly. Deploy responsibly. Introducing the Upsun PaaS.
 
 A bright, new offer powered by Platform.sh—adopted (and ❤️) by 16,000+ developers, 7,000 customers, and proven over the last 8 years—Upsun provides out-of-the-box capabilities that serve as the launchpad for creative development teams’ out-of-the-box thinking. A single, fully managed, self-service PaaS for development teams who just want to build their next, great application.
 
@@ -87,7 +85,7 @@ Key moments:
 
 14:31 - Introducing Upsun
 • Introduces Upsun, a fully distributed team working on a project similar to Platform.sh.
-• Describes the challenge of coordinating a distributed team to deliver a product within a tight timeframe.
+• Describes the challenge of coordinating a distributed team to deliver a product within a tight time frame.
 • Shares insights from team members on the benefits of remote work, including flexibility, access to talent, and effective communication tools.
 
 19:55 - Learnings from the Upsun project about working remote
@@ -96,7 +94,7 @@ Key moments:
 • Access to global talent and productivity benefits across time zones.
 
 21:20 - The Platform.sh remote work's secret sauce
-• Trust, transparency, and overcommunication are fundamental.
+• Trust, transparency, and over-communication are fundamental.
 • Building a strong culture, management support, and effective communication.
 • Creating a supportive organizational structure for remote teams.
 

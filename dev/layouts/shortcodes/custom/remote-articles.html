@@ -33,7 +33,7 @@
             <div class="contrib-item">
                 <div class="contrib-img">
                     {{ if isset $v "image" }}
-                    <img src="{{ $v.image }}">
+                    <img src="{{ $v.image }}" alt="{{ $v.title | anchorize }}">
                     {{ end }}
                 </div>
                 <div class="contrib-desc">

@@ -37,8 +37,8 @@ categories:
 1:48 - The main issues affecting application security
 • Discusses findings from the M Trends survey regarding prevalent attack vectors and the rising global costs of data breaches.
 
-1:55 - Cyber risks & attacks
-• Explores various cyber risks and attacks, including exploitation, phishing, and stolen credentials, based on the M Trends survey.
+1:55 - Cyber-risks & attacks
+• Explores various cyber-risks and attacks, including exploitation, phishing, and stolen credentials, based on the M Trends survey.
 
 2:59 - Investing now can save millions
 • Highlights the importance of increasing security investments to mitigate the financial impact of data breaches.

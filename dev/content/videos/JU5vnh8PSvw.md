@@ -37,7 +37,7 @@ categories:
 ---
 Our first-ever episode of the Change Mode podcast is kicking things off nicely with a wonderful guest from the Symfony ( symfony  ) core team, Ryan Weaver. The Symfony docs lead and SymfonyCasts writer keeping us all in check when it comes to Symfony development. Join us for this episode as Ryan shares how to get started in open source, his methods for creating and managing great documentation and screencasts (including those dreaded translations), and how to balance open source and family life.
 
-Donate to Ryan’s GoFoundMe page (https://www.gofundme.com/f/support-ry...)  to support him in his battle with cancer.
+Donate to Ryan’s GoFoundMe page (https://www.gofundme.com/f/support-ryans-brain-cancer-battle)  to support him in his battle with cancer.
 
 Key moments:
 *  0:22 — Intro: The Change Mode podcast powered by Upsun
@@ -62,14 +62,12 @@ Key moments:
 
 A huge thank you to Ryan for joining us for the first episode of the Change Mode Podcast. It was a pleasure to chat with him about his open-source experience and what led him from a self-described bad developer to teaching thousands of developers the ins and outs of Symfony on SymfonyCasts.
 
-Follow Ryan on his social channels linked below and if you can, please donate to Ryan’s GoFundMe page (https://www.gofundme.com/f/support-ry...)  in support of his ongoing battle with Glioblastoma.
+Follow Ryan on his social channels linked below and if you can, please donate to Ryan’s GoFundMe page (https://www.gofundme.com/f/support-ryans-brain-cancer-battle)  in support of his ongoing battle with Glioblastoma.
 
 *  GitHub (https://github.com/weaverryan)
-*  LinkedIn  (  / weaverryan  )
 *  X (https://twitter.com/weaverryan?ref_sr...)  (Twitter)
-*  YouTube (   / @weaverryan  )  (SymfonyCasts)
 
-Shoutout to our incredible podcast host this episode, Marine Gandy (  / mupsigraphy  ) , our resident Drupal expert and DevRel Engineer at Platform.sh (http://Platform.sh) . There’ll be plenty more from Marine coming soon, stay tuned!
+Shout out to our incredible podcast host this episode, Marine Gandy (  / mupsigraphy  ) , our resident Drupal expert and DevRel Engineer at Platform.sh (https://platform.sh) . There’ll be plenty more from Marine coming soon, stay tuned!
 
 Follow us (https://upsun.com/)  on X (  / upsuncom  )  to stay up to speed on the latest episodes.
 

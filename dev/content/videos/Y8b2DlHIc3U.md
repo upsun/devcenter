@@ -45,8 +45,6 @@ ______________________________________
 Enterprise Symfony for the future: Platform.sh is the official Symfony Cloud Platform.
 ______________________________________
 
-Experiment easily. Iterate quickly. Deploy responsibly. Introducing the Upsun PaaS.
-
 A bright, new offer powered by Platform.sh—adopted (and ❤️) by 16,000+ developers, 7,000 customers, and proven over the last 8 years—Upsun provides out-of-the-box capabilities that serve as the launchpad for creative development teams’ out-of-the-box thinking. A single, fully managed, self-service PaaS for development teams who just want to build their next, great application.
 
 Links to check out:
@@ -62,7 +60,7 @@ Key moments:
 
 4:15 - Introduction to Regular Expressions
 * Originating in 1951, regular expressions define search patterns with character sequences.
-* Emphasizing accessibility and learnability for all, regardless of mathematical background.
+* Emphasizing accessibility and comprehension for all, regardless of mathematical background.
 
 6:03 - Regular Expression uses
 * Practical applications include text finding, validation, and string manipulation.
@@ -70,7 +68,7 @@ Key moments:
 * Highlighting versatility and usefulness in various contexts.
 
 6:30 - How to use Regular Expressions
-* Overviewing regex syntax: literal characters, special characters, and character classes.
+* Reviewing regex syntax: literal characters, special characters, and character classes.
 * Encouraging hands-on experimentation and understanding syntax nuances.
 
 8:58 - RegEx builders

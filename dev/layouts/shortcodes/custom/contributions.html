@@ -93,11 +93,11 @@
                     <div class="contrib-item">
                         <div class="contrib-img">
                             {{ if isset .Params "image" }}
-                            <img src="{{ .Params.image }}">
+                            <img src="{{ .Params.image }}" alt="{{ .Title | anchorize }}">
                             {{ else if eq $contentType "videos" }}
-                            <img src="https://img.youtube.com/vi/{{ with .File }}{{ .BaseFileName }}{{ end }}/hqdefault.jpg">
+                            <img src="https://img.youtube.com/vi/{{ with .File }}{{ .BaseFileName }}{{ end }}/hqdefault.jpg" alt="{{ .Title | anchorize }}">
                             {{ else }}
-                            <img src="{{ $defaultImage }}">
+                            <img src="{{ $defaultImage }}" alt="{{ .Title | anchorize }}">
                             {{ end }}
                         </div>
                         <div class="contrib-desc">
@@ -158,11 +158,11 @@
                             <div class="contrib-item">
                                 <div class="contrib-img">
                                     {{ if isset .Params "image" }}
-                                    <img src="{{ .Params.image }}">
+                                    <img src="{{ .Params.image }}" alt="{{ .Title | anchorize }}">
                                     {{ else if eq $contentType "videos" }}
-                                    <img src="https://img.youtube.com/vi/{{ with .File }}{{ .BaseFileName }}{{ end }}/hqdefault.jpg">
+                                    <img src="https://img.youtube.com/vi/{{ with .File }}{{ .BaseFileName }}{{ end }}/hqdefault.jpg" alt="{{ .Title | anchorize }}">
                                     {{ else }}
-                                    <img src="{{ $defaultImage }}">
+                                    <img src="{{ $defaultImage }}" alt="{{ .Title | anchorize }}">
                                     {{ end }}
                                 </div>
                                 <div class="contrib-desc">

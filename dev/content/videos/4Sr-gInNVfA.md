@@ -7,7 +7,7 @@ sidebar:
 type: media
 #################################
 # Update the title
-title: "Django schema migrations and deployments minus the misery l Upsun"
+title: "Django schema migrations and deployments minus the misery"
 
 # (optional) Override the image produced for the video page.
 # When undefined, the following will be used.
@@ -46,7 +46,7 @@ Antonis Kalipetis
 
 Antonis is a Docker Captain and a Software Engineer at Platform.sh — a cloud platform for responsibly building, running, and scaling fleets of websites and applications. He is a Python lover and developer who helps teams embrace containers and improve their development workflow. He loves automating stuff and sharing knowledge around all things containers, DevOps and developer workflows.
 
-Try Upsun for your Django projects: https://upsun.com/blog/setting-up-dja...
+Try Upsun for your Django projects: https://upsun.com/blog/setting-up-django-on-upsun/
 
 Key moments:
 0:00 - Intro
@@ -58,7 +58,7 @@ Key moments:
 6:37 - Database
 7:30 - Static asset management in Django
 10:59 - Static files app
-13:28 - Storages
+13:28 - Storage
 14:46 - Schema migrations in Django
 16:29 - Challenges in horizontally scaling Django apps
 17:29 - Static files
