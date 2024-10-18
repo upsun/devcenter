@@ -30,6 +30,11 @@
             linear-gradient(260deg, #F7FECC 0%, #FFEDE7 33.56%, #FDE8FD 75.58%, #DFDAFF 100%), 
             linear-gradient(180deg, rgba(25, 28, 30, 0.00) 0%, #191C1E 100%)
         );
+
+}
+
+.cta-section {
+    background-color: #F7F8F8;
 }
 
 a.ot-sdk-show-settings:hover {

@@ -10,12 +10,16 @@ applications:
             - hugo
         hooks:
             build: |
-                export HUGO_ENVIRONMENT=development
-                if [ "$PLATFORM_ENVIRONMENT_TYPE" = "production" ]; then
-                    export HUGO_ENVIRONMENT=production
+                npm install 
+
+                if [ -z ${HUGO_ENVIRONMENT+x} ]; then 
+                    npm run build:nonprod
+                else 
+                    if [ "$HUGO_ENVIRONMENT" = "production" ]; then
+                        npm run build:prod
+                    fi
                 fi
-                npm install
-                npm run build
+
                 if [ ! -e "${PLATFORM_APP_DIR}/public/search/search.json" ] || [ ! -L "${PLATFORM_APP_DIR}/public/search/search.json" ]; then
                     echo "symlink for search.json doesn't exist. I'll attempt to create it."
                     ln -s -f "${PLATFORM_APP_DIR}/search-sources/search.json" "${PLATFORM_APP_DIR}/public/search/search.json"
@@ -25,6 +29,8 @@ applications:
                 bash "${PLATFORM_APP_DIR}"/purge.sh
 
         web:
+            commands:
+                start: "node index.js"
             locations:
                 /:
                     root: "public"

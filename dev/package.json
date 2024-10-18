@@ -4,15 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "hugo mod tidy && hugo --gc --minify --buildFuture",
+    "build:prod": "hugo mod tidy && HUGO_ENVIRONMENT=production hugo --gc --minify --buildFuture",
+    "build:nonprod": "hugo mod tidy && HUGO_ENVIRONMENT=development hugo --gc --minify --buildFuture",
     "create-index": "bash ./local.sh ${PWD}",
     "run-local": "hugo server --buildDrafts --buildFuture --bind 0.0.0.0 --logLevel debug -p $npm_package_config_dev_port",
-    "dev": "npm run build && npm run create-index && npm run run-local",
+    "dev": "npm run build:nonprod && npm run create-index && npm run run-local",
     "start": "python3 -m http.server $npm_package_config_dev_port --directory public"
   },
   "config": {
     "dev_port": "1313"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.1",
+    "path": "^0.12.7"
+  }
 }

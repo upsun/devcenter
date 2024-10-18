@@ -36,14 +36,14 @@ document.addEventListener("DOMContentLoaded", function () {
         // handleInputChange();
         // init()
         // search(form)
-    } 
+    }
     else {
         // let results = document.getElementById('results-wrapper');
         // results.classList.add("hx-hidden");
         form.focus();
     }
   });
-  
+
   // Render the search data as JSON.
   // {{ $searchDataFile := printf "%s.search-data.json" .Language.Lang }}
   // {{ $searchData := resources.Get "json/search-data.json" | resources.ExecuteAsTemplate $searchDataFile . }}
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
   //   {{ $searchData := $searchData | minify | fingerprint }}
   // {{ end }}
   // {{ $noResultsFound := (T "noResultsFound") | default "No results found." }}
-  
+
   (function () {
 
     document.addEventListener('DOMContentLoaded', function (e) {
@@ -62,8 +62,20 @@ document.addEventListener("DOMContentLoaded", function () {
         if (currentQuery !== null) {
             form.value = currentQuery;
             form.focus();
+            preloadIndex().then(()=>{
+              /**
+               * search() takes an event object as its only parameter. From there it retrieves e.target.value which
+               * should contain the search query we want to perform. In our case, the event passed to our callback is
+               * DOMContentLoaded where the target is the whole DOM. So we'll create a fake "event" and assign the
+               * necessary props (and sub props) so it can still extract the query which we determined in currentQuery
+               * @todo see if there's a better way to handle this
+               */
+              const fake = {}
+              fake.target = {value: currentQuery}
+              search(fake)
+            })
             // console.log("query path value");
-            // handleInputChange(form);   
+            // handleInputChange(form);
         }
       });
 
@@ -79,9 +91,9 @@ document.addEventListener("DOMContentLoaded", function () {
     //   el.addEventListener('focus', test);
       el.addEventListener('input', handleInputChange);
     }
-  
+
     const shortcutElements = document.querySelectorAll('.search-wrapper kbd');
-  
+
     function setShortcutElementsOpacity(opacity) {
       shortcutElements.forEach(el => {
         el.style.opacity = opacity;
@@ -89,17 +101,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function test(e) {
-        // console.log("test")
         init(e);
         search(e);
     }
-  
+
     function handleInputChange(e) {
-      console.log(e);
       const opacity = e.target.value.length > 0 ? 0 : 100;
+      /**
+       * If the user has cleared the results with the built-in input functionality, hide the search results
+       */
+      if(e.target.value.length === 0) {
+        const { resultsElement } = getActiveSearchElement();
+        if (!resultsElement.classList.contains('hx-hidden')) {
+          hideSearchResults()
+        }
+        //
+      }
       setShortcutElementsOpacity(opacity);
     }
-  
+
     // Get the search wrapper, input, and results elements.
     function getActiveSearchElement() {
         const inputs = Array.from(document.querySelectorAll('.search-wrapper')).filter(el => el.clientHeight > 0);
@@ -112,14 +132,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         return undefined;
       }
-  
+
     const INPUTS = ['input', 'select', 'button', 'textarea']
-  
+
     // Focus the search input when pressing ctrl+k/cmd+k or /.
     document.addEventListener('keydown', function (e) {
       const { inputElement } = getActiveSearchElement();
       if (!inputElement) return;
-  
+
       const activeElement = document.activeElement;
       const tagName = activeElement && activeElement.tagName;
       if (
@@ -128,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
         INPUTS.includes(tagName) ||
         (activeElement && activeElement.isContentEditable))
         return;
-  
+
       if (
         e.key === '/' ||
         (e.key === 'k' &&
@@ -140,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
         inputElement.blur();
       }
     });
-  
+
     // Dismiss the search results when clicking outside the search box.
     document.addEventListener('mousedown', function (e) {
       const { inputElement, resultsElement } = getActiveSearchElement();
@@ -154,24 +174,24 @@ document.addEventListener("DOMContentLoaded", function () {
         // hideSearchResults();
       }
     });
-  
+
     // Get the currently active result and its index.
     function getActiveResult() {
       const { resultsElement } = getActiveSearchElement();
       if (!resultsElement) return { result: undefined, index: -1 };
-  
+
       const result = resultsElement.querySelector('.active');
       if (!result) return { result: undefined, index: -1 };
-  
+
       const index = parseInt(result.dataset.index, 10);
       return { result, index };
     }
-  
+
     // Set the active result by index.
     function setActiveResult(index) {
       const { resultsElement } = getActiveSearchElement();
       if (!resultsElement) return;
-  
+
       const { result: activeResult } = getActiveResult();
       activeResult && activeResult.classList.remove('active');
       const result = resultsElement.querySelector(`[data-index="${index}"]`);
@@ -180,14 +200,14 @@ document.addEventListener("DOMContentLoaded", function () {
         result.focus();
       }
     }
-  
+
     // Get the number of search results from the DOM.
     function getResultsLength() {
       const { resultsElement } = getActiveSearchElement();
       if (!resultsElement) return 0;
       return resultsElement.dataset.count;
     }
-  
+
     // Finish the search by hiding the results and clearing the input.
     function finishSearch() {
       const { inputElement } = getActiveSearchElement();
@@ -196,21 +216,21 @@ document.addEventListener("DOMContentLoaded", function () {
       inputElement.value = '';
       inputElement.blur();
     }
-  
+
     function hideSearchResults() {
       const { resultsElement } = getActiveSearchElement();
       if (!resultsElement) return;
       resultsElement.classList.add('hx-hidden');
     }
-  
+
     // Handle keyboard events.
     function handleKeyDown(e) {
       const { inputElement } = getActiveSearchElement();
       if (!inputElement) return;
-  
+
       const resultsLength = getResultsLength();
       const { result: activeResult, index: activeIndex } = getActiveResult();
-  
+
       switch (e.key) {
         case 'ArrowUp':
           e.preventDefault();
@@ -237,7 +257,7 @@ document.addEventListener("DOMContentLoaded", function () {
           break;
       }
     }
-  
+
     // Initializes the search.
     function init(e) {
       e.target.removeEventListener('focus', init);
@@ -245,13 +265,12 @@ document.addEventListener("DOMContentLoaded", function () {
         preloadIndex();
       }
     }
-  
+
     /**
      * Preloads the search index by fetching data and adding it to the FlexSearch index.
      * @returns {Promise<void>} A promise that resolves when the index is preloaded.
      */
     async function preloadIndex() {
-    //   console.log("preloadIndex")
       const tokenize = '{{- site.Params.search.flexsearch.tokenize | default  "forward" -}}';
       window.pageIndex = new FlexSearch.Document({
         tokenize,
@@ -262,7 +281,7 @@ document.addEventListener("DOMContentLoaded", function () {
           index: "content"
         }
       });
-  
+
       window.sectionIndex = new FlexSearch.Document({
         tokenize,
         cache: 100,
@@ -273,7 +292,7 @@ document.addEventListener("DOMContentLoaded", function () {
           tag: 'pageId'
         }
       });
-  
+
       const resp = await fetch(searchDataURL);
       const data = await resp.json();
       let pageId = 0;
@@ -281,7 +300,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // console.log(route)
         let pageContent = '';
         ++pageId;
-  
+
         for (const heading in data[route].data) {
         //   console.log(heading)
           const [hash, text] = heading.split('#');
@@ -290,7 +309,7 @@ document.addEventListener("DOMContentLoaded", function () {
           const full = data[route].full.trimEnd('/') + (hash ? '#' + hash : '');
           const content = data[route].data[heading] || '';
           const paragraphs = content.split('\n').filter(Boolean);
-  
+
           sectionIndex.add({
             id: url,
             url,
@@ -300,7 +319,7 @@ document.addEventListener("DOMContentLoaded", function () {
             content: title,
             ...(paragraphs[0] && { display: paragraphs[0] })
           });
-  
+
           for (let i = 0; i < paragraphs.length; i++) {
             sectionIndex.add({
               id: `${url}_${i}`,
@@ -311,20 +330,20 @@ document.addEventListener("DOMContentLoaded", function () {
               content: paragraphs[i]
             });
           }
-  
+
           pageContent += ` ${title} ${content}`;
         }
-  
+
         window.pageIndex.add({
           id: pageId,
           title: data[route].title,
           content: pageContent,
           full: data[route].full
         });
-  
+
       }
     }
-  
+
     /**
      * Performs a search based on the provided query and displays the results.
      * @param {Event} e - The event object.
@@ -336,18 +355,18 @@ document.addEventListener("DOMContentLoaded", function () {
         hideSearchResults();
         return;
       }
-      console.log("search")
+      //console.log("search")
       const { resultsElement } = getActiveSearchElement();
       while (resultsElement.firstChild) {
         resultsElement.removeChild(resultsElement.firstChild);
       }
       resultsElement.classList.remove('hx-hidden');
-  
+
       const pageResults = window.pageIndex.search(query, 5, { enrich: true, suggest: true })[0]?.result || [];
       //console.log(JSON.stringify(pageResults))
       const results = [];
       const pageTitleMatches = {};
-  
+
       for (let i = 0; i < pageResults.length; i++) {
         const result = pageResults[i];
         pageTitleMatches[i] = 0;
@@ -357,7 +376,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const sectionResults = window.sectionIndex.search(query, 5, { enrich: true, suggest: true, tag: `page_${result.id}` })[0]?.result || [];
         let isFirstItemOfPage = true
         const occurred = {}
-  
+
         for (let j = 0; j < sectionResults.length; j++) {
           const { doc } = sectionResults[j]
           //console.log("looking at page counter id " + j)
@@ -426,7 +445,7 @@ document.addEventListener("DOMContentLoaded", function () {
       //console.log(sortedResults)
       displayResults(sortedResults, query);
     }
-  
+
     /**
      * Displays the search results on the page.
      *
@@ -436,32 +455,32 @@ document.addEventListener("DOMContentLoaded", function () {
     function displayResults(results, query) {
       const { resultsElement } = getActiveSearchElement();
       if (!resultsElement) return;
-  
+
       if (!results.length) {
         resultsElement.innerHTML = `<span class="no-result">{{ $noResultsFound | safeHTML }}</span>`;
         // let suggestions = document.getElementById('search-suggestions');
         // suggestions.classList.remove("hx-hidden");
         return;
-      } 
+      }
       // else {
       //   let suggestions = document.getElementById('search-suggestions');
       //   suggestions.classList.add("hx-hidden");
       // }
-  
+
       // Highlight the query in the result text.
       function highlightMatches(text, query) {
         const escapedQuery = query.replace(/[-\\^$*+?.()|[\]{}]/g, '\\$&');
         const regex = new RegExp(escapedQuery, 'gi');
         return text.replace(regex, (match) => `<span class="match">${match}</span>`);
       }
-  
+
       // Create a DOM element from the HTML string.
       function createElement(str) {
         const div = document.createElement('div');
         div.innerHTML = str.trim();
         return div.firstChild;
       }
-  
+
       function handleMouseMove(e) {
         const target = e.target.closest('a');
         if (target) {
@@ -472,7 +491,7 @@ document.addEventListener("DOMContentLoaded", function () {
           target.classList.add('active');
         }
       }
-  
+
       const fragment = document.createDocumentFragment();
       for (let i = 0; i < results.length; i++) {
         const result = results[i];
