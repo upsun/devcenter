@@ -17,7 +17,7 @@ sidebar:
 1. In another window, navigate into the repository, and run the following command from the `dev` folder:
 
     ```bash
-    hugo new content content/community/content/posts/article-title-slug.md --kind post
+    hugo new content content/posts/article-title-slug.md --kind post
     #OR
     sh create-content.sh post article-title-slug
     ```
