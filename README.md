@@ -217,3 +217,55 @@ pip install -r requirements.txt
     | Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 (compatible; Screenshot-Psh/1.0)         |     656 |
 
     ```
+
+3. Filter by IP address
+
+    ```bash
+    upsun log access -p 5c2jjy3p7slv6 -e main --lines 102400 | env/bin/ngxtop --no-follow -i 'remote_addr == "73.35.9.17"' top request status http_user_agent
+    ```
+
+    Which gives:
+
+    ```bash
+    $ upsun log access -p 5c2jjy3p7slv6 -e main --lines 102400 | env/bin/ngxtop --no-follow -i 'remote_addr == "73.35.9.17"' top request status http_user_agent
+    Reading log file 5c2jjy3p7slv6-main-bvxea6i--devcenter@ssh.ca-1.platform.sh:/var/log/access.log
+    running for 7 seconds, 10653 records processed: 1473.06 req/sec
+
+    top request
+    | request                                                                                                                |   count |
+    |------------------------------------------------------------------------------------------------------------------------+---------|
+    | GET /community/ HTTP/1.1                                                                                               |     386 |
+    | GET / HTTP/1.1                                                                                                         |     378 |
+    | GET /search/ HTTP/1.1                                                                                                  |     314 |
+    | GET /search HTTP/1.1                                                                                                   |     314 |
+    | GET /lib/flexsearch/flexsearch.bundle.min.0425860527cc9968f9f049421c7a56b39327d475e2e3a8f550416be3a9134327.js HTTP/1.1 |     284 |
+    | GET /community HTTP/1.1                                                                                                |     281 |
+    | GET /en.search.min.18ac67ea9b25fad7fe4af030542ac1edb7b51c04cc562f96c8eb555327bde985.js HTTP/1.1                        |     266 |
+    | GET /js/main.min.82ab41c285e203bbf22ca6b45743aa60857e566fe56f3ee56baa2ac3a56c69d5.js HTTP/1.1                          |     230 |
+    | GET /community/content/videos/ HTTP/1.1                                                                                |     222 |
+    | GET /community/content/posts/ HTTP/1.1                                                                                 |     221 |
+
+    top status
+    |   status |   count |
+    |----------+---------|
+    |      200 |    9153 |
+    |      301 |    1412 |
+    |      502 |      61 |
+    |      206 |      26 |
+    |      403 |       1 |
+
+    top http_user_agent
+    | http_user_agent                                                                                                                                    |   count |
+    |----------------------------------------------------------------------------------------------------------------------------------------------------+---------|
+    | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36                              |    5828 |
+    | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36                              |    2410 |
+    | Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Mobile/15E148 Safari/604.1 Ddg/17.6 |     791 |
+    | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36                              |     620 |
+    | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36                              |     164 |
+    | Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Mobile/15E148 Safari/604.1          |     155 |
+    | Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:130.0) Gecko/20100101 Firefox/130.0                                                               |     145 |
+    | Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36                |     137 |
+    | htmltest/0.17.0                                                                                                                                    |     129 |
+    | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36                              |     107 |
+    ```
+

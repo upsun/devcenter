@@ -8,6 +8,7 @@ applications:
             - nodePackages.npm
             - python312
             - hugo
+            - goaccess
         hooks:
             build: |
                 npm install 
@@ -46,6 +47,8 @@ applications:
 
         mounts:
             'search-sources':
+                source: storage
+            'public/data':
                 source: storage
 
         operations:
