@@ -36,10 +36,13 @@ securedRoutes.get('*', (req, res) => {
 });
 
 app.use('/dcxs/*', securedRoutes)
-// app.get('/*', (req, res) => {
-//     res.send("welome to the docs")
-// });
+app.get('/dcxs/*', (req, res) => {
 
+  res.status(404).sendFile('/404.html', {
+    root: path.join(__dirname, 'public'),
+  })
+
+})
 
 app.get('/*', (req, res) => {
 

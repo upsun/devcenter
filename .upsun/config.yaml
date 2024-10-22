@@ -53,12 +53,6 @@ applications:
                         \.(css|js|gif|jpe?g|png|ttf|eot|woff2?|otf|cast|mp4|json|yaml|ico|svg?|cast|mp4|json|yaml|svg?|ttf)$:
                             expires: 4w
 
-        # workers:
-        #     queue:
-        #         commands:
-        #             start: |
-        #                 cat /var/log/access.log | goaccess --log-format=COMBINED -o public/access/report.html --real-time-html -   
-
         mounts:
             'search-sources':
                 source: storage
@@ -77,6 +71,11 @@ applications:
                 spec: "19 7,19 * * *"
                 commands:
                     start: bash "${PLATFORM_APP_DIR}"/search.sh
+            update-data:
+                spec: '0 * * * *'
+                commands:
+                    start: cat /var/log/access.log | goaccess --log-format=COMBINED -o public/access/report.html -
+                    # start: cat /var/log/access.log | goaccess --log-format=COMBINED -o public/access/report.html --real-time-html -
 
 routes:
     "https://{default}/":

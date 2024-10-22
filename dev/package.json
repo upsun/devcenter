@@ -22,6 +22,7 @@
     "eslint-plugin-mdx": "^3.1.5",
     "express": "^4.21.1",
     "express-basic-auth": "^1.2.1",
+    "node-vault": "^0.10.2",
     "path": "^0.12.7"
   }
 }
