@@ -269,3 +269,8 @@ pip install -r requirements.txt
     | Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36                              |     107 |
     ```
 
+### [With GoAccess.io](https://support.platform.sh/hc/en-us/community/posts/16439473183122-How-to-visualize-Access-Logs-with-a-fancy-interface-and-charts)
+
+```bash
+upsun log -p 5c2jjy3p7slv6 -e main access --lines 102400 | goaccess --log-format=COMBINED -o dev/public/access/report.html --real-time-html -
+```

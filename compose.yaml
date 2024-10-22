@@ -7,14 +7,7 @@ services:
         working_dir: ${PWD}/dev
         ports:
             - 1313:1313
-        # expose:
-        #     - "1313"
+        environment:
+            HUGO_ENVIRONMENT: ${HUGO_ENVIRONMENT}
         image: nixos/nix
-        command:
-            # Dev
-            - nix-shell
-            # Prod
-            # - nix-shell prod.nix
-            # Cleanup
-            # - nix-store --gc
-
+        command: ./local-start.sh

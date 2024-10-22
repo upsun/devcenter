@@ -12,6 +12,7 @@ pkgs.mkShellNoCC {
     jq
   ];
   shellHook = ''
+    echo "Development configuration"
     npm install
     npm run dev
   '';

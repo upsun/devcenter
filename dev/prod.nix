@@ -9,10 +9,12 @@ pkgs.mkShellNoCC {
     nodePackages.npm
     python312
     hugo
+    jq
   ];
   shellHook = ''
-    npm install
-    npm run build
-    npm run start
+    echo "Production configuration"
+    npm run build:prod
+    npm run create-index
+    PORT=1313 node index.js
   '';
 }

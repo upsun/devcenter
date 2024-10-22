@@ -31,23 +31,15 @@ securedRoutes.use((req, res, next) => {
   
   })
 
+
 securedRoutes.get('*', (req, res) => {
     res.send("you are authorized to view this");
 });
 
 app.use('/dcxs/*', securedRoutes)
-// app.get('/*', (req, res) => {
-//     res.send("welome to the docs")
-// });
-
-
 app.get('/*', (req, res) => {
-
-  res.status(404).sendFile('/404.html', {
-    root: path.join(__dirname, 'public'),
-  })
-
-})
+    res.send("welome to the docs")
+});
 
 app.listen(process.env.PORT, () => {
     console.info(`ExpressJS listening on ${process.env.PORT}.`)
