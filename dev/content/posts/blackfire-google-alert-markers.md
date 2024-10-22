@@ -201,7 +201,7 @@ Markers should appear on the timeline, such as:
 
 {{< callout >}}
 
-🚨 **Please note**: The ``blackfire-google-alerts`` app import RSS Feed entries via a cron that runs every 5 minutes, so depending on the timing, you probably need to wait a bit for the first import to take place.
+🚨 **Please note**: The ``blackfire-google-alerts`` app imports RSS Feed entries via a cron that runs every 5 minutes, so depending on the timing, you probably need to wait a bit for the first import to take place.
 <BR>If you want to manually trigger the first import, you can also execute this command:
 ```shell
 upsun ssh 'php bin/console blackfire:import-google-alerts'
