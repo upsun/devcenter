@@ -22,6 +22,10 @@
     background-color: #DFDAFF;
 } */
 
+figcaption {
+    font-size: 0.775rem !important;
+}
+
 /* additional callouts */
 
 .cta-section {
