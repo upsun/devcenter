@@ -18,7 +18,6 @@ tags:
   - environments
 categories:
   - discussions
-  - featured
 math: true
 # excludeSearch: true
 ---
