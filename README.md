@@ -272,5 +272,6 @@ pip install -r requirements.txt
 ### [With GoAccess.io](https://support.platform.sh/hc/en-us/community/posts/16439473183122-How-to-visualize-Access-Logs-with-a-fancy-interface-and-charts)
 
 ```bash
+mkdir dev/public/access
 upsun log -p 5c2jjy3p7slv6 -e main access --lines 102400 | goaccess --log-format=COMBINED -o dev/public/access/report.html --real-time-html -
 ```
