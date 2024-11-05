@@ -9,7 +9,7 @@ type: post
 # Update the title
 title: "Using the Upsun API"
 
-# Replace if you have a good image. 
+# Replace if you have a good image.
 # Images are not used (yet) on individual pages, only on lists of articles.
 image: /images/red-background.webp
 
@@ -36,7 +36,7 @@ categories:
 #   - tutorials
 #   - use-cases
 #   - featured
-  
+
 # Tags don't do anything yet, so ignore for now.
 # tags:
 #   - events
@@ -58,7 +58,7 @@ This means that anything you can do in the Web UI console, you can also automate
 
 **Note:**
 
-Some documentation links may still refer to "Platform.sh", the `platform` CLI tool, and `PLATFORM_*` named environment variables. 
+Some documentation links may still refer to "Platform.sh", the `platform` CLI tool, and `PLATFORM_*` named environment variables.
 In most cases, you can imagine that the `upsun` CLI tool acts identically to the `platform` CLI tool, so you may read the docs as if they are interchangeable.
 
 {{< /callout >}}
@@ -114,7 +114,7 @@ The [authentication that is used for API access](https://api.upsun.com/docs/#sec
   * To create an API token, go to the "API Tokens" section of the "Account Settings" tab [on the Console](https://console.upsun.com/), and make that available as a variable named `UPSUN_API_TOKEN` in your shell environment.
 * For making requests directly via **the API**, or **for automation and delegation of tasks**, you would also use an API token in this same way.
   * To use the token, the `UPSUN_API_TOKEN`  variable must be set in the environment for the CLI, or passed explicitly in an API request header.
-  * You can experiment with semi-raw API requests but still use the CLI to manage authentication via the `upsun api:curl` command. 
+  * You can experiment with semi-raw API requests but still use the CLI to manage authentication via the `upsun api:curl` command.
     For inline documentation on `api:curl` enter `upsun help api:curl` in your terminal.
 
 
@@ -228,6 +228,6 @@ With access to this toolset now, you may be able to see some possibilities for m
 * As Upsun resources are charged for pro-rata (usage based), you could cut the RAM and CPU costs for all your preview environments in half by automating a `cron` task them to "pause" every night and weekend.
 * You can upscale and downscale the resources in realtime to match demand and traffic on the website.
 
-As an example, you can use [scalsun](https://github.com/upsun/scalsun) to [automatically upscale Upsun resources]( ./configuring-an-autoscaler.md).
+As an example, you can use [scalsun](https://github.com/upsun/scalsun) to [automatically upscale Upsun resources]( /posts/configuring-an-autoscaler/).
 
 
