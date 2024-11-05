@@ -127,7 +127,9 @@ It's possible to make raw http requests directly to the API endpoint, but it's u
 The CLI has an embedded utility that provides direct access to the http requests, and handles the project selection and authentication for you.
 See `upsun help project:curl`
 
-    upsun  project:curl /environments
+```bash
+upsun project:curl /environments
+```
 
 ^ Lists the available environments ([API ref](https://api.upsun.com/docs/#tag/Environment/operation/list-projects-environments)) . Equivalent to `platform environment:list`, but the JSON response may be more useful for automation.
 
