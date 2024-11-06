@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
-    
-  {{- partial "custom/gtm/script.html" . -}}
+
   {{- partial "head.html" . -}}
   {{- $currentPage := printf "%s%s" ( .Site.BaseURL ) ( .Page.RelPermalink ) -}}
   <body dir="{{ .Site.Language.LanguageDirection | default `ltr` }}"
