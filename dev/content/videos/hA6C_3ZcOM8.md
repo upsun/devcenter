@@ -41,7 +41,7 @@ highlighting the simplicity of the process and confirming the update by checking
 Try Upsun: https://upsun.com/
 
 Key moments:
-00:00 - Introduction to Updating Runtime in Upson
+00:00 - Introduction to Updating Runtime in Upsun
 00:06 - Step-by-Step Guide to Updating Node.js Version
 00:52 - Committing Changes and Pushing to Development
 02:06 - Verifying the Update in the Development Branch

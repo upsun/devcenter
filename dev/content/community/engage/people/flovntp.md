@@ -15,12 +15,12 @@ image: "/images/people/flovntp.webp"
 # Update these only if you'd like them to be public.
 
 links:
-   github: https://github.com/flovntp
-   twitter: https://twitter.com/flovntp
-   linkedin: https://www.linkedin.com/in/florenthuck/
+   github: flovntp
+   twitter: flovntp
+   linkedin: florenthuck
 #     website: https://www.something.com
 ---
-Florent works at Platform.sh, the hosting company, as a Developer Relation Engineer, helping people better understand how easy it is to use Platform.sh and Upsun on all your projects.
+Florent works at Platform.sh, the hosting company, as a Developer Relation Engineer, helping people better understand how to use Platform.sh and Upsun on all your projects.
 
 He is a senior technical expert on Symfony, eZ Publish/Platform and Ibexa with more than 13 years of experience.
 Before joining Platform.sh mid-July 2022, he was a freelancer (HKonsulting and co-founder of [Code Rhapsodie](https://www.code-rhapsodie.fr/)) for 6 years giving trainings and consulting days, developing expert backend solutions on those frameworks.

@@ -1,0 +1,70 @@
+extends: conditional
+message: "Spell out '%s' if it's unfamiliar to the audience."
+link: 'https://github.com/platformsh/platformsh-docs/blob/main/contributing/content-style.md#explain-abbreviations'
+level: suggestion
+ignorecase: false
+# Ensures that the existence of 'first' implies the existence of 'second'.
+first: '\b([A-Z]{3,5})\b'
+second: '(?:\b[a-zA-Z]+ )+\(([A-Z]{3,5})\)'
+exceptions:
+  - API
+  - ASCII
+  - ASP
+  - CLI
+  - CPU
+  - CSS
+  - CSV
+  - DEBUG
+  - DNS
+  - DOM
+  - DPI
+  - FAQ
+  - FPM
+  - GCC
+  - GDB
+  - GET
+  - GPU
+  - GTK
+  - GUI
+  - HRI
+  - HTML
+  - HTTP
+  - HTTPS
+  - IDE
+  - JAR
+  - JSON
+  - JSX
+  - LESS
+  - LLDB
+  - NET
+  - NOTE
+  - NVDA
+  - OSS
+  - PATH
+  - PDF
+  - PHP
+  - POST
+  - RAM
+  - REPL
+  - REST
+  - RSA
+  - SCM
+  - SCSS
+  - SDK
+  - SMTP
+  - SQL
+  - SSH
+  - SSL
+  - SVG
+  - TBD
+  - TCP
+  - TODO
+  - URI
+  - URL
+  - USB
+  - UTC
+  - UTF
+  - XML
+  - XSS
+  - YAML
+  - ZIP

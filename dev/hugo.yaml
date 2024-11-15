@@ -62,14 +62,15 @@ enableInlineShortcodes: true
 menu:
   main:
     - identifier: docs
-      name: "Docs <sup>↗</sup>"
-      # pageRef: /docs
-      url: "https://docs.upsun.com"
+      name: "Docs"
+      pageRef: /docs
+      # url: "https://docs.upsun.com"
       weight: 1
     - identifier: cli
-      name: "CLI <sup>↗</sup>"
+      name: "CLI"
+      pageRef: /docs/administration/cli
       # pageRef: /cli
-      url: "https://docs.upsun.com/administration/cli.html"
+      # url: "https://docs.upsun.com/administration/cli.html"
       weight: 2
     - identifier: api
       name: "API <sup>↗</sup>"
@@ -245,6 +246,7 @@ params:
   page:
     # full (100%), wide (90rem), normal (1280px)
     width: wide
+    # width: full
 
   theme:
     # light | dark | system
@@ -371,7 +373,7 @@ params:
   featured:
     - pageRef: /posts/introducing-dev-center
     - pageRef: /posts/preview-environments-a-developers-secret-weapon
-    - pageRef: /videos/orrxx4japwc
+    - pageRef: /videos/snqqtyzhl0o/
     # - pageRef: /posts/automate-with-gatling-1
     # - pageRef: /community/content/posts/infra-events-multi-app/
     # - pageRef: /community/post/why-we-chose-nix

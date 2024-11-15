@@ -39,6 +39,7 @@
       {{ .context.Scratch.Set "enableFooterSwitches" true }}
     {{- else -}}
       <ul class="hx-flex hx-flex-col hx-gap-1 max-md:hx-hidden">
+        {{- partial "custom/sidebar-dropdown.html" (dict "context" . )  -}}
         {{ template "sidebar-main" (dict "context" $navRoot "page" $context  "pageURL" $pageURL) }}
         {{ template "sidebar-footer" }}
       </ul>
@@ -181,8 +182,12 @@
   {{- $active := .active -}}
     {{- with .context }}
 
+    {{- $justify := "hx-justify-between" -}}
+    {{- if isset .Params "sectionbefore" -}}
+      <span class="section-before hx-text-gray-500 hx-py-1.5">{{ index .Params "sectionBefore" }}</span>
+    {{- end -}}
     <a
-    class="hx-flex {{ if .Params.sidebar.separator }}max-md:hx-hidden {{ end }}hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+    class="hx-flex {{ if .Params.sidebar.separator }}max-md:hx-hidden {{ end }}hx-items-center {{ $justify }} hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
     {{- if $active }}
       sidebar-active-item hx-bg-primary-100 hx-font-semibold hx-text-primary-800 contrast-more:hx-border contrast-more:hx-border-primary-500 dark:hx-bg-primary-400/10 dark:hx-text-primary-600 contrast-more:dark:hx-border-primary-500
     {{- else }}
@@ -191,12 +196,25 @@
     href="{{ $link }}"
     {{ if $external }}target="_blank" rel="noreferer"{{ end }}
   >
+    {{- $badgeTheme := "badge-blue" -}}
+    {{- if isset .Params "badgetheme" -}}
+      {{- $badgeTheme = printf "badge-%s" ( .Params.badgetheme ) -}}
+    {{- end -}}
     {{- $title -}}
       {{- if or .RegularPages .Sections }}
         {{- if not .Params.sidebar.excludechildren -}}
-        <span class="hextra-sidebar-collapsible-button">
-          {{- template "sidebar-collapsible-button" -}}
-        </span>
+          {{- if .Params.badge -}}
+            <span class="sidebar-badge {{ $badgeTheme }}">{{ .Params.badge }}</span>
+          {{- else -}}
+            <span class="hextra-sidebar-collapsible-button">
+              {{- template "sidebar-collapsible-button" -}}
+            </span>
+          {{- end -}}
+        {{- end -}}
+      {{- else -}}
+        {{- if .Params.badge -}}
+          <!-- <span class="sidebar-badge" style="margin-right: 20px;">{{ .Params.badge }}</span> -->
+          <span class="sidebar-badge {{ $badgeTheme }}">{{ .Params.badge }}</span>
         {{- end -}}
       {{- end }}
     {{ end -}}

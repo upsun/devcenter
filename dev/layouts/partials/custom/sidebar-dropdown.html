@@ -1,0 +1,111 @@
+<style>
+.dropbtn {
+  /* background-color: #3498DB; */
+  background-color: #6046FF;
+  /* --tw-text-opacity: 1; */
+  /* color: black; */
+  font-size: 0.875rem;
+  font-weight: 600;
+  /* color: rgb(107 114 128 / var(--tw-text-opacity)); */
+  color: white;
+  padding: 0.75rem 0.75rem;
+
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.dropbtn:hover, .dropbtn:focus, 
+.dropbtn:hover > span, .dropbtn:focus > span  {
+  /* background-color: #2980B9; */
+  /* background-color: #DFDAFF; */
+  color: white;
+  /* color: #6046FF; */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  /* --tw-text-opacity: 1; */
+  font-size: 0.875rem;
+  /* color: rgb(107 114 128 / var(--tw-text-opacity)); */
+  /* color: black; */
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content p {
+  --tw-text-opacity: 1;
+  font-size: 0.65rem;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+  /* color: black; */
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown a:hover {
+    /* background-color: #ddd; */
+    background-color: #DFDAFF;
+    color: #6046FF;
+}
+
+.show {display: block;}
+</style>
+
+
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">
+        <!-- <span class="hx-inline-block icon" style="vertical-align: middle; padding-bottom: 2px; padding-right: 5px;">
+        {{ partial "utils/icon.html" (dict "name" "document-text" "attributes" "height=1em") }}</span> -->
+        Upsun reference docs
+        <span class="hx-inline-block icon" style="vertical-align: middle; padding-bottom: 2px; padding-right: 5px;">
+            {{ partial "utils/icon.html" (dict "name" "chevron" "attributes" "height=1em") }}</span>
+    </button>
+    <div id="myDropdown" class="dropdown-content">
+      <!-- <a href="#">API reference docs</a>
+      <a href="#">CLI reference docs</a>
+      <p>PaaS, plan-based offering</p> -->
+      <a href="https://docs.platform.sh/">Platform.sh documentation &nbsp;<sup>↗</sup></a>
+      <!-- <p>Standalone observability tooling</p> -->
+      <a href="https://docs.blackfire.io/index">Blackfire.io documentation &nbsp;<sup>↗</sup></a>
+    </div>
+  </div>
+  
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() { 
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+    }
+    }
+}
+}
+</script>

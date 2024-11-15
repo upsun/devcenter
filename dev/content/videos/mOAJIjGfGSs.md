@@ -39,8 +39,6 @@ Product, Engineering, and Design need to work together in a healthy and positive
 Join Shawna Spoor and Sukhman Virk as they dive into examples of how this worked well during the development of Upsun and when it didn't work so well.
 ______________________________________
 
-Experiment easily. Iterate quickly. Deploy responsibly. Introducing the Upsun PaaS.
-
 A bright, new offer powered by Platform.sh—adopted (and ❤️) by 16,000+ developers, 7,000 customers, and proven over the last 8 years—Upsun provides out-of-the-box capabilities that serve as the launchpad for creative development teams’ out-of-the-box thinking. A single, fully managed, self-service PaaS for development teams who just want to build their next, great application.
 
 Links to check out:
@@ -94,20 +92,20 @@ Key moments:
 * Characteristics of an unhealthy team
 * Poor communication, misalignment, and lack of trust
 
-20:11 - Failed Delivery Example: Upson Trials
+20:11 - Failed Delivery Example: Upsun Trials
 * Case study of a failed initiative
-* Challenges and lessons learned from the Upson trials
+* Challenges and lessons learned from the Upsun trials
 
-22:05 - What Went Wrong with Upson Trials: Engineering Perspective
-* Engineering challenges during the Upson trials
+22:05 - What Went Wrong with Upsun Trials: Engineering Perspective
+* Engineering challenges during the Upsun trials
 * Technical debt and communication gaps
 
-24:06 - What Went Wrong with Upson Trials: Product Design Perspective
-* Design challenges during the Upson trials
+24:06 - What Went Wrong with Upsun Trials: Product Design Perspective
+* Design challenges during the Upsun trials
 * Misalignment and unclear implementation
 
-25:33 - What Went Wrong with Upson Trials: Product Management Perspective
-* Product management challenges during the Upson trials
+25:33 - What Went Wrong with Upsun Trials: Product Management Perspective
+* Product management challenges during the Upsun trials
 * Lack of ownership and unclear scope
 
 27:09 - Successful Example: Flexible Resources

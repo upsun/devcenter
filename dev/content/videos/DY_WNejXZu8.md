@@ -103,7 +103,7 @@ Key moments:
 * Empowers teams for faster decision-making.
 * Avoids bureaucratic bottlenecks and escalations.
 
-20:23 - Distribute decission making process
+20:23 - Distribute decision making process
 * Decisions made at the team level, avoiding hierarchies.
 * Enables faster responses and agility within teams.
 

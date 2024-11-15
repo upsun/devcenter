@@ -33,13 +33,11 @@ tags:
   - events
 #   - integrations
 ---
-Deploying an app for the first time is always daunting. It does not need to be. Setup a quick ChatGPT client based on a Symfony REST API and a React frontend with Guillaume MOIGNEU. This app will be deployed to Upsun where we will analyze some performance bottlenecks and scale the infrastructure appropriately based on these findings.
+Deploying an app for the first time is always daunting. It does not need to be. Setup a quick ChatGPT client based on a Symfony REST API and a React frontend with Guillaume Moigneu. This app will be deployed to Upsun where we will analyze some performance bottlenecks and scale the infrastructure appropriately based on these findings.
 ______________________________________
 
 Enterprise Symfony for the future: Platform.sh is the official Symfony Cloud Platform.
 ______________________________________
-
-Experiment easily. Iterate quickly. Deploy responsibly. Introducing the Upsun PaaS.
 
 A bright, new offer powered by Platform.sh—adopted (and ❤️) by 16,000+ developers, 7,000 customers, and proven over the last 8 years—Upsun provides out-of-the-box capabilities that serve as the launchpad for creative development teams’ out-of-the-box thinking. A single, fully managed, self-service PaaS for development teams who just want to build their next, great application.
 
@@ -78,7 +76,7 @@ Key moments:
 * Observability and Profiling: Utilizing tools like Blackfire for profiling and monitoring performance is emphasized, with a focus on identifying bottlenecks like synchronous processes.
 
 20:56 - Scaling the application
-* Dynamic Resource Allocation: Upsun allows easy scaling up or down by adjusting CPU and RAM allocations through simple API calls or CLI commands.
+* Dynamic Resource Allocation: Upsun allows scaling up or down by adjusting CPU and RAM allocations through simple API calls or CLI commands.
 * Automated Scaling: Discussion on automated scaling strategies, including triggers based on metrics like response time and traffic spikes.
 * Flexible Scaling Strategies: Customizable scaling strategies are explained, focusing on horizontal scaling for stateless instances and vertical scaling for databases.
 

@@ -1,0 +1,26 @@
+<div class="hextra-feature-grid hx-grid sm:max-lg:hx-grid-cols-2 max-sm:hx-grid-cols-1 hx-gap-4 hx-w-full not-prose" style="--hextra-feature-grid-cols: 1; margin-top: 2rem;">
+
+    {{ range .Pages }}
+    
+        {{- $icon := index .Params "icon" | default "info" -}}
+
+        {{ $description := index .Params "description" | default .Summary }}
+
+
+    <a href="{{ .RelPermalink }}" rel="noreferrer" class=" hextra-feature-card not-prose hx-block hx-relative hx-overflow-hidden hx-rounded-3xl hx-border hx-border-gray-200 hover:hx-border-gray-300 dark:hx-border-neutral-800 dark:hover:hx-border-neutral-700 before:hx-pointer-events-none before:hx-absolute before:hx-inset-0 before:hx-bg-glass-gradient">
+        <div class="hx-relative hx-w-full" style="padding: 2.25rem;">
+          <h3 class="hx-text-xl hx-font-medium hx-leading-6 hx-mb-2 hx-flex hx-items-center">
+            <span>{{ if isset .Params "linktitle" }}{{ .Params.linktitle }}{{ else }}{{ .Title }}{{ end }}</span>
+            {{ with $icon -}}
+                <span style="position: absolute; right: 2.25rem;">
+               {{- partial "utils/icon.html" (dict "name" . "attributes" "height=1.75rem") -}}
+                </span>
+          {{ end -}}
+            </h3>
+          <p class="hx-text-sm hx-leading-7">{{ $description | safeHTML }}</p>
+        </div>
+    </a>
+
+    {{ end }}
+  
+  </div>

@@ -13,6 +13,8 @@ Welcome to the Upsun Community, a hub where developers can unlock the full poten
 
 <!-- {{% custom/contributors %}} -->
 
+<!-- vale off -->
+
 <div class="hx-text-center hx-mt-6" style="margin-top: 4rem;">
 {{< hextra/hero-button text="Join us on Discord" link="https://discord.gg/platformsh" 
   class="upsun-button button-primary" style="margin-right: 10px;"
@@ -20,6 +22,8 @@ Welcome to the Upsun Community, a hub where developers can unlock the full poten
   class="upsun-button button-secondary max-md:hx-hidden" style="margin-right: 0px;"
 >}}
 </div>
+
+<!-- vale on -->
 
 <div class="hx-mt-6 hx-text-center" style="margin-top: 4rem; font-size: 1.5rem; font-weight: 700;">
 Featured articles

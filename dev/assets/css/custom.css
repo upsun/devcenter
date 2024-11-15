@@ -22,7 +22,57 @@
     background-color: #DFDAFF;
 } */
 
+@media (min-width:1025px) { 
+
+    .hx-max-w-\[90rem\] {
+        max-width: 95rem;
+    }
+    
+    .md\:hx-w-64 {
+        width: 20rem;
+    }
+}
+
+.sidebar-badge {
+    font-size: 0.65rem;
+    padding: 2px 8px;
+    font-weight: 700;
+    border-radius: 4px;
+    /* border: 1px soli */
+}
+
+.badge-blue {
+    background-color: #B2EBF2;
+    color: #188181; 
+}
+
+.badge-pink {
+    background-color: #FDE8FD;
+    color: #BA16BD; 
+}
+
+.badge-purple {
+    background-color: #EFEDFF;
+    color: #6046FF;
+}
+
+.section-before {
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    font-family: "Space Grotesk", sans-serif; 
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+figcaption {
+    font-size: 0.775rem !important;
+}
+
 /* additional callouts */
+
+.cta-section {
+    background-color: #F7F8F8;
+}
 
 a.ot-sdk-show-settings:hover {
     cursor: pointer;
