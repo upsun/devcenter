@@ -49,8 +49,8 @@ based on demand and some thresholds you can define.
 > This post follows on from the [introduction to the Upsun API]({{< ref "using-the-upsun-api.md" >}})
 
 {{< callout type="info" >}}
-This is a "handmade" example intended to illustrate how it's possible to leverage the API to manage your projects and vertically scale your product on demand.
-For industrial-strength load balancing and performance scaling assistance, please talk to the Upsun support team.
+This is an example intended to illustrate how it's possible to leverage the API to manage your projects and horizontaly scale your application on demand.
+If you have any feedback to make or require assistance feel free to open an issue on the related [github repositories](https://github.com/upsun/scalsun/issue) or to contact the Activation team at the following adress: activation@platform.sh.
 {{< /callout >}}
  
 ## Requirements:
@@ -130,7 +130,7 @@ The parameters are [documented in the README](https://github.com/upsun/scalsun/b
 
     As described, these are *thresholds* that determine when the upscale or downscale action is triggered.
     The buffer between the two thresholds is to prevent too much 'flapping' - it will add an extra application instance when CPU usage is averaging above 75% for 5 minutes, 
-    but only remove that instance when the total(?) usage of the active instances is averaging below 60% for 5 minutes.
+    but only remove that instance when the total usage of the active instances is averaging below 60% for 5 minutes.
 
     Both CPU and memory usage are polled and either going over the `max_` value may trigger an upscale.
     A downscale should only happen when both metrics are below the safe threshold.
@@ -147,7 +147,7 @@ upsun resources:get -p yd00gnuspu --environment=staging --format=csv --columns=s
 upsun resources:set -p yd00gnuspu --environment=staging --no-interaction --yes --no-wait --count app:2
 ```
 
-You can observe that it is just using the `upsun metrics:all` command to check the current status,
+You can observe that it is just using the `upsun metrics:all` command to check the current status, but it will not take into account (at the moment there is a boolean set to false by default to exclude service) the services metrics
 and the `upsun resources:` commands to request infrastructure changes in response to your own rules or heuristics.
 
 Hopefully you can imagine how you may extend this to enhance it with your own logic if you have more interesting use-cases!
@@ -167,7 +167,7 @@ This is just easier to set up, and doesn't invoke any extra new concepts or serv
 Running cron so frequently could be sub-optimal for a number of reasons.
 * The `cron` activity may fill up the logs really fast and make it harder to spot real issues.
 * `cron` intervals are limited by default to 5 minutes for normal accounts on the Upsun servers.
-* On the other hand, for some business cases, every 5 minutes may not be enough. Standard Upsun accounts cannot run a cron more frequently than that (though this can be arranged for Enterprise plans if needed)
+* On the other hand, for some business cases, every 5 minutes may not be enough. Standard Upsun accounts cannot run a cron more frequently than that (though this can be arranged for Enterprise plans if needed).
 
 ### This utility could run as a worker
 
@@ -175,7 +175,7 @@ If you wanted continuous control and continuous monitoring, then maybe this woul
 
 This could be slightly more sensible than a cron job, and could be better at spotting or predicting trends to react to - depending on the tasks you expect to perform.
 
-Adding a worker does take away dedicated resources from your main project, so it's not always the best solution on small plans.
+Adding a worker requires to set dedicated resources on your main project, so it's not always the best solution to run a separate application container just for it.
 
 Using a worker also means that the monitoring and management of your infrastructure resides on the infrastructure itself. 
 In extreme cases, this could mean that it is unable to bootstrap its own responses.
