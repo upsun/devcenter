@@ -64,6 +64,3 @@ routes:
         type: upstream
         primary: true
         upstream: "devcenter:http"
-    "https://www.{default}":
-        type: redirect
-        to: "https://{default}/"
