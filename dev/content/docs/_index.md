@@ -9,6 +9,8 @@ layout: single
 
 <!--more-->
 
+[test link to get-started/frameworks/next.js](/docs/get-started/stacks/nextjs/)
+
 ## What is Hextra?
 
 Hextra is a modern, fast and batteries-included [Hugo][hugo] theme built with [Tailwind CSS][tailwind-css].

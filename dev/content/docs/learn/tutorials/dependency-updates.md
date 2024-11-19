@@ -161,8 +161,8 @@ so you can run a cron job in your app container.
 
     {{< callout type="orange" >}}
       Once you add the API token as an environment variable,
-      anyone with [SSH access](/development/ssh/_index.md) can read its value.
-      Make sure you carefully check your [user access on this project](/administration/users.md#manage-project-users).
+      anyone with [SSH access](/docs/development/ssh/_index.md) can read its value.
+      Make sure you carefully check your [user access on this project](/docs/administration/users.md#manage-project-users).
     {{< /callout >}}
 
 {{< tabs items="Using the CLI, Using Git" >}}

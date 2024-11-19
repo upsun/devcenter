@@ -2,6 +2,15 @@
 title: Deploy Next.js on Upsun
 linkTitle: Next.js
 icon: nextjs
+
+#################################################################
+# Docs migration block - remove when migrated.
+excludeSearch: true
+sidebar:
+  external: false
+  link: https://docs.upsun.com/get-started/stacks/nextjs.html
+#################################################################
+
 description: |
     Complete the last required steps to successfully deploy Next.js on Upsun.
 weight: 2
