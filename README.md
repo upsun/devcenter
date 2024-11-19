@@ -41,3 +41,17 @@ Before merging a PR, it's a good idea to run the following tests.
     ```bash
     ./tests/linkchecker/test.sh http://localhost:1313/
     ``` -->
+
+## Handling dependencies
+
+1. Testing for vulnerabilities
+
+    ```bash
+    ./tests/check_deps/test.sh
+    ```
+
+2. Upgrading dependencies
+
+    ```bash
+    ./tests/check_deps/upgrade.sh
+    ```
