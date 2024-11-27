@@ -61,7 +61,7 @@ First, follow the official instructions for installing PHP 8.4 on your computer:
 - [macOS instructions](https://www.php.net/manual/install.macosx.php)
 - [Windows binaries](https://windows.php.net/download/)
 
-Then you can check it's installed and accessible with:
+Then you can check that it's installed and accessible with:
 
 ```bash
 php -r 'echo PHP_VERSION;'
@@ -89,7 +89,7 @@ composer upgrade
 
 {{< tab >}}
 
-On Upsun,
+On Upsun:
 
 ```yaml {filename=".upsun/config.yaml"}
 applications:
@@ -110,7 +110,7 @@ At the time of this post, PHP 8.4 is still a part of the 24.11 Nix packages **Be
 Beta channels are not yet supported for the Upsun and Platform.sh Composable image.
 As soon as it becomes available on the stable channel, you will be able to upgrade to PHP 8.4 as shown below.
 
-On Upsun,
+On Upsun:
 
 ```yaml {filename=".upsun/config.yaml"}
 applications:
@@ -135,7 +135,7 @@ stack:
 
 And test the changes on the new environment with an `upsun push`. 
 Once the environment is live, you can merge the upgrades now (`upsun merge`), then come back to visit many of the performance improvements and new features packaged in the release below.
-
+You can test the changes on the new environment with an `upsun push`. Once the environment is live, you can then merge the upgrades (`upsun merge`) and return to visit many of the performance improvements and new features packaged in the release below.
 You can as always find more information about available extensions and PHP configuration in the [Upsun](https://docs.upsun.com) and [Platform.sh](https://docs.platform.sh) documentation.
 
 {{< callout type="blue" >}}
