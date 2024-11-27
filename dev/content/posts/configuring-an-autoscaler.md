@@ -50,7 +50,7 @@ based on demand and some thresholds you can define.
 
 {{< callout type="info" >}}
 This is an example intended to illustrate how it's possible to leverage the API to manage your projects and horizontaly scale your application on demand.
-If you have any feedback to make or require assistance feel free to open an issue on the related [github repositories](https://github.com/upsun/scalsun/issue) or to contact the Activation team at the following adress: activation@platform.sh.
+If you have any feedback to make or require assistance feel free to open an issue on the related [github repositories](https://github.com/upsun/scalsun/issues) or to contact the Activation team at the following adress: activation@platform.sh.
 {{< /callout >}}
  
 ## Requirements:
