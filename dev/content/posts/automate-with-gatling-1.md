@@ -32,7 +32,7 @@ categories:
   - how-tos
 #   - releases
 #   - tutorials
-  - featured
+  # - featured
 
 # Tags don't do anything yet, so ignore for now.
 # tags:
