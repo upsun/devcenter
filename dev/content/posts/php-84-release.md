@@ -135,7 +135,7 @@ stack:
 
 And test the changes on the new environment with an `upsun push`. 
 Once the environment is live, you can merge the upgrades now (`upsun merge`), then come back to visit many of the performance improvements and new features packaged in the release below.
-You can test the changes on the new environment with an `upsun push`. Once the environment is live, you can then merge the upgrades (`upsun merge`) and return to visit many of the performance improvements and new features packaged in the release below.
+You can test the changes on the new environment with an `upsun push`.
 You can as always find more information about available extensions and PHP configuration in the [Upsun](https://docs.upsun.com) and [Platform.sh](https://docs.platform.sh) documentation.
 
 {{< callout type="blue" >}}
