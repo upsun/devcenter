@@ -28,8 +28,9 @@
         {{ .Content }}
         </div>
         {{ partial "components/last-updated.html" . }}
+        {{ if eq .Params.pagination true }}
         {{ partial "components/pager.html" . }}
-        {{ partial "components/comments.html" . }}
+        {{ end }}
       </main>
     </article>
   </div>

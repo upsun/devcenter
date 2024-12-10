@@ -57,7 +57,7 @@
 
   <div class="hx-w-full hx-min-w-0 hx-leading-7">
     <div class="hx-mt-6 hx-leading-7 first:hx-mt-0">
-      {{ .InnerDeindent | markdownify }}
+      {{ .InnerDeindent | markdownify | chomp }}
     </div>
   </div>
 </div>
