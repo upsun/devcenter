@@ -3,26 +3,22 @@ title: Third party integrations
 # linkTitle: Comments
 # description: Flexible resources on Upsun are easy to use. Find all you need to know about resources allocation there.
 weight: 7
+pagination: true
+prev: /docs/get-started/here/local/_index.md
+next: /docs/get-started/here/support.md
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-Morbi interdum metus neque, sed lobortis nisi aliquet sed. 
+In this guide, you've configured and deployed a local copy of your codebase to {{% vendor/name %}}.
+You can continue to work, but the primary remote your team would share would be {{% vendor/name %}} itself.
 
-<!--more-->
+It's more likely that your codebase is on a third party Git service like GitHub, GitLab, or Bitbucket.
 
-Pellentesque pellentesque a augue id iaculis. 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-Fusce suscipit ac libero ac mollis. Sed rutrum tempor porta. 
+Now that you've learned the basics of {{% vendor/name %}} configuration and deployment, you can create new projects within the management console, by choosing the **Connect repository** option to set up a GitHub application.
 
-Sed sem velit, feugiat sit amet dignissim id, tincidunt sed libero. 
-Duis aliquam bibendum vulputate. 
-Etiam accumsan est tristique dolor suscipit aliquet. 
-Vestibulum consequat, nulla eu ultrices bibendum, justo lorem vulputate nisi, eu aliquet tortor eros cursus leo. 
-Integer interdum facilisis felis, vitae iaculis lectus tristique nec. Sed vel viverra purus, at tincidunt sapien. 
-Quisque bibendum aliquam nunc, ac aliquet est pharetra eu. 
-Pellentesque quis dui urna. 
+At this stage, if you want to make another remote (i.e. `origin`) the primary remote, and {{% vendor/name %}} a deployment mirror, you can override your current configuration by setting up an integration:
 
-Aliquam molestie vitae lectus porta scelerisque. 
-Aliquam tincidunt neque nec mauris rutrum, sit amet commodo sapien maximus. 
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+- [BitBucket](/docs/integrations/source/bitbucket.md)
+- [GitHub](/docs/integrations/source/github.md)
+- [GitLab](/docs/integrations/source/gitlab.md)
 
+Once the integration is added, all commits on the service are mirrored, built, and deployed on {{% vendor/name %}}.

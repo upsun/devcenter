@@ -1,0 +1,24 @@
+{{ $python := "[Django](/docs/get-started/stacks/django.md)<br/>[Flask](/docs/get-started/stacks/flask.md)" }}
+{{ $php := "[Laravel](/docs/get-started/stacks/laravel)<br/>[Symfony](/docs/get-started/stacks/symfony/_index.md)<br/>[WordPress](/docs/get-started/stacks/wordpress.md)" }}
+{{ $nodejs := "[Express](/docs/get-started/stacks/express)<br/>[Next.js](/docs/get-started/stacks/nextjs.md)<br/>[Strapi](/docs/get-started/stacks/strapi/_index.md)" }}
+
+<table style="width: 100%; display: table;">
+    <tbody>
+        <tr>
+            <th>Language</th>
+            <th>Frameworks</th>
+          </tr>
+          <tr>
+            <td>{{ "[Python](/docs/languages/python/_index.md)" | .Page.RenderString }}</td>
+            <td>{{ $python | .Page.RenderString }}</td>
+          </tr>
+          <tr>
+            <td>{{ "[PHP](/docs/languages/php/_index.md)  " | .Page.RenderString }}</td>
+            <td>{{ $php | .Page.RenderString }}</td>
+          </tr>
+            <tr>
+            <td>{{ "[Javascript/Node.js](/docs/languages/nodejs/_index.md)" | .Page.RenderString }}</td>
+            <td>{{ $nodejs | .Page.RenderString }}</td>
+          </tr>
+    </tbody>
+</table>

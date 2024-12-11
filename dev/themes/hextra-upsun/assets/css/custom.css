@@ -186,8 +186,10 @@ a.ot-sdk-show-settings:hover {
     border-color: rgb(100, 111, 117, 0.2);
 }
 
-.hextra-code-block pre {
+.hextra-code-block pre,
+.hextra-code-block div .highlight pre {
     background-color: #FFFFFF;
+    border: 1px solid #646F754D;
 }
 
 .chroma .hl {

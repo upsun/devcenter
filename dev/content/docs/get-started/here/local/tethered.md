@@ -7,21 +7,72 @@ description: |
   Sync your local Upsun with your remote environment to start contributing.
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-Morbi interdum metus neque, sed lobortis nisi aliquet sed. 
-Pellentesque pellentesque a augue id iaculis. 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-Fusce suscipit ac libero ac mollis. Sed rutrum tempor porta. 
+When you develop a project, a significant amount of work takes place
+locally rather than on an active {{% vendor/name %}} environment. You want to ensure
+that the process of local development is as close as possible to a deployed
+environment.
 
-Sed sem velit, feugiat sit amet dignissim id, tincidunt sed libero. 
-Duis aliquam bibendum vulputate. 
-Etiam accumsan est tristique dolor suscipit aliquet. 
-Vestibulum consequat, nulla eu ultrices bibendum, justo lorem vulputate nisi, eu aliquet tortor eros cursus leo. 
-Integer interdum facilisis felis, vitae iaculis lectus tristique nec. Sed vel viverra purus, at tincidunt sapien. 
-Quisque bibendum aliquam nunc, ac aliquet est pharetra eu. 
-Pellentesque quis dui urna. 
+You can achieve this through various approaches. For example, you can use
+Symfony Server with tethered data.
 
-Aliquam molestie vitae lectus porta scelerisque. 
-Aliquam tincidunt neque nec mauris rutrum, sit amet commodo sapien maximus. 
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+To do so, when testing changes locally, you can connect your locally running
+Symfony Server to service containers on an active {{% vendor/name %}} environment.
 
+This methodology has several advantages:
+
+- It avoids installing anything on your local machine but your stack runtime.
+- It ensures that you are using the same versions of all services on your local
+  machine and in production.
+
+{{< callout type="pink" title="Warning">}}
+
+Never use this method on the **main** environment. Changes made on your local
+machine will impact production data.
+
+{{< /callout >}}
+
+{{% steps %}}
+
+### Start your local Server
+
+Use the official path to start your local server locally.
+
+### Create the tethered connection
+
+1.  Create a new environment off of production:
+
+    ```bash
+    {{% vendor/cli %}} branch new-feature main
+    ```
+
+1.  Open an SSH tunnel to the new environment's services:
+
+    ```bash
+    {{% vendor/cli %}} tunnel:open
+    ```
+
+    This command returns the addresses for SSH tunnels to all of your services that you can then use within your local source code:
+
+    ```bash
+    $ {{% vendor/cli %}} tunnel:open
+    
+        SSH tunnel opened to rediscache at: redis://127.0.0.1:30000
+        SSH tunnel opened to database at: pgsql://main:main@127.0.0.1:30001/main
+
+        Logs are written to: /Users/acmeUser/.upsun/tunnels.log
+
+        List tunnels with: {{% vendor/cli %}} tunnels
+        View tunnel details with: {{% vendor/cli %}} tunnel:info
+        Close tunnels with: {{% vendor/cli %}} tunnel:close
+
+        Save encoded tunnel details to the PLATFORM_RELATIONSHIPS variable using:
+        export PLATFORM_RELATIONSHIPS="$({{% vendor/cli %}} tunnel:info --encode)"
+    ```
+
+1. When you've finished your work, close the tunnels to your services by running the following command:
+
+    ```bash
+    {{% vendor/cli %}} tunnel:close --all -y
+    ```
+
+{{% /steps %}}
