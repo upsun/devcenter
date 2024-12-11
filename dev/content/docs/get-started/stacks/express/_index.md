@@ -81,7 +81,7 @@ After creating your {{% vendor/name %}} project, copy your new **project ID** fo
 {{< tab >}}
 To create a new project with the {{% vendor/name %}} CLI, use the following command and follow the prompts:
 
-```bash {location="Terminal"}
+```bash
 {{% vendor/cli %}} project:create
 ```
 
@@ -303,7 +303,7 @@ To make changes to your project, follow these steps:
 2. Make changes to your project.
    For example, edit the `views/index.jade` file and make the following changes:
 
-   ```diff
+   ```diff {filename="diff"}
    diff --git a/views/index.jade b/views/index.jade
    index 3d63b9a..77aee43 100644
    --- a/views/index.jade
@@ -314,7 +314,7 @@ To make changes to your project, follow these steps:
       h1= title
    -  p Welcome to #{title}
    +  p Welcome to #{title} on {{% vendor/name %}}
-   ``
+   ```
 
 3. Commit your changes:
 

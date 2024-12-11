@@ -39,7 +39,7 @@
       {{ .context.Scratch.Set "enableFooterSwitches" true }}
     {{- else -}}
       <ul class="hx-flex hx-flex-col hx-gap-1 max-md:hx-hidden">
-        {{- partial "custom/sidebar-dropdown.html" (dict "context" . )  -}}
+        <!-- {{- partial "custom/sidebar-dropdown.html" (dict "context" . )  -}} -->
         {{ template "sidebar-main" (dict "context" $navRoot "page" $context  "pageURL" $pageURL) }}
         {{ template "sidebar-footer" }}
       </ul>
