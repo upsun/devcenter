@@ -14,7 +14,7 @@
         <h1 class="hx-mt-2 hx-text-4xl hx-font-bold hx-tracking-tight hx-text-slate-900 dark:hx-text-slate-100">{{ .Title }}</h1>
         {{ if isset .Params "subtitle" }}
           <div class="post-category hx-text-sm">
-            {{ .Params.subtitle }}
+            {{ .Params.subtitle | markdownify }}
           </div>
         {{ end }}
         <!-- <div class="hx-mt-4 hx-mb-6">

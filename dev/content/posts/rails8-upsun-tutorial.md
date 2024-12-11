@@ -21,7 +21,7 @@ tags:
   - tutorial
 categories:
   - tutorials
-  - featured
+  # - featured
 math: false
 # excludeSearch: true
 ---
