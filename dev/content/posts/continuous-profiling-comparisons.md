@@ -34,7 +34,7 @@ categories:
 #   - how-it-works
 #   - discussions
 #   - experiments
-  - featured
+  # - featured
   - releases
 #   - transcripts
 #   - tutorials
