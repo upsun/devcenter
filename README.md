@@ -2,6 +2,22 @@
 
 ## Running locally
 
+### Option 1: Quickstart
+
+Requirements: 
+
+- [Hugo](https://gohugo.io/)
+
+Steps:
+
+- Clone this repository: `git clone git@github.com:upsun/devcenter.git && cd devcenter/dev`
+- `git submodule init`
+- `git submodule update`
+- `npm install`
+- `hugo serve`
+
+### Option 2: Replicate production
+
 - Start Docker
 - `git submodule init`
 - `git submodule update`
