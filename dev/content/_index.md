@@ -8,8 +8,8 @@ layout: hextra-home
 <!-- <div class="hx-mt-6"></div> -->
 
 {{< hextra/hero-container
-  image="images/upsun-hello-world.svg"
-  imageTitle="Console"
+  image="images/dev-center-all-brands-recolored.png"
+  imageTitle="Ecosystem"
   imageWidth="100%"
   imageClass="max-md:hx-hidden"
   class="hx-pt-6 hx-pb-6"
@@ -22,7 +22,7 @@ layout: hextra-home
 
 <div class="hx-mb-12">
 {{< hextra/hero-subtitle >}}
-  Your hub for all resources related to the Upsun product offerings. All the latest demos, examples, documentation, and
+  Your hub for all resources related to the Upsun, Platform.sh, and Blackfire.io product offerings. All the latest demos, examples, documentation, and
   articles for each of your frameworks and languages. Join the community. And build something great on the Upsun cloud
   application platform.<br class="sm:hx-block hx-hidden" />
 {{< /hextra/hero-subtitle >}}
