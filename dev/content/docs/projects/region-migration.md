@@ -26,7 +26,7 @@ Before starting the migration process, you need to plan for it:
 
 ## 2. Create a new project
 
-In the target region, create a new project from scratch.
+In the target region, [create a new project from scratch](https://console.upsun.com/org/create-project/info?_utm_campaign=cta_region_migration&utm_source=dc_docs&_utm_medium=organic).
 
 If you plan to test for long, start with the least amount of resources on the project and then upsize it before switching the DNS.
 
