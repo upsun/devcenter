@@ -3,24 +3,18 @@ title: Change the project timezone
 description: See how to change the timezone for a project and what it affects.
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-Morbi interdum metus neque, sed lobortis nisi aliquet sed. 
+The project timezone affects [automated backups](/docs/environments/backup.md).
 
-<!--more-->
+The project timezone doesn't affect:
 
-Pellentesque pellentesque a augue id iaculis. 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-Fusce suscipit ac libero ac mollis. Sed rutrum tempor porta. 
+- [App runtime](/docs/create-apps/timezone.md).
+- [Cron jobs](/docs/create-apps/app-reference/single-runtime-image.md#crons).
+- [System logs](/docs/increase-observability/logs/_index.md).
+ UTC is the default timezone for all logs.
 
-Sed sem velit, feugiat sit amet dignissim id, tincidunt sed libero. 
-Duis aliquam bibendum vulputate. 
-Etiam accumsan est tristique dolor suscipit aliquet. 
-Vestibulum consequat, nulla eu ultrices bibendum, justo lorem vulputate nisi, eu aliquet tortor eros cursus leo. 
-Integer interdum facilisis felis, vitae iaculis lectus tristique nec. Sed vel viverra purus, at tincidunt sapien. 
-Quisque bibendum aliquam nunc, ac aliquet est pharetra eu. 
-Pellentesque quis dui urna. 
+To change the timezone for a project, follow these steps:
 
-Aliquam molestie vitae lectus porta scelerisque. 
-Aliquam tincidunt neque nec mauris rutrum, sit amet commodo sapien maximus. 
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
+1. Open the project where you want to change the timezone.
+2. Click {{< icon settings >}} **Settings**.
+3. Select the timezone from the list.
+4. Click **Save**.

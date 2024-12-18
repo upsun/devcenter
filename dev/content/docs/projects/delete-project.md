@@ -3,24 +3,41 @@ title: Delete a project
 description: See how to delete projects you no longer need.
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-Morbi interdum metus neque, sed lobortis nisi aliquet sed. 
 
-<!--more-->
+To delete a project, you must be an organization owner or have the [manage plans permission](/docs/administration/users.md#organization-permissions).
 
-Pellentesque pellentesque a augue id iaculis. 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-Fusce suscipit ac libero ac mollis. Sed rutrum tempor porta. 
+To delete a {{% vendor/name %}} project, including all data, code, and active environments:
 
-Sed sem velit, feugiat sit amet dignissim id, tincidunt sed libero. 
-Duis aliquam bibendum vulputate. 
-Etiam accumsan est tristique dolor suscipit aliquet. 
-Vestibulum consequat, nulla eu ultrices bibendum, justo lorem vulputate nisi, eu aliquet tortor eros cursus leo. 
-Integer interdum facilisis felis, vitae iaculis lectus tristique nec. Sed vel viverra purus, at tincidunt sapien. 
-Quisque bibendum aliquam nunc, ac aliquet est pharetra eu. 
-Pellentesque quis dui urna. 
 
-Aliquam molestie vitae lectus porta scelerisque. 
-Aliquam tincidunt neque nec mauris rutrum, sit amet commodo sapien maximus. 
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+{{< tabs items="In the Console, Using the CLI" >}}
+
+{{< tab >}}
+
+- On the tile of the project you want to delete, click **{{< icon more >}} More**.
+- Click **Edit plan**.
+- Click **Delete project**.
+- To confirm your choice, enter the project's name.
+- Click **Yes, Delete Project**.
+
+{{< /tab >}}
+
+{{< tab >}}
+
+1. Run the following command:
+
+   ```bash
+   {{% vendor/cli %}} project:delete --project {{< variable "PROJECT_ID" >}}
+   ```
+
+2. Read the consequences to deletion and enter `y`.
+3. Enter the project title to confirm.
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
+You are billed only for the portion of a month when the project was active.
+
+When you remove all your projects from your user account,
+you stop being charged.
 
