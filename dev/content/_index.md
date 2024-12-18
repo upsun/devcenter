@@ -8,7 +8,7 @@ layout: hextra-home
 <!-- <div class="hx-mt-6"></div> -->
 
 {{< hextra/hero-container
-  image="images/dev-center-all-brands-cropped.png"
+  image="images/dev-center-all-brands-recolored.png"
   imageTitle="Ecosystem"
   imageWidth="100%"
   imageClass="max-md:hx-hidden"
