@@ -22,6 +22,48 @@
     background-color: #DFDAFF;
 } */
 
+@media (min-width:1025px) { 
+
+    .hx-max-w-\[90rem\] {
+        max-width: 95rem;
+    }
+    
+    .md\:hx-w-64 {
+        width: 20rem;
+    }
+}
+
+.sidebar-badge {
+    font-size: 0.65rem;
+    padding: 2px 8px;
+    font-weight: 700;
+    border-radius: 4px;
+    /* border: 1px soli */
+}
+
+.badge-blue {
+    background-color: #B2EBF2;
+    color: #188181; 
+}
+
+.badge-pink {
+    background-color: #FDE8FD;
+    color: #BA16BD; 
+}
+
+.badge-purple {
+    background-color: #EFEDFF;
+    color: #6046FF;
+}
+
+.section-before {
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    font-family: "Space Grotesk", sans-serif; 
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
 figcaption {
     font-size: 0.775rem !important;
 }
@@ -29,7 +71,8 @@ figcaption {
 /* additional callouts */
 
 .cta-section {
-    background-color: #F7F8F8;
+    /* background-color: #F7F8F8; */
+    background-color: #ffffff;
 }
 
 a.ot-sdk-show-settings:hover {
@@ -144,8 +187,10 @@ a.ot-sdk-show-settings:hover {
     border-color: rgb(100, 111, 117, 0.2);
 }
 
-.hextra-code-block pre {
+.hextra-code-block pre,
+.hextra-code-block div .highlight pre {
     background-color: #FFFFFF;
+    border: 1px solid #646F754D;
 }
 
 .chroma .hl {
@@ -279,7 +324,8 @@ details > div {
 }
 
 body {
-    background: #F7F8F8;
+    /* background: #F7F8F8; */
+    background: #ffffff;
 }
 
 .upsun-button {
@@ -300,21 +346,24 @@ body {
 }
 
 .button-secondary {
-    background: #F7F8F8; 
+    /* background: #F7F8F8;  */
+    background: #ffffff;
     color: #0E1113;;
     border: 2px solid #0E1113;
 }
 
 .button-secondary:hover {
     background: #0E1113;
-    color: #F7F8F8;
+    /* color: #F7F8F8; */
+    color: #ffffff;
     border: 2px solid #0E1113;
 }
 
 .nav-container,
 .nav-container > div,
 .nav-container > nav {
-    background: #F7F8F8 !important;
+    /* background: #F7F8F8 !important; */
+    background: #ffffff !important;
     border-color: #646F754D !important;
 }
 
@@ -412,7 +461,8 @@ figcaption > h4 {
 }
 
 .home-title-container {
-    background-color: #F7F8F8;
+    /* background-color: #F7F8F8; */
+    background-color: #ffffff;
 }
 
 .home-title {
@@ -802,7 +852,8 @@ span.hx-cursor-default {
 }
 
 .hextra-card {
-    border: 2px solid #F7F8F8;
+    /* border: 2px solid #F7F8F8; */
+    border: 2px solid #ffffff;
 }
 
 .hextra-card {

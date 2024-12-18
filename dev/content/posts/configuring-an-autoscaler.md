@@ -46,7 +46,7 @@ monitor your project resource usage,
 and upscale or downscale the allocated resources for it 
 based on demand and some thresholds you can define.
 
-> This post follows on from the [introduction to the Upsun API]({{< ref "using-the-upsun-api.md" >}})
+> This post follows on from the [introduction to the Upsun API](/posts/using-the-upsun-api.md)
 
 {{< callout type="info" >}}
 This is an example intended to illustrate how it's possible to leverage the API to manage your projects and horizontaly scale your application on demand.

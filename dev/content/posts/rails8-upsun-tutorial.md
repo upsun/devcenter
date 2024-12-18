@@ -30,7 +30,7 @@ Rails 8.0 Release Candidate just dropped, and it's packed with exciting features
 
 Let's build a simple blog application and deploy it to production **in under 10 minutes**!
 
-![Final Blog Application](/images/rails8-upsun-tutorial/rails8-blog-index.png)
+![Final Blog Application](/images/rails8-upsun-tutorial/rails8-blog-index.png "0.5")
 
 ## Prerequisites
 
@@ -262,7 +262,7 @@ Refresh and your styles should now be properly generated and injected into `appl
 
 {{% /steps %}}
 
-![Article](/images/rails8-upsun-tutorial/rails8-blog-show.png)
+![Article](/images/rails8-upsun-tutorial/rails8-blog-show.png "0.5")
 
 **Great! Our app is now complete!**
 

@@ -28,10 +28,10 @@ layout: hextra-home
 {{< /hextra/hero-subtitle >}}
 </div>
 
-{{< hextra/hero-button text="Get Started" link="https://docs.upsun.com/get-started/here.html" class="upsun-button button-primary"
+{{< hextra/hero-button text="Get Started" link="/docs/get-started/here" class="upsun-button button-primary"
   style="margin-right: 10px;"
 >}}
-{{< hextra/hero-button text="What is Upsun?" link="https://docs.upsun.com/learn/overview.html" class="upsun-button button-secondary max-md:hx-hidden"
+{{< hextra/hero-button text="What is Upsun?" link="/docs/learn/overview" class="upsun-button button-secondary max-md:hx-hidden"
 >}}
 
 {{< /hextra/hero-container >}}
@@ -55,43 +55,43 @@ Container-based deployments built on Git. Managed services and custom applicatio
     imageStyle="padding-right: 1.5rem !important;"
     icon="configure"
     subtitle="Upsun allows you to configure resources (CPU, RAM, and disk) per environment for each of your apps and services. You can add instances of your apps depending on your needs."
-    link="https://docs.upsun.com/manage-resources.html"
+    link="/docs/manage-resources"
   >}}
   {{< hextra/feature-card
     title="Access control"
     icon="user"
     subtitle="Access to code, production data, and secrets can be finely tuned, managed, and audited with Organizations and Teams from the Console, CLI, or API."
-    link="https://docs.upsun.com/administration/organizations.html"
+    link="/docs/administration/organizations"
   >}}
   {{< hextra/feature-card
     title="Projects & Git"
     icon="branch"
     subtitle="With a source integration, Upsun projects are a mirror of external Git repositories. Pull requests inherit production data by default -- true staging environments for every revision."
-    link="https://docs.upsun.com/integrations/source.html"
+    link="/docs/integrations/source"
   >}}
   {{< hextra/feature-card
     title="Runtime languages"
     icon="tree"
     subtitle="We support 10 popular runtimes out of the box and much more with a bit of tinkering. Whether you do 100% JS or use PHP, Java, Python, Ruby or Rust, we have you covered."
-    link="https://docs.upsun.com/languages.html"
+    link="/docs/languages"
   >}}
   {{< hextra/feature-card
     title="Managed services"
     icon="backup"
     subtitle="Augment your application capabilities with our included services: Databases, caches, queues, indexes. Managed and ready to deploy."
-    link="https://docs.upsun.com/add-services.html"
+    link="/docs/add-services"
   >}}
   {{< hextra/feature-card
     title="Networking"
     icon="router"
     subtitle="Every project needs some hostnames and certificates. Dive into how HTTP routes are defined for your projects."
-    link="https://docs.upsun.com/define-routes.html"
+    link="/docs/define-routes"
   >}}
   {{< hextra/feature-card
     title="Observability"
     icon="search"
     subtitle="Power is nothing without control. Keep an eye on how your applications behave on our platform. Dive into code bottlenecks with ease."
-    link="https://docs.upsun.com/increase-observability.html"
+    link="/docs/increase-observability"
   >}}
   {{< hextra/feature-card
     title="API"
@@ -103,7 +103,7 @@ Container-based deployments built on Git. Managed services and custom applicatio
     title="CLI"
     icon="code"
     subtitle="As a developer first product, our CLI should be your main Upsun interface. Get it setup and start deploying your projects through the terminal."
-    link="https://docs.upsun.com/administration/cli.html"
+    link="/docs/administration/cli"
   >}}
 {{< /hextra/feature-grid >}}
 
@@ -147,55 +147,55 @@ Container-based deployments built on Git. Managed services and custom applicatio
     title="Express"
     icon="nodejs"
     subtitle="Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications."
-    link="https://docs.upsun.com/get-started/stacks/express.html"
+    link="/docs/get-started/stacks/express"
   >}}
   {{< hextra/feature-card
     title="Django"
     icon="django"
     subtitle="Build with the \"high-level\" Python web framework to develop your APIs, backends, and microservices rapidly and securely."
-    link="https://docs.upsun.com/get-started/stacks/django.html"
+    link="/docs/get-started/stacks/django"
   >}}
   {{< hextra/feature-card
     title="Laravel"
     icon="laravel"
     subtitle="Start building your next application with Laravel. The PHP framework for web artisans."
-    link="https://docs.upsun.com/get-started/stacks/laravel.html"
+    link="/docs/get-started/stacks/laravel"
   >}}
   {{< hextra/feature-card
     title="Symfony"
     icon="symfony"
     subtitle="Symfony is a set of reusable PHP components and a high performance PHP framework for web projects."
-    link="https://docs.upsun.com/get-started/stacks/symfony.html"
+    link="/docs/get-started/stacks/symfony"
   >}}
   {{< hextra/feature-card
     title="Next.js"
     icon="nodejs"
     subtitle="Used by some of the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components."
-    link="https://docs.upsun.com/get-started/stacks/nextjs.html"
+    link="/docs/get-started/stacks/nextjs"
   >}}
   {{< hextra/feature-card
     title="Flask"
     icon="flask"
     subtitle="Flask is a lightweight WSGI web application framework. It is designed to make getting started quick and easy, with the ability to scale up to complex applications."
-    link="https://docs.upsun.com/get-started/stacks/flask.html"
+    link="/docs/get-started/stacks/flask"
   >}}
     {{< hextra/feature-card
     title="WordPress"
     icon="wordpress"
     subtitle="The open source publishing platform of choice for millions of websites worldwide—from creators and small businesses to enterprises."
-    link="https://docs.upsun.com/get-started/stacks/wordpress.html"
+    link="/docs/get-started/stacks/wordpress"
   >}}
   {{< hextra/feature-card
     title="Strapi"
     icon="strapi"
     subtitle="The leading open-source headless CMS. 100% JavaScript / TypeScript and fully customizable."
-    link="https://docs.upsun.com/get-started/stacks/strapi.html"
+    link="/docs/get-started/stacks/strapi"
   >}}
   {{< hextra/feature-card
     title="More frameworks"
     icon="arrow-right"
     subtitle="With support for even more runtimes like Go, Lisp, Elixir, Ruby and Rust, start deploying your application on Upsun."
-    link="https://docs.upsun.com/get-started/stacks.html"
+    link="/docs/get-started/stacks"
   >}}
 {{< /hextra/feature-grid >}}
 

@@ -7,7 +7,7 @@ comments: false
 
 {{% details title="Why did the message I post disappear?" closed="true" %}}
 
-- Bots and moderators often remove messages that are against our [rules](../rules).
+- Bots and moderators often remove messages that are against our [rules](/community/engage/discord/rules.md).
 - Do not post it again, the bot may exclude you from the server if you do.
 
 {{% /details %}}
